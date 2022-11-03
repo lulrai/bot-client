@@ -1,0 +1,8146 @@
+[
+  {
+    "index": "1",
+    "name": "CChatClient"
+  },
+  {
+    "index": "2",
+    "name": "ContextMenu"
+  },
+  {
+    "index": "3",
+    "name": "ContextMenuData"
+  },
+  {
+    "index": "4",
+    "name": "ContextMenuSystem"
+  },
+  {
+    "index": "5",
+    "name": "CPhysicsSystem"
+  },
+  {
+    "index": "6",
+    "name": "DialogCallbackDispatchSystem"
+  },
+  {
+    "index": "7",
+    "name": "ECM_UI"
+  },
+  {
+    "index": "8",
+    "name": "Shell"
+  },
+  {
+    "index": "9",
+    "name": "TextTagSystem"
+  },
+  {
+    "index": "10",
+    "name": "UIElementManager"
+  },
+  {
+    "index": "11",
+    "name": "AAHash"
+  },
+  {
+    "index": "12",
+    "name": "AAHashIter"
+  },
+  {
+    "index": "13",
+    "name": "AAMultiHash"
+  },
+  {
+    "index": "14",
+    "name": "AAMultiHashIter"
+  },
+  {
+    "index": "15",
+    "name": "AAMultiMap"
+  },
+  {
+    "index": "16",
+    "name": "AAMultiMapIter"
+  },
+  {
+    "index": "17",
+    "name": "AArray"
+  },
+  {
+    "index": "18",
+    "name": "AHashSet"
+  },
+  {
+    "index": "19",
+    "name": "AHashSetIter"
+  },
+  {
+    "index": "20",
+    "name": "AIMoveToCallbackHandler"
+  },
+  {
+    "index": "21",
+    "name": "AIMoveToParameters"
+  },
+  {
+    "index": "22",
+    "name": "AIMoveToSystem"
+  },
+  {
+    "index": "23",
+    "name": "ALHash"
+  },
+  {
+    "index": "24",
+    "name": "ALHashIter"
+  },
+  {
+    "index": "25",
+    "name": "AList"
+  },
+  {
+    "index": "26",
+    "name": "AListIter"
+  },
+  {
+    "index": "27",
+    "name": "All_WorldObjectFilter"
+  },
+  {
+    "index": "28",
+    "name": "ALMultiHash"
+  },
+  {
+    "index": "29",
+    "name": "ALMultiHashIter"
+  },
+  {
+    "index": "30",
+    "name": "ALMultiMap"
+  },
+  {
+    "index": "31",
+    "name": "ALMultiMapIter"
+  },
+  {
+    "index": "32",
+    "name": "AppearanceTable"
+  },
+  {
+    "index": "33",
+    "name": "AppInfoHash"
+  },
+  {
+    "index": "34",
+    "name": "AppliedAppearanceKey"
+  },
+  {
+    "index": "35",
+    "name": "ARHash"
+  },
+  {
+    "index": "36",
+    "name": "ARHashIter"
+  },
+  {
+    "index": "37",
+    "name": "ARMultiHash"
+  },
+  {
+    "index": "38",
+    "name": "ARMultiHashIter"
+  },
+  {
+    "index": "39",
+    "name": "BaseProperty"
+  },
+  {
+    "index": "40",
+    "name": "BaseProperty_PropertyDetectionFilter"
+  },
+  {
+    "index": "41",
+    "name": "BBox"
+  },
+  {
+    "index": "42",
+    "name": "Bitfield32_PropertyDetectionFilter"
+  },
+  {
+    "index": "43",
+    "name": "Bitfield64_PropertyDetectionFilter"
+  },
+  {
+    "index": "44",
+    "name": "BlockCreationInfo"
+  },
+  {
+    "index": "45",
+    "name": "BoxShapeDescriptor"
+  },
+  {
+    "index": "46",
+    "name": "cistring"
+  },
+  {
+    "index": "47",
+    "name": "CollisionRecord"
+  },
+  {
+    "index": "48",
+    "name": "ContainerSystem"
+  },
+  {
+    "index": "49",
+    "name": "ConvexHullShapeDescriptor"
+  },
+  {
+    "index": "50",
+    "name": "DamageReport"
+  },
+  {
+    "index": "51",
+    "name": "DBCache"
+  },
+  {
+    "index": "52",
+    "name": "DBPropertyCollection"
+  },
+  {
+    "index": "53",
+    "name": "debug"
+  },
+  {
+    "index": "54",
+    "name": "DetectionParams"
+  },
+  {
+    "index": "55",
+    "name": "DetectionSystem"
+  },
+  {
+    "index": "56",
+    "name": "Donut_AIMoveToShape"
+  },
+  {
+    "index": "57",
+    "name": "DynamicBitset"
+  },
+  {
+    "index": "58",
+    "name": "EFunTestSystem"
+  },
+  {
+    "index": "59",
+    "name": "EmailUtils"
+  },
+  {
+    "index": "60",
+    "name": "EngineOptionSystem"
+  },
+  {
+    "index": "61",
+    "name": "EntityDesc"
+  },
+  {
+    "index": "62",
+    "name": "EntityLinkDesc"
+  },
+  {
+    "index": "63",
+    "name": "EntityPositionInfo"
+  },
+  {
+    "index": "64",
+    "name": "EnumeratedBitfield32"
+  },
+  {
+    "index": "65",
+    "name": "EnumeratedBitfield64"
+  },
+  {
+    "index": "66",
+    "name": "EnumMapper"
+  },
+  {
+    "index": "67",
+    "name": "Enum_PropertyDetectionFilter"
+  },
+  {
+    "index": "68",
+    "name": "File"
+  },
+  {
+    "index": "69",
+    "name": "FileArray"
+  },
+  {
+    "index": "70",
+    "name": "FileNode"
+  },
+  {
+    "index": "71",
+    "name": "FileParser"
+  },
+  {
+    "index": "72",
+    "name": "Frame"
+  },
+  {
+    "index": "73",
+    "name": "FXAndBehaviorInfo"
+  },
+  {
+    "index": "74",
+    "name": "GameplaySystem"
+  },
+  {
+    "index": "75",
+    "name": "GameTime"
+  },
+  {
+    "index": "76",
+    "name": "Heading"
+  },
+  {
+    "index": "77",
+    "name": "HouseAddress"
+  },
+  {
+    "index": "78",
+    "name": "HouseData"
+  },
+  {
+    "index": "79",
+    "name": "HousingDB"
+  },
+  {
+    "index": "80",
+    "name": "IconDesc"
+  },
+  {
+    "index": "81",
+    "name": "IDetectionReport"
+  },
+  {
+    "index": "82",
+    "name": "IEtherealityFilter"
+  },
+  {
+    "index": "83",
+    "name": "IFunTestSystem"
+  },
+  {
+    "index": "84",
+    "name": "IFunVirtualTestSystem"
+  },
+  {
+    "index": "85",
+    "name": "IIDUtils"
+  },
+  {
+    "index": "86",
+    "name": "IMonitorUserExtension"
+  },
+  {
+    "index": "87",
+    "name": "InstanceID_PropertyDetectionFilter"
+  },
+  {
+    "index": "88",
+    "name": "IPerfTracker"
+  },
+  {
+    "index": "89",
+    "name": "IPreproc"
+  },
+  {
+    "index": "90",
+    "name": "IRaycastReport"
+  },
+  {
+    "index": "91",
+    "name": "IScriptGameCallback"
+  },
+  {
+    "index": "92",
+    "name": "IShapeDescriptor"
+  },
+  {
+    "index": "93",
+    "name": "IStandardEtherealityFilter"
+  },
+  {
+    "index": "94",
+    "name": "IWorldEntityConstructionInfo"
+  },
+  {
+    "index": "95",
+    "name": "IWorldObjectFilter"
+  },
+  {
+    "index": "96",
+    "name": "KynMapKey"
+  },
+  {
+    "index": "97",
+    "name": "LAHash"
+  },
+  {
+    "index": "98",
+    "name": "LAHashIter"
+  },
+  {
+    "index": "99",
+    "name": "LAMultiHash"
+  },
+  {
+    "index": "100",
+    "name": "LAMultiHashIter"
+  },
+  {
+    "index": "101",
+    "name": "LAMultiMap"
+  },
+  {
+    "index": "102",
+    "name": "LAMultiMapIter"
+  },
+  {
+    "index": "103",
+    "name": "LandBlockInfo"
+  },
+  {
+    "index": "104",
+    "name": "LArray"
+  },
+  {
+    "index": "105",
+    "name": "LHashSet"
+  },
+  {
+    "index": "106",
+    "name": "LHashSetIter"
+  },
+  {
+    "index": "107",
+    "name": "LifecycleHandler"
+  },
+  {
+    "index": "108",
+    "name": "List_RaycastReport"
+  },
+  {
+    "index": "109",
+    "name": "LLHash"
+  },
+  {
+    "index": "110",
+    "name": "LLHashIter"
+  },
+  {
+    "index": "111",
+    "name": "LList"
+  },
+  {
+    "index": "112",
+    "name": "LListIter"
+  },
+  {
+    "index": "113",
+    "name": "LLMultiHash"
+  },
+  {
+    "index": "114",
+    "name": "LLMultiHashIter"
+  },
+  {
+    "index": "115",
+    "name": "LLMultiMap"
+  },
+  {
+    "index": "116",
+    "name": "LLMultiMapIter"
+  },
+  {
+    "index": "117",
+    "name": "LRHash"
+  },
+  {
+    "index": "118",
+    "name": "LRHashIter"
+  },
+  {
+    "index": "119",
+    "name": "LRMultiHash"
+  },
+  {
+    "index": "120",
+    "name": "LRMultiHashIter"
+  },
+  {
+    "index": "121",
+    "name": "MasterProperty"
+  },
+  {
+    "index": "122",
+    "name": "Math"
+  },
+  {
+    "index": "123",
+    "name": "MissileSystem"
+  },
+  {
+    "index": "124",
+    "name": "ModelSystem"
+  },
+  {
+    "index": "125",
+    "name": "MonitorHandler"
+  },
+  {
+    "index": "126",
+    "name": "MonitorID"
+  },
+  {
+    "index": "127",
+    "name": "MonitorParams"
+  },
+  {
+    "index": "128",
+    "name": "MonitorSystem"
+  },
+  {
+    "index": "129",
+    "name": "MoveToStatus"
+  },
+  {
+    "index": "130",
+    "name": "MoveToTargetInfo"
+  },
+  {
+    "index": "131",
+    "name": "NAHash"
+  },
+  {
+    "index": "132",
+    "name": "NAHashIter"
+  },
+  {
+    "index": "133",
+    "name": "NameFilterSystem"
+  },
+  {
+    "index": "134",
+    "name": "NHashSet"
+  },
+  {
+    "index": "135",
+    "name": "NHashSetIter"
+  },
+  {
+    "index": "136",
+    "name": "NLHash"
+  },
+  {
+    "index": "137",
+    "name": "NLHashIter"
+  },
+  {
+    "index": "138",
+    "name": "NRHash"
+  },
+  {
+    "index": "139",
+    "name": "NRHashIter"
+  },
+  {
+    "index": "140",
+    "name": "NRMultiHash"
+  },
+  {
+    "index": "141",
+    "name": "NRMultiHashIter"
+  },
+  {
+    "index": "142",
+    "name": "PackBuffer"
+  },
+  {
+    "index": "143",
+    "name": "Path"
+  },
+  {
+    "index": "144",
+    "name": "PathFinder_Normal"
+  },
+  {
+    "index": "145",
+    "name": "PathLinkIterator"
+  },
+  {
+    "index": "146",
+    "name": "PathNodeData"
+  },
+  {
+    "index": "147",
+    "name": "PathSystem"
+  },
+  {
+    "index": "148",
+    "name": "PerfSetup"
+  },
+  {
+    "index": "149",
+    "name": "PerfSystemCounter"
+  },
+  {
+    "index": "150",
+    "name": "PerfSystemTimer"
+  },
+  {
+    "index": "151",
+    "name": "PhysicsHandler"
+  },
+  {
+    "index": "152",
+    "name": "PhysicsStory"
+  },
+  {
+    "index": "153",
+    "name": "PhysicsSystem"
+  },
+  {
+    "index": "154",
+    "name": "Place"
+  },
+  {
+    "index": "155",
+    "name": "PlacementInfo"
+  },
+  {
+    "index": "156",
+    "name": "PlacesTable"
+  },
+  {
+    "index": "157",
+    "name": "Plane"
+  },
+  {
+    "index": "158",
+    "name": "PlayerMoveToCallbackHandler"
+  },
+  {
+    "index": "159",
+    "name": "PlayerMoveToParameters"
+  },
+  {
+    "index": "160",
+    "name": "Position"
+  },
+  {
+    "index": "161",
+    "name": "PositionBase"
+  },
+  {
+    "index": "162",
+    "name": "PositionOffset"
+  },
+  {
+    "index": "163",
+    "name": "PositionOffsetBase"
+  },
+  {
+    "index": "164",
+    "name": "PositionUtils"
+  },
+  {
+    "index": "165",
+    "name": "PostprocSystem"
+  },
+  {
+    "index": "166",
+    "name": "PropertyCollection"
+  },
+  {
+    "index": "167",
+    "name": "PropertyDesc"
+  },
+  {
+    "index": "168",
+    "name": "PropertyDetectionFilter"
+  },
+  {
+    "index": "169",
+    "name": "PropertySystem"
+  },
+  {
+    "index": "170",
+    "name": "PropertyHandler"
+  },
+  {
+    "index": "171",
+    "name": "PSUtils"
+  },
+  {
+    "index": "172",
+    "name": "QualifiedDataIDArray"
+  },
+  {
+    "index": "173",
+    "name": "Quaternion"
+  },
+  {
+    "index": "174",
+    "name": "Random"
+  },
+  {
+    "index": "175",
+    "name": "RandomSelectionTable"
+  },
+  {
+    "index": "176",
+    "name": "RArray"
+  },
+  {
+    "index": "177",
+    "name": "Ray"
+  },
+  {
+    "index": "178",
+    "name": "RaycastParams"
+  },
+  {
+    "index": "179",
+    "name": "RaycastResult"
+  },
+  {
+    "index": "180",
+    "name": "Region"
+  },
+  {
+    "index": "181",
+    "name": "RGBAColor"
+  },
+  {
+    "index": "182",
+    "name": "RList"
+  },
+  {
+    "index": "183",
+    "name": "RListIter"
+  },
+  {
+    "index": "184",
+    "name": "ScriptParameters"
+  },
+  {
+    "index": "185",
+    "name": "ScriptSystem"
+  },
+  {
+    "index": "186",
+    "name": "Segment"
+  },
+  {
+    "index": "187",
+    "name": "SegmentLinkIterator"
+  },
+  {
+    "index": "188",
+    "name": "SegmentTable"
+  },
+  {
+    "index": "189",
+    "name": "Simple_DetectionFilter"
+  },
+  {
+    "index": "190",
+    "name": "SliderSystem"
+  },
+  {
+    "index": "191",
+    "name": "Sphere"
+  },
+  {
+    "index": "192",
+    "name": "SphereShapeDescriptor"
+  },
+  {
+    "index": "193",
+    "name": "StandardEtherealityFilter"
+  },
+  {
+    "index": "194",
+    "name": "Standard_DetectionInfo"
+  },
+  {
+    "index": "195",
+    "name": "Standard_DetectionReport"
+  },
+  {
+    "index": "196",
+    "name": "StaticIFun"
+  },
+  {
+    "index": "197",
+    "name": "StorySegment"
+  },
+  {
+    "index": "198",
+    "name": "StorySystem"
+  },
+  {
+    "index": "199",
+    "name": "StringInfo"
+  },
+  {
+    "index": "200",
+    "name": "StringTable"
+  },
+  {
+    "index": "201",
+    "name": "TabooTable"
+  },
+  {
+    "index": "202",
+    "name": "TeleportInfo"
+  },
+  {
+    "index": "203",
+    "name": "TextHandler"
+  },
+  {
+    "index": "204",
+    "name": "Timer"
+  },
+  {
+    "index": "205",
+    "name": "TimeUtils"
+  },
+  {
+    "index": "206",
+    "name": "Tokenize"
+  },
+  {
+    "index": "207",
+    "name": "TransformShapeDescriptor"
+  },
+  {
+    "index": "208",
+    "name": "GUID"
+  },
+  {
+    "index": "209",
+    "name": "TypeInfo"
+  },
+  {
+    "index": "210",
+    "name": "UISaveLocations"
+  },
+  {
+    "index": "211",
+    "name": "Vector"
+  },
+  {
+    "index": "212",
+    "name": "VersionUtils"
+  },
+  {
+    "index": "213",
+    "name": "VisualDesc"
+  },
+  {
+    "index": "214",
+    "name": "VM"
+  },
+  {
+    "index": "215",
+    "name": "VMBlockSystem"
+  },
+  {
+    "index": "216",
+    "name": "VMData"
+  },
+  {
+    "index": "217",
+    "name": "VMEntityMessageSystem"
+  },
+  {
+    "index": "218",
+    "name": "VMEntitySystem"
+  },
+  {
+    "index": "219",
+    "name": "VMPerfSystem"
+  },
+  {
+    "index": "220",
+    "name": "VMSynchronizationSystem"
+  },
+  {
+    "index": "221",
+    "name": "wccinternal"
+  },
+  {
+    "index": "222",
+    "name": "WLogSystem"
+  },
+  {
+    "index": "223",
+    "name": "WorldEntity"
+  },
+  {
+    "index": "224",
+    "name": "WorldStatusHandler"
+  },
+  {
+    "index": "225",
+    "name": "string"
+  },
+  {
+    "index": "226",
+    "name": "AOIObjectFilter"
+  },
+  {
+    "index": "227",
+    "name": "BlockManagerSystem"
+  },
+  {
+    "index": "228",
+    "name": "BookieFacade"
+  },
+  {
+    "index": "229",
+    "name": "EntityCheckpointSystem"
+  },
+  {
+    "index": "230",
+    "name": "EntityRepositorySystem"
+  },
+  {
+    "index": "231",
+    "name": "GameSystem"
+  },
+  {
+    "index": "232",
+    "name": "GRSGameData"
+  },
+  {
+    "index": "233",
+    "name": "GRSManager"
+  },
+  {
+    "index": "234",
+    "name": "RepositoryQuery"
+  },
+  {
+    "index": "235",
+    "name": "RepositoryQueryResult"
+  },
+  {
+    "index": "236",
+    "name": "SChatHandler"
+  },
+  {
+    "index": "237",
+    "name": "SChatManager"
+  },
+  {
+    "index": "238",
+    "name": "ServerAdminAdaptor"
+  },
+  {
+    "index": "239",
+    "name": "ServerServiceSystem"
+  },
+  {
+    "index": "240",
+    "name": "SHARTHandler"
+  },
+  {
+    "index": "241",
+    "name": "SHARTManager"
+  },
+  {
+    "index": "242",
+    "name": "SPhysicsSystem"
+  },
+  {
+    "index": "243",
+    "name": "TokenBillingSystem"
+  },
+  {
+    "index": "244",
+    "name": "TurbineServer"
+  },
+  {
+    "index": "245",
+    "name": "WInterface"
+  },
+  {
+    "index": "246",
+    "name": "AdminPropertySystem"
+  },
+  {
+    "index": "247",
+    "name": "AlignmentSystem"
+  },
+  {
+    "index": "248",
+    "name": "AreaSystem"
+  },
+  {
+    "index": "249",
+    "name": "AuctionControl"
+  },
+  {
+    "index": "250",
+    "name": "AuctionSystem"
+  },
+  {
+    "index": "251",
+    "name": "BankSystem"
+  },
+  {
+    "index": "252",
+    "name": "CAccomplishmentSystem"
+  },
+  {
+    "index": "253",
+    "name": "CAdminSystem"
+  },
+  {
+    "index": "254",
+    "name": "CAIPetSystem"
+  },
+  {
+    "index": "255",
+    "name": "CAreaSystem"
+  },
+  {
+    "index": "256",
+    "name": "CCombatSystem"
+  },
+  {
+    "index": "257",
+    "name": "CComboSystem"
+  },
+  {
+    "index": "258",
+    "name": "CCommunicationSystem"
+  },
+  {
+    "index": "259",
+    "name": "CConjunctionSystem"
+  },
+  {
+    "index": "260",
+    "name": "CConsiderationSystem"
+  },
+  {
+    "index": "261",
+    "name": "CConversationSystem"
+  },
+  {
+    "index": "262",
+    "name": "CCooldownSystem"
+  },
+  {
+    "index": "263",
+    "name": "CCraftSystem"
+  },
+  {
+    "index": "264",
+    "name": "CCurrencySystem"
+  },
+  {
+    "index": "265",
+    "name": "CDamageTypeSystem"
+  },
+  {
+    "index": "266",
+    "name": "CDiscoverySystem"
+  },
+  {
+    "index": "267",
+    "name": "CEffectSystem"
+  },
+  {
+    "index": "268",
+    "name": "CErrorSystem"
+  },
+  {
+    "index": "269",
+    "name": "CExaminationSystem"
+  },
+  {
+    "index": "270",
+    "name": "CGlorySystem"
+  },
+  {
+    "index": "271",
+    "name": "CItemSystem"
+  },
+  {
+    "index": "272",
+    "name": "CLandmarkSystem"
+  },
+  {
+    "index": "273",
+    "name": "ClassSystem"
+  },
+  {
+    "index": "274",
+    "name": "CLootSystem"
+  },
+  {
+    "index": "275",
+    "name": "CMonsterPlaySystem"
+  },
+  {
+    "index": "276",
+    "name": "CMoodSystem"
+  },
+  {
+    "index": "277",
+    "name": "CMouseoverSystem"
+  },
+  {
+    "index": "278",
+    "name": "CMusicSystem"
+  },
+  {
+    "index": "279",
+    "name": "ColorTextSystem"
+  },
+  {
+    "index": "280",
+    "name": "CommunicationControl"
+  },
+  {
+    "index": "281",
+    "name": "CPedigreeSystem"
+  },
+  {
+    "index": "282",
+    "name": "CPerkSystem"
+  },
+  {
+    "index": "283",
+    "name": "CPipSystem"
+  },
+  {
+    "index": "284",
+    "name": "CPrivateEncounterSystem"
+  },
+  {
+    "index": "285",
+    "name": "CProgressSystem"
+  },
+  {
+    "index": "286",
+    "name": "CQuestDispenserSystem"
+  },
+  {
+    "index": "287",
+    "name": "CQuestSystem"
+  },
+  {
+    "index": "288",
+    "name": "CraftProfessionDataAdaptor"
+  },
+  {
+    "index": "289",
+    "name": "CraftRecipeDataAdaptor"
+  },
+  {
+    "index": "290",
+    "name": "CraftVocationDataAdaptor"
+  },
+  {
+    "index": "291",
+    "name": "CRaidSystem"
+  },
+  {
+    "index": "292",
+    "name": "CTapSystem"
+  },
+  {
+    "index": "293",
+    "name": "CTraitSystem"
+  },
+  {
+    "index": "294",
+    "name": "CTutorialSystem"
+  },
+  {
+    "index": "295",
+    "name": "CUsageSystem"
+  },
+  {
+    "index": "296",
+    "name": "DamageTypeSystem"
+  },
+  {
+    "index": "297",
+    "name": "CDeathSystem"
+  },
+  {
+    "index": "298",
+    "name": "EmoteSystem"
+  },
+  {
+    "index": "299",
+    "name": "ErrorDataAdaptor"
+  },
+  {
+    "index": "300",
+    "name": "FellowAdaptor"
+  },
+  {
+    "index": "301",
+    "name": "FellowshipAdaptor"
+  },
+  {
+    "index": "302",
+    "name": "GCM_Accomplishment"
+  },
+  {
+    "index": "303",
+    "name": "GCM_AdminPropertySystem"
+  },
+  {
+    "index": "304",
+    "name": "GCM_Advancement"
+  },
+  {
+    "index": "305",
+    "name": "GCM_Alert"
+  },
+  {
+    "index": "306",
+    "name": "GCM_Alignment"
+  },
+  {
+    "index": "307",
+    "name": "GCM_Auction"
+  },
+  {
+    "index": "308",
+    "name": "GCM_BankSystem"
+  },
+  {
+    "index": "309",
+    "name": "GCM_Character"
+  },
+  {
+    "index": "310",
+    "name": "GCM_CombatSocket"
+  },
+  {
+    "index": "311",
+    "name": "GCM_Communication"
+  },
+  {
+    "index": "312",
+    "name": "GCM_Conjunction"
+  },
+  {
+    "index": "313",
+    "name": "GCM_Cooldown"
+  },
+  {
+    "index": "314",
+    "name": "GCM_Crafting"
+  },
+  {
+    "index": "315",
+    "name": "GCM_DamageType"
+  },
+  {
+    "index": "316",
+    "name": "GCM_Discovery"
+  },
+  {
+    "index": "317",
+    "name": "GCM_ErrorSystem"
+  },
+  {
+    "index": "318",
+    "name": "GCM_Examination"
+  },
+  {
+    "index": "319",
+    "name": "GCM_Fellowship"
+  },
+  {
+    "index": "320",
+    "name": "GCM_Friend"
+  },
+  {
+    "index": "321",
+    "name": "GCM_Guild"
+  },
+  {
+    "index": "322",
+    "name": "GCM_Hart"
+  },
+  {
+    "index": "323",
+    "name": "GCM_Housing"
+  },
+  {
+    "index": "324",
+    "name": "GCM_InventorySystem"
+  },
+  {
+    "index": "325",
+    "name": "GCM_ItemWearSystem"
+  },
+  {
+    "index": "326",
+    "name": "GCM_LFG"
+  },
+  {
+    "index": "327",
+    "name": "GCM_Logout"
+  },
+  {
+    "index": "328",
+    "name": "GCM_Mail"
+  },
+  {
+    "index": "329",
+    "name": "GCM_Map"
+  },
+  {
+    "index": "330",
+    "name": "GCM_MenuUI"
+  },
+  {
+    "index": "331",
+    "name": "GCM_MEOInventorySystem"
+  },
+  {
+    "index": "332",
+    "name": "GCM_Money"
+  },
+  {
+    "index": "333",
+    "name": "GCM_MonsterPlay"
+  },
+  {
+    "index": "334",
+    "name": "GCM_Mood"
+  },
+  {
+    "index": "335",
+    "name": "GCM_MouseoverSystem"
+  },
+  {
+    "index": "336",
+    "name": "GCM_MusicSystem"
+  },
+  {
+    "index": "337",
+    "name": "GCM_Notary"
+  },
+  {
+    "index": "338",
+    "name": "GCM_NPC"
+  },
+  {
+    "index": "339",
+    "name": "GCM_Pedigree"
+  },
+  {
+    "index": "340",
+    "name": "GCM_PerkSystem"
+  },
+  {
+    "index": "341",
+    "name": "GCM_Pet"
+  },
+  {
+    "index": "342",
+    "name": "GCM_Physics"
+  },
+  {
+    "index": "343",
+    "name": "GCM_PrivateEncounter"
+  },
+  {
+    "index": "344",
+    "name": "GCM_Progress"
+  },
+  {
+    "index": "345",
+    "name": "GCM_Quest"
+  },
+  {
+    "index": "346",
+    "name": "GCM_QuestDispenser"
+  },
+  {
+    "index": "347",
+    "name": "GCM_QuickslotUI"
+  },
+  {
+    "index": "348",
+    "name": "GCM_Raid"
+  },
+  {
+    "index": "349",
+    "name": "GCM_Shortcut"
+  },
+  {
+    "index": "350",
+    "name": "GCM_Skill"
+  },
+  {
+    "index": "351",
+    "name": "GCM_SurveySystem"
+  },
+  {
+    "index": "352",
+    "name": "GCM_TextItem"
+  },
+  {
+    "index": "353",
+    "name": "GCM_Theater"
+  },
+  {
+    "index": "354",
+    "name": "GCM_Tracking"
+  },
+  {
+    "index": "355",
+    "name": "GCM_Trade"
+  },
+  {
+    "index": "356",
+    "name": "GCM_Trait"
+  },
+  {
+    "index": "357",
+    "name": "GCM_Travel"
+  },
+  {
+    "index": "358",
+    "name": "GCM_TutorialSystem"
+  },
+  {
+    "index": "359",
+    "name": "GCM_UI"
+  },
+  {
+    "index": "360",
+    "name": "GCM_Vendor"
+  },
+  {
+    "index": "361",
+    "name": "GuildAdaptor"
+  },
+  {
+    "index": "362",
+    "name": "GuildMemberAdaptor"
+  },
+  {
+    "index": "363",
+    "name": "GuildRankAdaptor"
+  },
+  {
+    "index": "364",
+    "name": "GuildSystem"
+  },
+  {
+    "index": "365",
+    "name": "HARTSystem"
+  },
+  {
+    "index": "366",
+    "name": "HouseSystem"
+  },
+  {
+    "index": "367",
+    "name": "InscriptionSystem"
+  },
+  {
+    "index": "368",
+    "name": "InventorySystem"
+  },
+  {
+    "index": "369",
+    "name": "CItemWearSystem"
+  },
+  {
+    "index": "370",
+    "name": "KinshipTheme"
+  },
+  {
+    "index": "371",
+    "name": "MailSystem"
+  },
+  {
+    "index": "372",
+    "name": "MEOInventorySystem"
+  },
+  {
+    "index": "373",
+    "name": "MovementSystem"
+  },
+  {
+    "index": "374",
+    "name": "OptionSystem"
+  },
+  {
+    "index": "375",
+    "name": "PedigreeControl"
+  },
+  {
+    "index": "376",
+    "name": "ResistSystem"
+  },
+  {
+    "index": "377",
+    "name": "ShortcutSystem"
+  },
+  {
+    "index": "378",
+    "name": "SkillSystem"
+  },
+  {
+    "index": "379",
+    "name": "SkillTrainDataAdaptor"
+  },
+  {
+    "index": "380",
+    "name": "CTextItemSystem"
+  },
+  {
+    "index": "381",
+    "name": "TheaterSystem"
+  },
+  {
+    "index": "382",
+    "name": "TitleSystem"
+  },
+  {
+    "index": "383",
+    "name": "TradeSystem"
+  },
+  {
+    "index": "384",
+    "name": "UIDamageControl"
+  },
+  {
+    "index": "385",
+    "name": "UIUtils"
+  },
+  {
+    "index": "386",
+    "name": "VitalRecordAdaptor"
+  },
+  {
+    "index": "387",
+    "name": "VitalSystem"
+  },
+  {
+    "index": "388",
+    "name": "AccomplishmentWSLData"
+  },
+  {
+    "index": "389",
+    "name": "AdvancementSystem"
+  },
+  {
+    "index": "390",
+    "name": "AICombatSystem"
+  },
+  {
+    "index": "391",
+    "name": "AIPetSystem"
+  },
+  {
+    "index": "392",
+    "name": "AppearanceData"
+  },
+  {
+    "index": "393",
+    "name": "AuctionAdaptor"
+  },
+  {
+    "index": "394",
+    "name": "CharacterGenSystem"
+  },
+  {
+    "index": "395",
+    "name": "ClassAppearanceDataAdaptor"
+  },
+  {
+    "index": "396",
+    "name": "ClassInfoAdaptor"
+  },
+  {
+    "index": "397",
+    "name": "CLogoutSystem"
+  },
+  {
+    "index": "398",
+    "name": "CombatLOS_DetectionReport"
+  },
+  {
+    "index": "399",
+    "name": "CombatMath"
+  },
+  {
+    "index": "400",
+    "name": "CombatSystem"
+  },
+  {
+    "index": "401",
+    "name": "ConjunctionAttemptDataAdaptor"
+  },
+  {
+    "index": "402",
+    "name": "ConjunctionDataAdaptor"
+  },
+  {
+    "index": "403",
+    "name": "CurrencyRecord"
+  },
+  {
+    "index": "404",
+    "name": "CurrencySystem"
+  },
+  {
+    "index": "405",
+    "name": "DamageTextBlob"
+  },
+  {
+    "index": "406",
+    "name": "DiscoveredEntity"
+  },
+  {
+    "index": "407",
+    "name": "DiscoveredMapNoteData"
+  },
+  {
+    "index": "408",
+    "name": "EffectUINode"
+  },
+  {
+    "index": "409",
+    "name": "EntityNameInterface"
+  },
+  {
+    "index": "410",
+    "name": "ExaminationProfile"
+  },
+  {
+    "index": "411",
+    "name": "ExaminationRequest"
+  },
+  {
+    "index": "412",
+    "name": "ExaminationSystem"
+  },
+  {
+    "index": "413",
+    "name": "CFellowshipSystem"
+  },
+  {
+    "index": "414",
+    "name": "FriendAdaptor"
+  },
+  {
+    "index": "415",
+    "name": "GameplayOptionsProfile"
+  },
+  {
+    "index": "416",
+    "name": "GameplayUtils"
+  },
+  {
+    "index": "417",
+    "name": "Gameplay_DetectionFilter"
+  },
+  {
+    "index": "418",
+    "name": "gmActInfo"
+  },
+  {
+    "index": "419",
+    "name": "gmActInfoList"
+  },
+  {
+    "index": "420",
+    "name": "gmAICallForHelp_DetectionFilter"
+  },
+  {
+    "index": "421",
+    "name": "gmBase_DetectionFilter"
+  },
+  {
+    "index": "422",
+    "name": "gmCharGenResult"
+  },
+  {
+    "index": "423",
+    "name": "gmEntityPositionInfo"
+  },
+  {
+    "index": "424",
+    "name": "gmKeyframe"
+  },
+  {
+    "index": "425",
+    "name": "gmPropertySystem"
+  },
+  {
+    "index": "426",
+    "name": "gmReservedIDs"
+  },
+  {
+    "index": "427",
+    "name": "gmSceneInfo"
+  },
+  {
+    "index": "428",
+    "name": "gmSceneInfoList"
+  },
+  {
+    "index": "429",
+    "name": "Guest"
+  },
+  {
+    "index": "430",
+    "name": "HARAdaptor"
+  },
+  {
+    "index": "431",
+    "name": "HouseAdaptor"
+  },
+  {
+    "index": "432",
+    "name": "IDHolder"
+  },
+  {
+    "index": "433",
+    "name": "IgnoreAdaptor"
+  },
+  {
+    "index": "434",
+    "name": "InteractionSystem"
+  },
+  {
+    "index": "435",
+    "name": "LFGInfoAdaptor"
+  },
+  {
+    "index": "436",
+    "name": "LFGSystem"
+  },
+  {
+    "index": "437",
+    "name": "MailAdaptor"
+  },
+  {
+    "index": "438",
+    "name": "CMapSystem"
+  },
+  {
+    "index": "439",
+    "name": "MemberData"
+  },
+  {
+    "index": "440",
+    "name": "MonsterPlaySystem"
+  },
+  {
+    "index": "441",
+    "name": "MPMissionDataAdaptor"
+  },
+  {
+    "index": "442",
+    "name": "MPSessionDataAdaptor"
+  },
+  {
+    "index": "443",
+    "name": "NeighborhoodAdaptor"
+  },
+  {
+    "index": "444",
+    "name": "PerkDataAdaptor"
+  },
+  {
+    "index": "445",
+    "name": "PerkSystem"
+  },
+  {
+    "index": "446",
+    "name": "PlayerGlobals"
+  },
+  {
+    "index": "447",
+    "name": "PrivateEncounterAdminData"
+  },
+  {
+    "index": "448",
+    "name": "PrivateEncounterData"
+  },
+  {
+    "index": "449",
+    "name": "PrivateEncounterMessageSystem"
+  },
+  {
+    "index": "450",
+    "name": "PrivateEncounterSystem"
+  },
+  {
+    "index": "451",
+    "name": "PropertyGrabber"
+  },
+  {
+    "index": "452",
+    "name": "RadarControl"
+  },
+  {
+    "index": "453",
+    "name": "ScorePad"
+  },
+  {
+    "index": "454",
+    "name": "ShortcutInfo"
+  },
+  {
+    "index": "455",
+    "name": "SkillUIData"
+  },
+  {
+    "index": "456",
+    "name": "StatSystem"
+  },
+  {
+    "index": "457",
+    "name": "TraitInspectionData"
+  },
+  {
+    "index": "458",
+    "name": "TraitUIData"
+  },
+  {
+    "index": "459",
+    "name": "TraitUISlotIdentifier"
+  },
+  {
+    "index": "460",
+    "name": "CTravelSystem"
+  },
+  {
+    "index": "461",
+    "name": "UsageSystem"
+  },
+  {
+    "index": "462",
+    "name": "VendorSystem"
+  },
+  {
+    "index": "463",
+    "name": "WantedListAdaptor"
+  },
+  {
+    "index": "464",
+    "name": "WeenieType_PropertyDetectionFilter"
+  },
+  {
+    "index": "465",
+    "name": "WSLTime"
+  },
+  {
+    "index": "466",
+    "name": "AgentTracking_PropertyDetectionFilter"
+  },
+  {
+    "index": "467",
+    "name": "AuctionRepositoryData"
+  },
+  {
+    "index": "468",
+    "name": "EffectTimePriorityQueue"
+  },
+  {
+    "index": "469",
+    "name": "gmStealthServiceSystem"
+  },
+  {
+    "index": "470",
+    "name": "gmWInterface"
+  },
+  {
+    "index": "471",
+    "name": "KinshipLifespanPriorityQueue"
+  },
+  {
+    "index": "472",
+    "name": "ObserverStealthDataAdaptor"
+  },
+  {
+    "index": "473",
+    "name": "SCombatSystem"
+  },
+  {
+    "index": "474",
+    "name": "SCommunicationSystem"
+  },
+  {
+    "index": "475",
+    "name": "SHeartbeatSystem"
+  },
+  {
+    "index": "476",
+    "name": "SMonsterPlaySystem"
+  },
+  {
+    "index": "477",
+    "name": "SPerkSystem"
+  },
+  {
+    "index": "478",
+    "name": "SStealthSystem"
+  },
+  {
+    "index": "479",
+    "name": "StealthAOIUserExtension"
+  },
+  {
+    "index": "480",
+    "name": "StealthBitfield64_PropertyDetectionFilter"
+  },
+  {
+    "index": "481",
+    "name": "Stealth_AOIObjectFilter"
+  },
+  {
+    "index": "482",
+    "name": "$global"
+  },
+  {
+    "index": "483",
+    "name": "CollectionProvider"
+  },
+  {
+    "index": "484",
+    "name": "IPropertyProvider"
+  },
+  {
+    "index": "485",
+    "name": "PropertyObject"
+  },
+  {
+    "index": "486",
+    "name": "Singleton"
+  },
+  {
+    "index": "487",
+    "name": "StructProvider"
+  },
+  {
+    "index": "488",
+    "name": "Entity"
+  },
+  {
+    "index": "490",
+    "name": "EngineAdminSystem"
+  },
+  {
+    "index": "491",
+    "name": "ConversationCallback"
+  },
+  {
+    "index": "492",
+    "name": "EngineWeenieTypeSystem"
+  },
+  {
+    "index": "496",
+    "name": "LogInfo"
+  },
+  {
+    "index": "497",
+    "name": "LogSystem"
+  },
+  {
+    "index": "501",
+    "name": "EWM_Option"
+  },
+  {
+    "index": "502",
+    "name": "ArrayPropertyIterator"
+  },
+  {
+    "index": "503",
+    "name": "IPropertyIterator"
+  },
+  {
+    "index": "504",
+    "name": "PropertyAccessor"
+  },
+  {
+    "index": "505",
+    "name": "StructPropertyIterator"
+  },
+  {
+    "index": "506",
+    "name": "ICSMActionHandler"
+  },
+  {
+    "index": "507",
+    "name": "FFNUtil"
+  },
+  {
+    "index": "508",
+    "name": "LocalizeEnum"
+  },
+  {
+    "index": "509",
+    "name": "PropertyUtils"
+  },
+  {
+    "index": "510",
+    "name": "Agent"
+  },
+  {
+    "index": "512",
+    "name": "Admin"
+  },
+  {
+    "index": "514",
+    "name": "NPC"
+  },
+  {
+    "index": "516",
+    "name": "Player"
+  },
+  {
+    "index": "518",
+    "name": "Referee"
+  },
+  {
+    "index": "533",
+    "name": "AIActionChoice"
+  },
+  {
+    "index": "534",
+    "name": "AIActionTable"
+  },
+  {
+    "index": "539",
+    "name": "AIColorEventTable"
+  },
+  {
+    "index": "659",
+    "name": "PetChannelData"
+  },
+  {
+    "index": "660",
+    "name": "PetData"
+  },
+  {
+    "index": "661",
+    "name": "PetSkillData"
+  },
+  {
+    "index": "662",
+    "name": "PetState"
+  },
+  {
+    "index": "663",
+    "name": "AIRemoteDetector"
+  },
+  {
+    "index": "690",
+    "name": "Area"
+  },
+  {
+    "index": "691",
+    "name": "Dungeon"
+  },
+  {
+    "index": "692",
+    "name": "Territory"
+  },
+  {
+    "index": "693",
+    "name": "ChannelData"
+  },
+  {
+    "index": "694",
+    "name": "ChannelManager"
+  },
+  {
+    "index": "695",
+    "name": "Container"
+  },
+  {
+    "index": "697",
+    "name": "EffectExaminationData"
+  },
+  {
+    "index": "698",
+    "name": "Effect"
+  },
+  {
+    "index": "699",
+    "name": "EffectBlob"
+  },
+  {
+    "index": "700",
+    "name": "EffectRecord"
+  },
+  {
+    "index": "701",
+    "name": "EffectRegistry"
+  },
+  {
+    "index": "702",
+    "name": "IEqvClassMgr"
+  },
+  {
+    "index": "703",
+    "name": "SingleEffectEqvClassMgr"
+  },
+  {
+    "index": "704",
+    "name": "MultipleEffectEqvClassMgr"
+  },
+  {
+    "index": "705",
+    "name": "InstantEffect"
+  },
+  {
+    "index": "706",
+    "name": "AddAccountPropertyEffect"
+  },
+  {
+    "index": "707",
+    "name": "ApplyEffect"
+  },
+  {
+    "index": "708",
+    "name": "ApplyOverTimeEffect"
+  },
+  {
+    "index": "709",
+    "name": "AuraEffect"
+  },
+  {
+    "index": "710",
+    "name": "AuraEffectData"
+  },
+  {
+    "index": "711",
+    "name": "BaseVitalEffect"
+  },
+  {
+    "index": "712",
+    "name": "CountdownEffectEntry"
+  },
+  {
+    "index": "713",
+    "name": "CountdownEffect"
+  },
+  {
+    "index": "714",
+    "name": "DispelByResistEffect"
+  },
+  {
+    "index": "715",
+    "name": "DispelEffect"
+  },
+  {
+    "index": "716",
+    "name": "DistractionEffect"
+  },
+  {
+    "index": "717",
+    "name": "DrowsinessEffect"
+  },
+  {
+    "index": "718",
+    "name": "FlagEffect"
+  },
+  {
+    "index": "719",
+    "name": "GenesisEffect"
+  },
+  {
+    "index": "720",
+    "name": "GrantEmoteEffect"
+  },
+  {
+    "index": "721",
+    "name": "GrantSkillEffect"
+  },
+  {
+    "index": "722",
+    "name": "GrantTraitEffect"
+  },
+  {
+    "index": "723",
+    "name": "ImpulseEffect"
+  },
+  {
+    "index": "724",
+    "name": "InstantFellowshipEffect"
+  },
+  {
+    "index": "725",
+    "name": "InstantVitalEffect"
+  },
+  {
+    "index": "726",
+    "name": "InterruptInductionEffect"
+  },
+  {
+    "index": "727",
+    "name": "InvokeTutorialEffect"
+  },
+  {
+    "index": "728",
+    "name": "KnockAwayEffect"
+  },
+  {
+    "index": "730",
+    "name": "ParameterizedNumericEffect"
+  },
+  {
+    "index": "731",
+    "name": "PipEffect"
+  },
+  {
+    "index": "732",
+    "name": "PropModEffectBlob"
+  },
+  {
+    "index": "733",
+    "name": "PropModScratchpadBlob"
+  },
+  {
+    "index": "734",
+    "name": "PropertyModificationEffect"
+  },
+  {
+    "index": "735",
+    "name": "ProtectionEffect"
+  },
+  {
+    "index": "736",
+    "name": "ReactiveVitalEffect"
+  },
+  {
+    "index": "737",
+    "name": "RecallEffect"
+  },
+  {
+    "index": "738",
+    "name": "RedirectVitalEffectData"
+  },
+  {
+    "index": "739",
+    "name": "RedirectVitalEffect"
+  },
+  {
+    "index": "740",
+    "name": "ReflectiveEffect"
+  },
+  {
+    "index": "741",
+    "name": "ReflectiveVitalEffectData"
+  },
+  {
+    "index": "742",
+    "name": "ReflectiveVitalEffect"
+  },
+  {
+    "index": "743",
+    "name": "ReviveEffectVitalData"
+  },
+  {
+    "index": "744",
+    "name": "ReviveEffect"
+  },
+  {
+    "index": "745",
+    "name": "RunScriptEffect"
+  },
+  {
+    "index": "746",
+    "name": "SkillResetEffect"
+  },
+  {
+    "index": "747",
+    "name": "SmitePlayerEffect"
+  },
+  {
+    "index": "748",
+    "name": "TransformVitalEffect"
+  },
+  {
+    "index": "749",
+    "name": "TravelEffect"
+  },
+  {
+    "index": "750",
+    "name": "TravelRecallEffect"
+  },
+  {
+    "index": "751",
+    "name": "TravelTieEffect"
+  },
+  {
+    "index": "752",
+    "name": "VanishEffect"
+  },
+  {
+    "index": "753",
+    "name": "VitalInterestedEffect"
+  },
+  {
+    "index": "754",
+    "name": "VitalInterestedEffectData"
+  },
+  {
+    "index": "755",
+    "name": "VitalOverTimeEffect"
+  },
+  {
+    "index": "756",
+    "name": "VitalTransferEffect"
+  },
+  {
+    "index": "757",
+    "name": "WaypointSummonEffect"
+  },
+  {
+    "index": "758",
+    "name": "XPBonusEffect"
+  },
+  {
+    "index": "759",
+    "name": "AIAddCustomGoalEffect"
+  },
+  {
+    "index": "760",
+    "name": "AIAngerEffect"
+  },
+  {
+    "index": "761",
+    "name": "AICallForHelpEffect"
+  },
+  {
+    "index": "762",
+    "name": "AIForceAttackEffect"
+  },
+  {
+    "index": "763",
+    "name": "AIPetEffect"
+  },
+  {
+    "index": "764",
+    "name": "AIRunAwayEffect"
+  },
+  {
+    "index": "765",
+    "name": "AlignmentChangeEffect"
+  },
+  {
+    "index": "766",
+    "name": "ExitChannelingStateEffect"
+  },
+  {
+    "index": "767",
+    "name": "ComboEffect"
+  },
+  {
+    "index": "768",
+    "name": "ExitCombatStateEffect"
+  },
+  {
+    "index": "769",
+    "name": "InduceCombatStateEffect"
+  },
+  {
+    "index": "770",
+    "name": "GrantRecipeEffect"
+  },
+  {
+    "index": "771",
+    "name": "RevokeRecipeEffect"
+  },
+  {
+    "index": "772",
+    "name": "CurrencyChangeEffect"
+  },
+  {
+    "index": "776",
+    "name": "LootgenEffect"
+  },
+  {
+    "index": "777",
+    "name": "PrivateEncounterEventEffect"
+  },
+  {
+    "index": "778",
+    "name": "BlockStealthEffect"
+  },
+  {
+    "index": "779",
+    "name": "BreakStealthEffect"
+  },
+  {
+    "index": "780",
+    "name": "EnterStealthEffect"
+  },
+  {
+    "index": "781",
+    "name": "ClientDurationEffect"
+  },
+  {
+    "index": "782",
+    "name": "ClientInstantEffect"
+  },
+  {
+    "index": "783",
+    "name": "TheaterEffect"
+  },
+  {
+    "index": "784",
+    "name": "AgentTrackingEffect"
+  },
+  {
+    "index": "785",
+    "name": "CraftResourceTrackingEffect"
+  },
+  {
+    "index": "786",
+    "name": "TrackingEffect"
+  },
+  {
+    "index": "787",
+    "name": "gmEntity"
+  },
+  {
+    "index": "788",
+    "name": "gmIEntity"
+  },
+  {
+    "index": "790",
+    "name": "Inventory"
+  },
+  {
+    "index": "791",
+    "name": "Clothing"
+  },
+  {
+    "index": "792",
+    "name": "DeathPortal"
+  },
+  {
+    "index": "793",
+    "name": "Door"
+  },
+  {
+    "index": "794",
+    "name": "GameplayContainer"
+  },
+  {
+    "index": "795",
+    "name": "IClothing"
+  },
+  {
+    "index": "796",
+    "name": "IItem"
+  },
+  {
+    "index": "797",
+    "name": "IShield"
+  },
+  {
+    "index": "798",
+    "name": "ITextItem"
+  },
+  {
+    "index": "799",
+    "name": "IWeapon"
+  },
+  {
+    "index": "800",
+    "name": "Ingot"
+  },
+  {
+    "index": "801",
+    "name": "Item"
+  },
+  {
+    "index": "802",
+    "name": "Jewelry"
+  },
+  {
+    "index": "803",
+    "name": "Key"
+  },
+  {
+    "index": "804",
+    "name": "Milestone"
+  },
+  {
+    "index": "805",
+    "name": "RecipeItem"
+  },
+  {
+    "index": "811",
+    "name": "SceneryObject"
+  },
+  {
+    "index": "812",
+    "name": "ScriptPlayer"
+  },
+  {
+    "index": "813",
+    "name": "Shield"
+  },
+  {
+    "index": "814",
+    "name": "TextItem"
+  },
+  {
+    "index": "815",
+    "name": "Waypoint"
+  },
+  {
+    "index": "816",
+    "name": "Weapon"
+  },
+  {
+    "index": "817",
+    "name": "VisualDescInfo"
+  },
+  {
+    "index": "818",
+    "name": "AEDetectionVolumeInfo"
+  },
+  {
+    "index": "819",
+    "name": "AEDetectionVolumeInfo_Arc"
+  },
+  {
+    "index": "820",
+    "name": "AEDetectionVolumeInfo_Box"
+  },
+  {
+    "index": "821",
+    "name": "AEDetectionVolumeInfo_Sphere"
+  },
+  {
+    "index": "822",
+    "name": "AttackHook"
+  },
+  {
+    "index": "823",
+    "name": "ItemSkillInfo"
+  },
+  {
+    "index": "824",
+    "name": "MaterialComponent"
+  },
+  {
+    "index": "825",
+    "name": "SkillDamageStruct"
+  },
+  {
+    "index": "826",
+    "name": "SkillDamageSummary"
+  },
+  {
+    "index": "827",
+    "name": "Skill"
+  },
+  {
+    "index": "828",
+    "name": "SkillEffectData"
+  },
+  {
+    "index": "829",
+    "name": "SkillDamageModifiers"
+  },
+  {
+    "index": "830",
+    "name": "SkillInfo"
+  },
+  {
+    "index": "831",
+    "name": "SkillPool"
+  },
+  {
+    "index": "832",
+    "name": "SkillRegistry"
+  },
+  {
+    "index": "833",
+    "name": "SkillVitalInfo"
+  },
+  {
+    "index": "838",
+    "name": "AccomplishmentDirectory"
+  },
+  {
+    "index": "839",
+    "name": "AccomplishmentSystem"
+  },
+  {
+    "index": "845",
+    "name": "ActivatorTemplate"
+  },
+  {
+    "index": "846",
+    "name": "AdminSystem"
+  },
+  {
+    "index": "849",
+    "name": "AdvancementTable"
+  },
+  {
+    "index": "850",
+    "name": "AvailableSkill"
+  },
+  {
+    "index": "851",
+    "name": "ExperienceSystem"
+  },
+  {
+    "index": "852",
+    "name": "GroupXPModifierTable"
+  },
+  {
+    "index": "853",
+    "name": "LevelTable"
+  },
+  {
+    "index": "854",
+    "name": "LevelDescriptor"
+  },
+  {
+    "index": "855",
+    "name": "LevelTableDirectory"
+  },
+  {
+    "index": "856",
+    "name": "LevelTableTraitData"
+  },
+  {
+    "index": "857",
+    "name": "NationalityTable"
+  },
+  {
+    "index": "858",
+    "name": "NationalityTableDirectory"
+  },
+  {
+    "index": "859",
+    "name": "RaceGenderData"
+  },
+  {
+    "index": "860",
+    "name": "RaceTable"
+  },
+  {
+    "index": "861",
+    "name": "RaceTableDirectory"
+  },
+  {
+    "index": "862",
+    "name": "XPGlobals"
+  },
+  {
+    "index": "875",
+    "name": "AlertInfo"
+  },
+  {
+    "index": "876",
+    "name": "AlertRegistry"
+  },
+  {
+    "index": "879",
+    "name": "AlignmentDirectory"
+  },
+  {
+    "index": "880",
+    "name": "AlignmentLevelTable"
+  },
+  {
+    "index": "882",
+    "name": "AntispamSystem"
+  },
+  {
+    "index": "884",
+    "name": "AttitudeTable"
+  },
+  {
+    "index": "885",
+    "name": "AuctionManager"
+  },
+  {
+    "index": "891",
+    "name": "AddPropertiesToListCallback"
+  },
+  {
+    "index": "892",
+    "name": "BasicExpressionCallback"
+  },
+  {
+    "index": "893",
+    "name": "CallbackSystem"
+  },
+  {
+    "index": "894",
+    "name": "DestroyCallback"
+  },
+  {
+    "index": "895",
+    "name": "DisplayTextCallback"
+  },
+  {
+    "index": "896",
+    "name": "GetCurrentAITargetCallback"
+  },
+  {
+    "index": "897",
+    "name": "GetCurrentVitalCallback"
+  },
+  {
+    "index": "898",
+    "name": "SetClosedDoorEtherealityCallback"
+  },
+  {
+    "index": "899",
+    "name": "SetOpenDoorEtherealityCallback"
+  },
+  {
+    "index": "900",
+    "name": "ToggleWorldPropertyCallback"
+  },
+  {
+    "index": "901",
+    "name": "ActivationCallback"
+  },
+  {
+    "index": "902",
+    "name": "AddAICustomGoalCallback"
+  },
+  {
+    "index": "903",
+    "name": "KungFuBecomeMonsterCallback"
+  },
+  {
+    "index": "904",
+    "name": "KungFuBecomeNPCCallback"
+  },
+  {
+    "index": "905",
+    "name": "ChannelingCleanupCallback"
+  },
+  {
+    "index": "906",
+    "name": "ClearIdleDramaCallback"
+  },
+  {
+    "index": "907",
+    "name": "DramaCompleteCallback"
+  },
+  {
+    "index": "908",
+    "name": "PerformNamedDramaCallback"
+  },
+  {
+    "index": "909",
+    "name": "SetIdleDramaCallback"
+  },
+  {
+    "index": "910",
+    "name": "AddEffectCallback"
+  },
+  {
+    "index": "911",
+    "name": "GetEffectBoolCallback"
+  },
+  {
+    "index": "912",
+    "name": "RemoveEffectCallback"
+  },
+  {
+    "index": "913",
+    "name": "IsFellowCallback"
+  },
+  {
+    "index": "914",
+    "name": "IsHoldLocVisibleCallback"
+  },
+  {
+    "index": "915",
+    "name": "NPCBehavior_BroadcastToRadius_Callback"
+  },
+  {
+    "index": "916",
+    "name": "NPCBehavior_Callback"
+  },
+  {
+    "index": "917",
+    "name": "NPCBehavior_ColorEvent_Perform_Callback"
+  },
+  {
+    "index": "918",
+    "name": "NPCBehavior_CombatPatrol_Start_Callback"
+  },
+  {
+    "index": "919",
+    "name": "NPCBehavior_Combat_Assist_Callback"
+  },
+  {
+    "index": "920",
+    "name": "NPCBehavior_Combat_CallForHelp_Callback"
+  },
+  {
+    "index": "921",
+    "name": "NPCBehavior_Combat_ClearAllThreat_Callback"
+  },
+  {
+    "index": "922",
+    "name": "NPCBehavior_Combat_Consider_Callback"
+  },
+  {
+    "index": "923",
+    "name": "NPCBehavior_Combat_MakeEnemy_Callback"
+  },
+  {
+    "index": "924",
+    "name": "NPCBehavior_Combat_Move_Callback"
+  },
+  {
+    "index": "925",
+    "name": "NPCBehavior_Combat_RunHome_Callback"
+  },
+  {
+    "index": "926",
+    "name": "NPCBehavior_Combat_SetFrameHints_Callback"
+  },
+  {
+    "index": "927",
+    "name": "NPCBehavior_Communication_Say_Callback"
+  },
+  {
+    "index": "928",
+    "name": "NPCBehavior_Communication_Shout_Callback"
+  },
+  {
+    "index": "929",
+    "name": "NPCBehavior_Communication_Spew_Callback"
+  },
+  {
+    "index": "930",
+    "name": "NPCBehavior_Debug_Shout_Callback"
+  },
+  {
+    "index": "931",
+    "name": "NPCBehavior_DestroySelf_Callback"
+  },
+  {
+    "index": "932",
+    "name": "NPCBehavior_Die_Callback"
+  },
+  {
+    "index": "933",
+    "name": "NPCBehavior_Drama_StartPatrol_Callback"
+  },
+  {
+    "index": "934",
+    "name": "NPCBehavior_Effect_Give_Callback"
+  },
+  {
+    "index": "935",
+    "name": "NPCBehavior_Hints_Clear_Callback"
+  },
+  {
+    "index": "936",
+    "name": "NPCBehavior_Hints_Set_Callback"
+  },
+  {
+    "index": "937",
+    "name": "NPCBehavior_KungFu_BecomeMonster_Callback"
+  },
+  {
+    "index": "938",
+    "name": "NPCBehavior_LinkToRemoteDetector_Callback"
+  },
+  {
+    "index": "939",
+    "name": "NPCBehavior_Patrol_SetVelocity_Callback"
+  },
+  {
+    "index": "940",
+    "name": "NPCBehavior_Patrol_Start_Callback"
+  },
+  {
+    "index": "941",
+    "name": "NPCBehavior_Quest_WorldQuestMsg_Callback"
+  },
+  {
+    "index": "942",
+    "name": "NPCBehavior_StealthAlert_Callback"
+  },
+  {
+    "index": "943",
+    "name": "NPCBehavior_UnlinkFromRemoteDetector_Callback"
+  },
+  {
+    "index": "944",
+    "name": "NPCBehavior_UsageMarker_Clear_Callback"
+  },
+  {
+    "index": "945",
+    "name": "NPCBehavior_UsageMarker_Mark_Callback"
+  },
+  {
+    "index": "946",
+    "name": "NPCFilter_Callback"
+  },
+  {
+    "index": "947",
+    "name": "NPCFilter_CheckHints_Callback"
+  },
+  {
+    "index": "948",
+    "name": "NPCFilter_Combat_IsEnemy_Callback"
+  },
+  {
+    "index": "949",
+    "name": "NPCFilter_Combat_IsFriend_Callback"
+  },
+  {
+    "index": "950",
+    "name": "NPCFilter_UsageMarker_PerformedAtAll_Callback"
+  },
+  {
+    "index": "951",
+    "name": "NPCFilter_UsageMarker_PerformedRecently_Callback"
+  },
+  {
+    "index": "952",
+    "name": "RelayActivateCallback"
+  },
+  {
+    "index": "953",
+    "name": "RelayCancelFuseCallback"
+  },
+  {
+    "index": "954",
+    "name": "RelayDeactivateCallback"
+  },
+  {
+    "index": "955",
+    "name": "RelayInputCallback"
+  },
+  {
+    "index": "956",
+    "name": "TripwireActivateCallback"
+  },
+  {
+    "index": "957",
+    "name": "TripwireDeactivateCallback"
+  },
+  {
+    "index": "958",
+    "name": "TripwireSlaveCallback"
+  },
+  {
+    "index": "959",
+    "name": "TripwireTripUntripCallback"
+  },
+  {
+    "index": "960",
+    "name": "ChannelingProgressController"
+  },
+  {
+    "index": "961",
+    "name": "ChannelingState"
+  },
+  {
+    "index": "962",
+    "name": "ChannelingSystem"
+  },
+  {
+    "index": "969",
+    "name": "AppearanceProfile"
+  },
+  {
+    "index": "970",
+    "name": "AttributeProfile"
+  },
+  {
+    "index": "971",
+    "name": "StartInvData"
+  },
+  {
+    "index": "972",
+    "name": "ClassInfo"
+  },
+  {
+    "index": "973",
+    "name": "ClassificationData"
+  },
+  {
+    "index": "974",
+    "name": "ClassificationFilter"
+  },
+  {
+    "index": "975",
+    "name": "ClassificationFilterGroup"
+  },
+  {
+    "index": "976",
+    "name": "ClassificationSystem"
+  },
+  {
+    "index": "977",
+    "name": "GenericClassificationFilter"
+  },
+  {
+    "index": "978",
+    "name": "NPCColorText"
+  },
+  {
+    "index": "984",
+    "name": "DamageTypeData"
+  },
+  {
+    "index": "994",
+    "name": "CombatStateData"
+  },
+  {
+    "index": "995",
+    "name": "CombatStateSystem"
+  },
+  {
+    "index": "997",
+    "name": "ComboSystem"
+  },
+  {
+    "index": "998",
+    "name": "EmoteInfo"
+  },
+  {
+    "index": "999",
+    "name": "EmoteTable"
+  },
+  {
+    "index": "1000",
+    "name": "LocalizedChannelInfo"
+  },
+  {
+    "index": "1001",
+    "name": "Conjunction"
+  },
+  {
+    "index": "1004",
+    "name": "ConjunctionSystem"
+  },
+  {
+    "index": "1005",
+    "name": "ConjTableProcessingNode"
+  },
+  {
+    "index": "1006",
+    "name": "ConjunctionTable"
+  },
+  {
+    "index": "1007",
+    "name": "ConjunctionTableNode"
+  },
+  {
+    "index": "1009",
+    "name": "ConsiderationSystem"
+  },
+  {
+    "index": "1011",
+    "name": "GameplayContainerSystem"
+  },
+  {
+    "index": "1012",
+    "name": "CooldownSystem"
+  },
+  {
+    "index": "1014",
+    "name": "DurationEnumCooldownRecord"
+  },
+  {
+    "index": "1015",
+    "name": "ExplicitCooldownRecord"
+  },
+  {
+    "index": "1016",
+    "name": "ICooldownRecord"
+  },
+  {
+    "index": "1017",
+    "name": "IRTCooldownRecord"
+  },
+  {
+    "index": "1018",
+    "name": "RTDurationEnumCooldownRecord"
+  },
+  {
+    "index": "1019",
+    "name": "RTExplicitCooldownRecord"
+  },
+  {
+    "index": "1021",
+    "name": "CraftDirectory"
+  },
+  {
+    "index": "1022",
+    "name": "CraftIngredient"
+  },
+  {
+    "index": "1023",
+    "name": "CraftProfession"
+  },
+  {
+    "index": "1024",
+    "name": "CraftRecipe"
+  },
+  {
+    "index": "1025",
+    "name": "CraftSystem"
+  },
+  {
+    "index": "1026",
+    "name": "CraftVocation"
+  },
+  {
+    "index": "1028",
+    "name": "Currency"
+  },
+  {
+    "index": "1029",
+    "name": "CurrencyDirectory"
+  },
+  {
+    "index": "1030",
+    "name": "CurrencyAmountRecord"
+  },
+  {
+    "index": "1034",
+    "name": "DeathSystem"
+  },
+  {
+    "index": "1035",
+    "name": "DefeatInfo"
+  },
+  {
+    "index": "1039",
+    "name": "DramaSystem"
+  },
+  {
+    "index": "1045",
+    "name": "EffectDesc"
+  },
+  {
+    "index": "1046",
+    "name": "EffectSystem"
+  },
+  {
+    "index": "1049",
+    "name": "Emote"
+  },
+  {
+    "index": "1050",
+    "name": "EmoteDirectory"
+  },
+  {
+    "index": "1051",
+    "name": "ErrorSystem"
+  },
+  {
+    "index": "1053",
+    "name": "ExaminationDataGrabberFactory"
+  },
+  {
+    "index": "1055",
+    "name": "ExaminationAllowedSlotsDataGrabber"
+  },
+  {
+    "index": "1056",
+    "name": "ExaminationClothingColorDataGrabber"
+  },
+  {
+    "index": "1057",
+    "name": "ExaminationClothingPatternDataGrabber"
+  },
+  {
+    "index": "1058",
+    "name": "ExaminationDPSDataGrabber"
+  },
+  {
+    "index": "1059",
+    "name": "ExaminationDamageDataGrabber"
+  },
+  {
+    "index": "1060",
+    "name": "ExaminationDurabilityDataGrabber"
+  },
+  {
+    "index": "1061",
+    "name": "ExaminationEffectDescriptionDataGrabber"
+  },
+  {
+    "index": "1062",
+    "name": "ExaminationEffectListDataGrabber"
+  },
+  {
+    "index": "1063",
+    "name": "ExaminationEffectListDataGrabberBlob"
+  },
+  {
+    "index": "1064",
+    "name": "ExaminationEffectTimeDisplayDataGrabber"
+  },
+  {
+    "index": "1065",
+    "name": "ExaminationEquipmentCategoryDataGrabber"
+  },
+  {
+    "index": "1066",
+    "name": "ExaminationGeneroDataGrabber"
+  },
+  {
+    "index": "1067",
+    "name": "ExaminationIconDataGrabber"
+  },
+  {
+    "index": "1068",
+    "name": "ExaminationIndestructibleDataGrabber"
+  },
+  {
+    "index": "1069",
+    "name": "ExaminationItemBindingDataGrabber"
+  },
+  {
+    "index": "1070",
+    "name": "ExaminationItemDelayDataGrabber"
+  },
+  {
+    "index": "1071",
+    "name": "ExaminationLFGDataGrabber"
+  },
+  {
+    "index": "1072",
+    "name": "ExaminationModStatDataGrabber"
+  },
+  {
+    "index": "1073",
+    "name": "ExaminationNameDataGrabber"
+  },
+  {
+    "index": "1074",
+    "name": "ExaminationQuestIDDataGrabber"
+  },
+  {
+    "index": "1075",
+    "name": "ExaminationRPDataGrabber"
+  },
+  {
+    "index": "1076",
+    "name": "ExaminationRaceNameDataGrabber"
+  },
+  {
+    "index": "1077",
+    "name": "ExaminationSkillChannelingDurationDataGrabber"
+  },
+  {
+    "index": "1078",
+    "name": "ExaminationSkillDamageDataGrabber"
+  },
+  {
+    "index": "1079",
+    "name": "ExaminationSkillDataGrabber"
+  },
+  {
+    "index": "1080",
+    "name": "ExaminationSkillEffectListPropertyDataGrabber"
+  },
+  {
+    "index": "1081",
+    "name": "ExaminationSkillGeneroPropertyDataGrabber"
+  },
+  {
+    "index": "1082",
+    "name": "ExaminationSkillMaterialsDataGrabber"
+  },
+  {
+    "index": "1083",
+    "name": "ExaminationSkillMaxTargetsDataGrabber"
+  },
+  {
+    "index": "1084",
+    "name": "ExaminationSkillPipDataGrabber"
+  },
+  {
+    "index": "1085",
+    "name": "ExaminationSkillRecoveryTimeDataGrabber"
+  },
+  {
+    "index": "1086",
+    "name": "ExaminationSkillSpecialClassDataGrabber"
+  },
+  {
+    "index": "1087",
+    "name": "ExaminationSkillTraitDataGrabber"
+  },
+  {
+    "index": "1088",
+    "name": "ExaminationSkillVitalCostDataGrabber"
+  },
+  {
+    "index": "1089",
+    "name": "ExaminationTitleDataGrabber"
+  },
+  {
+    "index": "1090",
+    "name": "ExaminationUniqueDataGrabber"
+  },
+  {
+    "index": "1091",
+    "name": "ExaminationUsageCooldownDataGrabber"
+  },
+  {
+    "index": "1092",
+    "name": "ExaminationUsageReqsDataGrabber"
+  },
+  {
+    "index": "1093",
+    "name": "ExaminationValueDataGrabber"
+  },
+  {
+    "index": "1094",
+    "name": "ExaminationVirtueRankDataGrabber"
+  },
+  {
+    "index": "1095",
+    "name": "ExaminationVitalDataGrabber"
+  },
+  {
+    "index": "1096",
+    "name": "ExaminationWeaponSlayerModDataGrabber"
+  },
+  {
+    "index": "1097",
+    "name": "IExaminationDataGrabber"
+  },
+  {
+    "index": "1098",
+    "name": "IExaminationDataGrabberBlob"
+  },
+  {
+    "index": "1099",
+    "name": "BiggerIsBetterStyleGrabber"
+  },
+  {
+    "index": "1100",
+    "name": "IExaminationStyleGrabber"
+  },
+  {
+    "index": "1101",
+    "name": "Fellow"
+  },
+  {
+    "index": "1102",
+    "name": "FellowPet"
+  },
+  {
+    "index": "1103",
+    "name": "Fellowship"
+  },
+  {
+    "index": "1104",
+    "name": "FellowshipManager"
+  },
+  {
+    "index": "1106",
+    "name": "FellowshipMessageSystem"
+  },
+  {
+    "index": "1107",
+    "name": "FellowshipSystem"
+  },
+  {
+    "index": "1108",
+    "name": "Raid"
+  },
+  {
+    "index": "1112",
+    "name": "WeenieTypeSystem"
+  },
+  {
+    "index": "1113",
+    "name": "Generator"
+  },
+  {
+    "index": "1117",
+    "name": "AllPropertyGeneratorCondition"
+  },
+  {
+    "index": "1118",
+    "name": "AndGeneratorCondition"
+  },
+  {
+    "index": "1119",
+    "name": "AnyPropertyGeneratorCondition"
+  },
+  {
+    "index": "1120",
+    "name": "DefaultGeneratorCondition"
+  },
+  {
+    "index": "1121",
+    "name": "GeneratorCondition"
+  },
+  {
+    "index": "1122",
+    "name": "IsDayGeneratorCondition"
+  },
+  {
+    "index": "1123",
+    "name": "IsNightGeneratorCondition"
+  },
+  {
+    "index": "1124",
+    "name": "LogicalGeneratorCondition"
+  },
+  {
+    "index": "1125",
+    "name": "OrGeneratorCondition"
+  },
+  {
+    "index": "1126",
+    "name": "PropertyGeneratorCondition"
+  },
+  {
+    "index": "1127",
+    "name": "TimeGeneratorCondition"
+  },
+  {
+    "index": "1128",
+    "name": "WorldAlignmentGeneratorCondition"
+  },
+  {
+    "index": "1129",
+    "name": "LinkedObjectEntry"
+  },
+  {
+    "index": "1130",
+    "name": "AllOfGeneratorProfileData"
+  },
+  {
+    "index": "1131",
+    "name": "EntityGeneratorProfileData"
+  },
+  {
+    "index": "1132",
+    "name": "GeneratorProfile"
+  },
+  {
+    "index": "1133",
+    "name": "GeneratorProfileData"
+  },
+  {
+    "index": "1134",
+    "name": "GeneratorProfileDataWrapper"
+  },
+  {
+    "index": "1135",
+    "name": "GeneratorProfileParser"
+  },
+  {
+    "index": "1136",
+    "name": "OneOfGeneratorProfileData"
+  },
+  {
+    "index": "1137",
+    "name": "PositionSetGeneratorProfileData"
+  },
+  {
+    "index": "1138",
+    "name": "ProgressiveProfile"
+  },
+  {
+    "index": "1139",
+    "name": "ProgressiveGeneratorProfileData"
+  },
+  {
+    "index": "1140",
+    "name": "RepeatGeneratorProfileData"
+  },
+  {
+    "index": "1141",
+    "name": "ConditionedProfile"
+  },
+  {
+    "index": "1142",
+    "name": "SwitchGeneratorProfileData"
+  },
+  {
+    "index": "1143",
+    "name": "WCGeneratorProfileData"
+  },
+  {
+    "index": "1158",
+    "name": "GloryGroupDamage"
+  },
+  {
+    "index": "1159",
+    "name": "GloryKillTracker"
+  },
+  {
+    "index": "1160",
+    "name": "GloryRegistry"
+  },
+  {
+    "index": "1161",
+    "name": "GlorySystem"
+  },
+  {
+    "index": "1164",
+    "name": "Guild"
+  },
+  {
+    "index": "1165",
+    "name": "GuildControl"
+  },
+  {
+    "index": "1166",
+    "name": "GuildManager"
+  },
+  {
+    "index": "1167",
+    "name": "GuildMember"
+  },
+  {
+    "index": "1168",
+    "name": "GuildRank"
+  },
+  {
+    "index": "1169",
+    "name": "KinshipRankInfo"
+  },
+  {
+    "index": "1170",
+    "name": "Hotspot"
+  },
+  {
+    "index": "1177",
+    "name": "Buyer"
+  },
+  {
+    "index": "1178",
+    "name": "Decoration"
+  },
+  {
+    "index": "1179",
+    "name": "DecorationMapEntry"
+  },
+  {
+    "index": "1180",
+    "name": "HAR"
+  },
+  {
+    "index": "1181",
+    "name": "House"
+  },
+  {
+    "index": "1182",
+    "name": "HouseQualifications"
+  },
+  {
+    "index": "1183",
+    "name": "HousingAuthority"
+  },
+  {
+    "index": "1184",
+    "name": "HousingControl"
+  },
+  {
+    "index": "1185",
+    "name": "Neighborhood"
+  },
+  {
+    "index": "1186",
+    "name": "TerritoryMarker"
+  },
+  {
+    "index": "1187",
+    "name": "Town"
+  },
+  {
+    "index": "1188",
+    "name": "IconSystem"
+  },
+  {
+    "index": "1189",
+    "name": "IProgressController"
+  },
+  {
+    "index": "1190",
+    "name": "InductionProgressController"
+  },
+  {
+    "index": "1191",
+    "name": "InductionSystem"
+  },
+  {
+    "index": "1192",
+    "name": "OpenLoopProgressController"
+  },
+  {
+    "index": "1194",
+    "name": "SkillInductionProgressController"
+  },
+  {
+    "index": "1195",
+    "name": "InductionAction"
+  },
+  {
+    "index": "1196",
+    "name": "InteractionPermissions"
+  },
+  {
+    "index": "1198",
+    "name": "CosmeticInventory"
+  },
+  {
+    "index": "1199",
+    "name": "CosmeticInventorySystem"
+  },
+  {
+    "index": "1200",
+    "name": "InvParams"
+  },
+  {
+    "index": "1201",
+    "name": "InvSupportSystem"
+  },
+  {
+    "index": "1202",
+    "name": "InventoryControl"
+  },
+  {
+    "index": "1204",
+    "name": "DataIDItemFilter"
+  },
+  {
+    "index": "1205",
+    "name": "IItemFilter"
+  },
+  {
+    "index": "1206",
+    "name": "KeyItemFilter"
+  },
+  {
+    "index": "1207",
+    "name": "UsageTargetTypeItemFilter"
+  },
+  {
+    "index": "1208",
+    "name": "ItemWearSystem"
+  },
+  {
+    "index": "1210",
+    "name": "Landmark"
+  },
+  {
+    "index": "1212",
+    "name": "LFGInfo"
+  },
+  {
+    "index": "1213",
+    "name": "LFGManager"
+  },
+  {
+    "index": "1214",
+    "name": "WantedList"
+  },
+  {
+    "index": "1222",
+    "name": "LogUtils"
+  },
+  {
+    "index": "1224",
+    "name": "LootRollDataEntry"
+  },
+  {
+    "index": "1225",
+    "name": "LootRollData"
+  },
+  {
+    "index": "1226",
+    "name": "LootSystem"
+  },
+  {
+    "index": "1233",
+    "name": "VitalStaticData?"
+  },
+  {
+    "index": "1234",
+    "name": "SpeciesLevelLootTableTemplate"
+  },
+  {
+    "index": "1235",
+    "name": "TreasureGroupProfile"
+  },
+  {
+    "index": "1236",
+    "name": "TreasureListTemplate"
+  },
+  {
+    "index": "1237",
+    "name": "TrophyListTemplate"
+  },
+  {
+    "index": "1239",
+    "name": "MailManager"
+  },
+  {
+    "index": "1241",
+    "name": "GWM_AI"
+  },
+  {
+    "index": "1242",
+    "name": "GWM_Accomplishment"
+  },
+  {
+    "index": "1244",
+    "name": "GWM_Admin"
+  },
+  {
+    "index": "1245",
+    "name": "GWM_AdminPropertySystem"
+  },
+  {
+    "index": "1246",
+    "name": "GWM_AdminSystem"
+  },
+  {
+    "index": "1247",
+    "name": "GWM_Advancement"
+  },
+  {
+    "index": "1249",
+    "name": "GWM_Alert"
+  },
+  {
+    "index": "1250",
+    "name": "GWM_Alignment"
+  },
+  {
+    "index": "1251",
+    "name": "GWM_Area"
+  },
+  {
+    "index": "1252",
+    "name": "GWM_AreaSystem"
+  },
+  {
+    "index": "1253",
+    "name": "GWM_Auction"
+  },
+  {
+    "index": "1255",
+    "name": "GWM_BankSystem"
+  },
+  {
+    "index": "1256",
+    "name": "GWM_ChannelingSystem"
+  },
+  {
+    "index": "1257",
+    "name": "GWM_Combat"
+  },
+  {
+    "index": "1259",
+    "name": "GWM_CombatState"
+  },
+  {
+    "index": "1260",
+    "name": "GWM_Communication"
+  },
+  {
+    "index": "1261",
+    "name": "GWM_Conjunction"
+  },
+  {
+    "index": "1262",
+    "name": "GWM_Cooldown"
+  },
+  {
+    "index": "1263",
+    "name": "GWM_CraftSystem"
+  },
+  {
+    "index": "1264",
+    "name": "GWM_Currency"
+  },
+  {
+    "index": "1265",
+    "name": "GWM_DamageType"
+  },
+  {
+    "index": "1266",
+    "name": "GWM_Death"
+  },
+  {
+    "index": "1267",
+    "name": "GWM_Discovery"
+  },
+  {
+    "index": "1270",
+    "name": "GWM_Drama"
+  },
+  {
+    "index": "1271",
+    "name": "GWM_Dueling"
+  },
+  {
+    "index": "1272",
+    "name": "GWM_Effect"
+  },
+  {
+    "index": "1273",
+    "name": "GWM_Emote"
+  },
+  {
+    "index": "1276",
+    "name": "GWM_ErrorSystem"
+  },
+  {
+    "index": "1277",
+    "name": "GWM_Examination"
+  },
+  {
+    "index": "1278",
+    "name": "GWM_Fellowship"
+  },
+  {
+    "index": "1282",
+    "name": "GWM_Guild"
+  },
+  {
+    "index": "1283",
+    "name": "GWM_HARTSystem"
+  },
+  {
+    "index": "1285",
+    "name": "GWM_House"
+  },
+  {
+    "index": "1286",
+    "name": "GWM_InductionSystem"
+  },
+  {
+    "index": "1287",
+    "name": "GWM_InscriptionSystem"
+  },
+  {
+    "index": "1288",
+    "name": "GWM_Interaction"
+  },
+  {
+    "index": "1290",
+    "name": "GWM_InventorySystem"
+  },
+  {
+    "index": "1291",
+    "name": "GWM_ItemWearSystem"
+  },
+  {
+    "index": "1292",
+    "name": "GWM_LFG"
+  },
+  {
+    "index": "1294",
+    "name": "GWM_Landmark"
+  },
+  {
+    "index": "1295",
+    "name": "GWM_Listener"
+  },
+  {
+    "index": "1296",
+    "name": "GWM_Logout"
+  },
+  {
+    "index": "1297",
+    "name": "GWM_LootGenSystem"
+  },
+  {
+    "index": "1298",
+    "name": "GWM_LootSystem"
+  },
+  {
+    "index": "1299",
+    "name": "GWM_MEOInventorySystem"
+  },
+  {
+    "index": "1300",
+    "name": "GWM_Mail"
+  },
+  {
+    "index": "1301",
+    "name": "GWM_Map"
+  },
+  {
+    "index": "1302",
+    "name": "GWM_MonsterPlaySystem"
+  },
+  {
+    "index": "1304",
+    "name": "GWM_Movement"
+  },
+  {
+    "index": "1305",
+    "name": "GWM_MusicSystem"
+  },
+  {
+    "index": "1306",
+    "name": "GWM_NameSystem"
+  },
+  {
+    "index": "1307",
+    "name": "GWM_Pedigree"
+  },
+  {
+    "index": "1308",
+    "name": "GWM_PerkSystem"
+  },
+  {
+    "index": "1310",
+    "name": "GWM_Player"
+  },
+  {
+    "index": "1311",
+    "name": "GWM_PrivateEncounter"
+  },
+  {
+    "index": "1312",
+    "name": "GWM_ProgressSystem"
+  },
+  {
+    "index": "1313",
+    "name": "GWM_Quest"
+  },
+  {
+    "index": "1314",
+    "name": "GWM_QuestDispenser"
+  },
+  {
+    "index": "1315",
+    "name": "GWM_Raid"
+  },
+  {
+    "index": "1316",
+    "name": "GWM_RecallSystem"
+  },
+  {
+    "index": "1319",
+    "name": "GWM_ScriptGameplayCallback"
+  },
+  {
+    "index": "1320",
+    "name": "GWM_Skill"
+  },
+  {
+    "index": "1322",
+    "name": "GWM_SummonSystem"
+  },
+  {
+    "index": "1324",
+    "name": "GWM_TextItem"
+  },
+  {
+    "index": "1325",
+    "name": "GWM_Theater"
+  },
+  {
+    "index": "1326",
+    "name": "GWM_Title"
+  },
+  {
+    "index": "1327",
+    "name": "GWM_ToggleSkill"
+  },
+  {
+    "index": "1328",
+    "name": "GWM_Tracking"
+  },
+  {
+    "index": "1329",
+    "name": "GWM_Trade"
+  },
+  {
+    "index": "1330",
+    "name": "GWM_Trait"
+  },
+  {
+    "index": "1331",
+    "name": "GWM_Travel"
+  },
+  {
+    "index": "1332",
+    "name": "GWM_TutorialSystem"
+  },
+  {
+    "index": "1333",
+    "name": "GWM_Usage"
+  },
+  {
+    "index": "1334",
+    "name": "GWM_Vendor"
+  },
+  {
+    "index": "1335",
+    "name": "GWM_Vital"
+  },
+  {
+    "index": "1338",
+    "name": "AppliedMod"
+  },
+  {
+    "index": "1339",
+    "name": "ConstantModDefinition"
+  },
+  {
+    "index": "1340",
+    "name": "IModDefinition"
+  },
+  {
+    "index": "1341",
+    "name": "ModSystem"
+  },
+  {
+    "index": "1342",
+    "name": "ProgressionModDefinition"
+  },
+  {
+    "index": "1343",
+    "name": "MonsterLevelDirectory"
+  },
+  {
+    "index": "1345",
+    "name": "MonsterLevelTemplate"
+  },
+  {
+    "index": "1346",
+    "name": "MonsterLevelStatModifier"
+  },
+  {
+    "index": "1347",
+    "name": "MonsterLevelRange"
+  },
+  {
+    "index": "1348",
+    "name": "MonsterLevelRangeDirectory"
+  },
+  {
+    "index": "1349",
+    "name": "MPLevelTableDirectory"
+  },
+  {
+    "index": "1350",
+    "name": "MPVirtueAdvancementData"
+  },
+  {
+    "index": "1351",
+    "name": "MonsterPlayMission"
+  },
+  {
+    "index": "1352",
+    "name": "MonsterPlaySession"
+  },
+  {
+    "index": "1353",
+    "name": "MonsterPlayerDesc"
+  },
+  {
+    "index": "1354",
+    "name": "MoodControl"
+  },
+  {
+    "index": "1355",
+    "name": "MoodLevelData"
+  },
+  {
+    "index": "1356",
+    "name": "MoodSystem"
+  },
+  {
+    "index": "1358",
+    "name": "MountSystem"
+  },
+  {
+    "index": "1360",
+    "name": "MusicSystem"
+  },
+  {
+    "index": "1366",
+    "name": "PrivateEncounterControl"
+  },
+  {
+    "index": "1367",
+    "name": "PrivateEncounterServer"
+  },
+  {
+    "index": "1368",
+    "name": "PrivateEncounterTemplate"
+  },
+  {
+    "index": "1370",
+    "name": "ScoreToken"
+  },
+  {
+    "index": "1371",
+    "name": "VisualScoreToken"
+  },
+  {
+    "index": "1372",
+    "name": "PedigreeRecord"
+  },
+  {
+    "index": "1373",
+    "name": "PedigreeRegistry"
+  },
+  {
+    "index": "1374",
+    "name": "PedigreeSystem"
+  },
+  {
+    "index": "1376",
+    "name": "gmPerfSetup"
+  },
+  {
+    "index": "1377",
+    "name": "Perk"
+  },
+  {
+    "index": "1378",
+    "name": "PerkRegistry"
+  },
+  {
+    "index": "1380",
+    "name": "Pip"
+  },
+  {
+    "index": "1381",
+    "name": "PipSystem"
+  },
+  {
+    "index": "1383",
+    "name": "ProgressData"
+  },
+  {
+    "index": "1385",
+    "name": "FloatProgression"
+  },
+  {
+    "index": "1386",
+    "name": "IProgression"
+  },
+  {
+    "index": "1387",
+    "name": "ProgressionSet"
+  },
+  {
+    "index": "1388",
+    "name": "ProgressionSystem"
+  },
+  {
+    "index": "1389",
+    "name": "PropertyProgression"
+  },
+  {
+    "index": "1390",
+    "name": "ForwardedPropertySystem"
+  },
+  {
+    "index": "1391",
+    "name": "PropertyMetaData"
+  },
+  {
+    "index": "1392",
+    "name": "PropertyMetaDataControl"
+  },
+  {
+    "index": "1393",
+    "name": "Pruninator"
+  },
+  {
+    "index": "1394",
+    "name": "PVPSystem"
+  },
+  {
+    "index": "1395",
+    "name": "DuelingSystem"
+  },
+  {
+    "index": "1397",
+    "name": "IQuestJournal"
+  },
+  {
+    "index": "1398",
+    "name": "Quest"
+  },
+  {
+    "index": "1399",
+    "name": "QuestCompletionObjective"
+  },
+  {
+    "index": "1400",
+    "name": "QuestCondition"
+  },
+  {
+    "index": "1401",
+    "name": "QuestLootStruct"
+  },
+  {
+    "index": "1402",
+    "name": "QuestGenusStruct"
+  },
+  {
+    "index": "1403",
+    "name": "QuestRecord"
+  },
+  {
+    "index": "1404",
+    "name": "QuestReward"
+  },
+  {
+    "index": "1405",
+    "name": "QuestSystem"
+  },
+  {
+    "index": "1406",
+    "name": "QuestTreasureProfile"
+  },
+  {
+    "index": "1414",
+    "name": "ChannelingQuestEvent"
+  },
+  {
+    "index": "1415",
+    "name": "ClearCampQuestEvent"
+  },
+  {
+    "index": "1416",
+    "name": "CraftRecipeExecutionQuestEvent"
+  },
+  {
+    "index": "1417",
+    "name": "DetectingQuestEvent"
+  },
+  {
+    "index": "1418",
+    "name": "DynamicQuestEvent"
+  },
+  {
+    "index": "1419",
+    "name": "EmoteQuestEvent"
+  },
+  {
+    "index": "1420",
+    "name": "EnterDetectionQuestEvent"
+  },
+  {
+    "index": "1421",
+    "name": "EscortQuestEvent"
+  },
+  {
+    "index": "1422",
+    "name": "ExternalInventoryItemQuestEvent"
+  },
+  {
+    "index": "1423",
+    "name": "IQuestEvent"
+  },
+  {
+    "index": "1424",
+    "name": "InventoryItemQuestEvent"
+  },
+  {
+    "index": "1425",
+    "name": "ItemTalkQuestEvent"
+  },
+  {
+    "index": "1426",
+    "name": "ItemUsedQuestEvent"
+  },
+  {
+    "index": "1427",
+    "name": "KungFuQuestEvent"
+  },
+  {
+    "index": "1428",
+    "name": "LandmarkDetectionQuestEvent"
+  },
+  {
+    "index": "1429",
+    "name": "LeaveDetectionQuestEvent"
+  },
+  {
+    "index": "1430",
+    "name": "LevelQuestEvent"
+  },
+  {
+    "index": "1431",
+    "name": "MonsterDiedQuestEvent"
+  },
+  {
+    "index": "1432",
+    "name": "MonsterPlayerDiedQuestEvent"
+  },
+  {
+    "index": "1433",
+    "name": "NPCTalkQuestEvent"
+  },
+  {
+    "index": "1434",
+    "name": "NPCUsedQuestEvent"
+  },
+  {
+    "index": "1435",
+    "name": "PersistentQuestEvent"
+  },
+  {
+    "index": "1436",
+    "name": "PlayerDiedQuestEvent"
+  },
+  {
+    "index": "1437",
+    "name": "QuestCompleteQuestEvent"
+  },
+  {
+    "index": "1438",
+    "name": "SelfDiedQuestEvent"
+  },
+  {
+    "index": "1439",
+    "name": "SkillAppliedQuestEvent"
+  },
+  {
+    "index": "1440",
+    "name": "SkillUsedQuestEvent"
+  },
+  {
+    "index": "1441",
+    "name": "TimeExpiredQuestEvent"
+  },
+  {
+    "index": "1442",
+    "name": "QuestMsg"
+  },
+  {
+    "index": "1445",
+    "name": "Relay"
+  },
+  {
+    "index": "1446",
+    "name": "RelaySystem"
+  },
+  {
+    "index": "1447",
+    "name": "ResistControlData"
+  },
+  {
+    "index": "1448",
+    "name": "ISkillBasedSystem"
+  },
+  {
+    "index": "1452",
+    "name": "Stat"
+  },
+  {
+    "index": "1453",
+    "name": "StatAgility"
+  },
+  {
+    "index": "1454",
+    "name": "StatDirectory"
+  },
+  {
+    "index": "1455",
+    "name": "StatFate"
+  },
+  {
+    "index": "1456",
+    "name": "StatMight"
+  },
+  {
+    "index": "1457",
+    "name": "StatSimple"
+  },
+  {
+    "index": "1458",
+    "name": "StatVitalRelated"
+  },
+  {
+    "index": "1459",
+    "name": "StatVitality"
+  },
+  {
+    "index": "1460",
+    "name": "StatWill"
+  },
+  {
+    "index": "1463",
+    "name": "StealthSystem"
+  },
+  {
+    "index": "1467",
+    "name": "TextItemSystem"
+  },
+  {
+    "index": "1468",
+    "name": "Scene"
+  },
+  {
+    "index": "1469",
+    "name": "TimeSystem"
+  },
+  {
+    "index": "1470",
+    "name": "Title"
+  },
+  {
+    "index": "1471",
+    "name": "TitleAcquisitionData"
+  },
+  {
+    "index": "1472",
+    "name": "TitleRegistry"
+  },
+  {
+    "index": "1474",
+    "name": "TrackingRegistry"
+  },
+  {
+    "index": "1475",
+    "name": "Trade"
+  },
+  {
+    "index": "1476",
+    "name": "EarnedTraitInfo"
+  },
+  {
+    "index": "1477",
+    "name": "EffectTrait"
+  },
+  {
+    "index": "1478",
+    "name": "EquipmentTrait"
+  },
+  {
+    "index": "1479",
+    "name": "ITrait"
+  },
+  {
+    "index": "1481",
+    "name": "PersistentTraitPool"
+  },
+  {
+    "index": "1483",
+    "name": "SkillTrait"
+  },
+  {
+    "index": "1484",
+    "name": "SlottedTraitPool"
+  },
+  {
+    "index": "1486",
+    "name": "TraitControl"
+  },
+  {
+    "index": "1487",
+    "name": "TraitPool"
+  },
+  {
+    "index": "1488",
+    "name": "TraitRegistry"
+  },
+  {
+    "index": "1489",
+    "name": "TraitSlot"
+  },
+  {
+    "index": "1490",
+    "name": "TraitSlotSchedule"
+  },
+  {
+    "index": "1491",
+    "name": "TraitSystem"
+  },
+  {
+    "index": "1494",
+    "name": "VirtueTrait"
+  },
+  {
+    "index": "1497",
+    "name": "ITravelAction"
+  },
+  {
+    "index": "1499",
+    "name": "TravelDestination"
+  },
+  {
+    "index": "1500",
+    "name": "TravelDestinationRecord"
+  },
+  {
+    "index": "1501",
+    "name": "TravelHopAction"
+  },
+  {
+    "index": "1502",
+    "name": "TravelPadAction"
+  },
+  {
+    "index": "1503",
+    "name": "TravelRecord"
+  },
+  {
+    "index": "1504",
+    "name": "TravelRegistry"
+  },
+  {
+    "index": "1505",
+    "name": "TravelRoute"
+  },
+  {
+    "index": "1506",
+    "name": "TravelSegmentAction"
+  },
+  {
+    "index": "1507",
+    "name": "TravelSystem"
+  },
+  {
+    "index": "1508",
+    "name": "TravelWeb"
+  },
+  {
+    "index": "1509",
+    "name": "TravelWebDirectory"
+  },
+  {
+    "index": "1510",
+    "name": "Tripwire"
+  },
+  {
+    "index": "1511",
+    "name": "TripwireSystem"
+  },
+  {
+    "index": "1512",
+    "name": "BiasProfile"
+  },
+  {
+    "index": "1527",
+    "name": "TutorialHint"
+  },
+  {
+    "index": "1528",
+    "name": "TutorialSystem"
+  },
+  {
+    "index": "1529",
+    "name": "ActivatorActionHandler"
+  },
+  {
+    "index": "1530",
+    "name": "AdminActionHandler"
+  },
+  {
+    "index": "1531",
+    "name": "ChestActionHandler"
+  },
+  {
+    "index": "1532",
+    "name": "ConsumableActionHandler"
+  },
+  {
+    "index": "1533",
+    "name": "CorpseActionHandler"
+  },
+  {
+    "index": "1534",
+    "name": "DefaultActionHandler"
+  },
+  {
+    "index": "1535",
+    "name": "DoorActionHandler"
+  },
+  {
+    "index": "1536",
+    "name": "EquippableActionHandler"
+  },
+  {
+    "index": "1537",
+    "name": "ExamineActionHandler"
+  },
+  {
+    "index": "1538",
+    "name": "MonsterActionHandler"
+  },
+  {
+    "index": "1539",
+    "name": "NPCActionHandler"
+  },
+  {
+    "index": "1540",
+    "name": "PlayerActionHandler"
+  },
+  {
+    "index": "1541",
+    "name": "TakeableActionHandler"
+  },
+  {
+    "index": "1542",
+    "name": "TextItemActionHandler"
+  },
+  {
+    "index": "1543",
+    "name": "UpkeepBoxActionHandler"
+  },
+  {
+    "index": "1545",
+    "name": "UsageDesc"
+  },
+  {
+    "index": "1546",
+    "name": "CanTakePermission"
+  },
+  {
+    "index": "1547",
+    "name": "CantTakePermission"
+  },
+  {
+    "index": "1548",
+    "name": "DefaultTakePermission"
+  },
+  {
+    "index": "1549",
+    "name": "DefaultTakePermissionBlob"
+  },
+  {
+    "index": "1550",
+    "name": "TakePermission"
+  },
+  {
+    "index": "1551",
+    "name": "ActivatorUsageAction"
+  },
+  {
+    "index": "1552",
+    "name": "BankUsageAction"
+  },
+  {
+    "index": "1553",
+    "name": "ContainerUsageAction"
+  },
+  {
+    "index": "1554",
+    "name": "CreateAndJoinPrivateEncounterUsageAction"
+  },
+  {
+    "index": "1555",
+    "name": "DismissPetUsageAction"
+  },
+  {
+    "index": "1556",
+    "name": "DoNothingUsageAction"
+  },
+  {
+    "index": "1557",
+    "name": "DoorPortalUsageAction"
+  },
+  {
+    "index": "1558",
+    "name": "DoorPortalUsageBlob"
+  },
+  {
+    "index": "1559",
+    "name": "DoorUsageAction"
+  },
+  {
+    "index": "1560",
+    "name": "DoorUsageBlob"
+  },
+  {
+    "index": "1561",
+    "name": "DyeUsageAction"
+  },
+  {
+    "index": "1562",
+    "name": "DyeUsageBlob"
+  },
+  {
+    "index": "1563",
+    "name": "EffectUsageAction"
+  },
+  {
+    "index": "1564",
+    "name": "EffectUsageBlob"
+  },
+  {
+    "index": "1565",
+    "name": "EffectUsageRecord"
+  },
+  {
+    "index": "1567",
+    "name": "EquippableUsageAction"
+  },
+  {
+    "index": "1568",
+    "name": "ExamineUsageAction"
+  },
+  {
+    "index": "1569",
+    "name": "FacilityUsageAction"
+  },
+  {
+    "index": "1570",
+    "name": "InterruptTestUsageAction"
+  },
+  {
+    "index": "1571",
+    "name": "InterruptTestUsageBlob"
+  },
+  {
+    "index": "1572",
+    "name": "KeyUsageAction"
+  },
+  {
+    "index": "1573",
+    "name": "KeyUsageBlob"
+  },
+  {
+    "index": "1574",
+    "name": "KinshipCharterUsageAction"
+  },
+  {
+    "index": "1575",
+    "name": "MailUsageAction"
+  },
+  {
+    "index": "1576",
+    "name": "MilestoneUsageAction"
+  },
+  {
+    "index": "1577",
+    "name": "MonsterActionPickerUsageAction"
+  },
+  {
+    "index": "1578",
+    "name": "MonsterUsageAction"
+  },
+  {
+    "index": "1579",
+    "name": "MountUsageAction"
+  },
+  {
+    "index": "1580",
+    "name": "NPCActionPickerUsageAction"
+  },
+  {
+    "index": "1581",
+    "name": "NPCActionPickerUsageBlob"
+  },
+  {
+    "index": "1582",
+    "name": "NPCColorTextUsageAction"
+  },
+  {
+    "index": "1583",
+    "name": "NPCUsageAction"
+  },
+  {
+    "index": "1584",
+    "name": "PlayerUsageAction"
+  },
+  {
+    "index": "1585",
+    "name": "PotionUsageAction"
+  },
+  {
+    "index": "1586",
+    "name": "PotionUsageBlob"
+  },
+  {
+    "index": "1587",
+    "name": "QuestDispenserUsageAction"
+  },
+  {
+    "index": "1588",
+    "name": "QuestDispenserUsageBlob"
+  },
+  {
+    "index": "1589",
+    "name": "QuestNPCUsageAction"
+  },
+  {
+    "index": "1590",
+    "name": "SkillUsageAction"
+  },
+  {
+    "index": "1591",
+    "name": "SummonUsageAction"
+  },
+  {
+    "index": "1592",
+    "name": "TextItemUsageAction"
+  },
+  {
+    "index": "1593",
+    "name": "ThresholdUsageAction"
+  },
+  {
+    "index": "1594",
+    "name": "ThresholdUsageBlob"
+  },
+  {
+    "index": "1595",
+    "name": "TravelUsageBlob"
+  },
+  {
+    "index": "1596",
+    "name": "UpkeepBoxUsageAction"
+  },
+  {
+    "index": "1597",
+    "name": "UsageAction"
+  },
+  {
+    "index": "1598",
+    "name": "UsageBlob"
+  },
+  {
+    "index": "1599",
+    "name": "WaypointUsageAction"
+  },
+  {
+    "index": "1600",
+    "name": "AlwaysAllowUsagePermission"
+  },
+  {
+    "index": "1601",
+    "name": "AlwaysDenyUsagePermission"
+  },
+  {
+    "index": "1602",
+    "name": "DefaultPermissionBlob"
+  },
+  {
+    "index": "1603",
+    "name": "DefaultUsagePermission"
+  },
+  {
+    "index": "1604",
+    "name": "DismissPetUsagePermission"
+  },
+  {
+    "index": "1605",
+    "name": "EquippableUsagePermission"
+  },
+  {
+    "index": "1606",
+    "name": "HousePermissionBlob"
+  },
+  {
+    "index": "1607",
+    "name": "HouseUsagePermission"
+  },
+  {
+    "index": "1608",
+    "name": "KinshipCharterUsagePermission"
+  },
+  {
+    "index": "1609",
+    "name": "MountUsagePermission"
+  },
+  {
+    "index": "1610",
+    "name": "NPCUsagePermission"
+  },
+  {
+    "index": "1611",
+    "name": "PVPPermissionBlob"
+  },
+  {
+    "index": "1612",
+    "name": "PVPUsagePermission"
+  },
+  {
+    "index": "1613",
+    "name": "PermissionBlob"
+  },
+  {
+    "index": "1614",
+    "name": "UsageExaminationData"
+  },
+  {
+    "index": "1615",
+    "name": "UsagePermission"
+  },
+  {
+    "index": "1616",
+    "name": "IVendorDataProvider"
+  },
+  {
+    "index": "1617",
+    "name": "NPCVendorDataProvider"
+  },
+  {
+    "index": "1618",
+    "name": "PCVendorDataProvider"
+  },
+  {
+    "index": "1619",
+    "name": "VendorInventory"
+  },
+  {
+    "index": "1620",
+    "name": "PlayerVersion"
+  },
+  {
+    "index": "1621",
+    "name": "Version"
+  },
+  {
+    "index": "1623",
+    "name": "VersionSystem"
+  },
+  {
+    "index": "1624",
+    "name": "Version_BillingGroupCreation"
+  },
+  {
+    "index": "1625",
+    "name": "Version_DoNothing"
+  },
+  {
+    "index": "1626",
+    "name": "ResponsibilityInfo"
+  },
+  {
+    "index": "1627",
+    "name": "Vital"
+  },
+  {
+    "index": "1628",
+    "name": "VitalDataEntry"
+  },
+  {
+    "index": "1629",
+    "name": "VitalHealth"
+  },
+  {
+    "index": "1630",
+    "name": "VitalPower"
+  },
+  {
+    "index": "1631",
+    "name": "VitalProfile"
+  },
+  {
+    "index": "1632",
+    "name": "VitalRegistry"
+  },
+  {
+    "index": "1633",
+    "name": "VitalStaticData"
+  },
+  {
+    "index": "1634",
+    "name": "VitalUpdateRecord"
+  },
+  {
+    "index": "1635",
+    "name": "VitalUpdateRecordContainer"
+  },
+  {
+    "index": "1638",
+    "name": "WorldAlignmentServer"
+  },
+  {
+    "index": "1640",
+    "name": "WorldPropertyBox"
+  },
+  {
+    "index": "1641",
+    "name": "TestTemplate"
+  },
+  {
+    "index": "1642",
+    "name": "TestTools"
+  },
+  {
+    "index": "1653",
+    "name": "AdminAvatar"
+  },
+  {
+    "index": "1654",
+    "name": "PlayerAvatar"
+  },
+  {
+    "index": "1655",
+    "name": "AIActionProbabilityControl"
+  },
+  {
+    "index": "1658",
+    "name": "ClassificationControl"
+  },
+  {
+    "index": "1659",
+    "name": "CombatControl"
+  },
+  {
+    "index": "1660",
+    "name": "CombatDPSLookup"
+  },
+  {
+    "index": "1661",
+    "name": "CombatMusicControl"
+  },
+  {
+    "index": "1662",
+    "name": "CombatStateControl"
+  },
+  {
+    "index": "1664",
+    "name": "CooldownControl"
+  },
+  {
+    "index": "1665",
+    "name": "CraftControl"
+  },
+  {
+    "index": "1666",
+    "name": "EffectControl"
+  },
+  {
+    "index": "1667",
+    "name": "FellowshipControl"
+  },
+  {
+    "index": "1670",
+    "name": "GloryControl"
+  },
+  {
+    "index": "1671",
+    "name": "ItemMungingControl"
+  },
+  {
+    "index": "1672",
+    "name": "ItemWearControl"
+  },
+  {
+    "index": "1673",
+    "name": "LootGenControl"
+  },
+  {
+    "index": "1674",
+    "name": "LootGenDirectoryControl"
+  },
+  {
+    "index": "1675",
+    "name": "MPAdvancementControl"
+  },
+  {
+    "index": "1677",
+    "name": "MonsterPlayControl"
+  },
+  {
+    "index": "1678",
+    "name": "NPCColorControl"
+  },
+  {
+    "index": "1679",
+    "name": "PerkControl"
+  },
+  {
+    "index": "1680",
+    "name": "PetChannelControl"
+  },
+  {
+    "index": "1681",
+    "name": "PipControl"
+  },
+  {
+    "index": "1682",
+    "name": "PrefabEmoteTable"
+  },
+  {
+    "index": "1683",
+    "name": "QuestControl"
+  },
+  {
+    "index": "1684",
+    "name": "ResistControl"
+  },
+  {
+    "index": "1687",
+    "name": "TutorialHintControl"
+  },
+  {
+    "index": "1688",
+    "name": "ValueLookupTable"
+  },
+  {
+    "index": "1690",
+    "name": "ActionDurationDataBlob"
+  },
+  {
+    "index": "1691",
+    "name": "WeaponActionDurationData"
+  },
+  {
+    "index": "1692",
+    "name": "WeaponActionDurationTable"
+  },
+  {
+    "index": "1693",
+    "name": "XPBonusControl"
+  },
+  {
+    "index": "1694",
+    "name": "CombatConsiderationTable"
+  },
+  {
+    "index": "1695",
+    "name": "ConsiderationControl"
+  },
+  {
+    "index": "1696",
+    "name": "ConsiderationTable"
+  },
+  {
+    "index": "1697",
+    "name": "QuestConsiderationTable"
+  },
+  {
+    "index": "1699",
+    "name": "Eff_E3_CallOnValar"
+  },
+  {
+    "index": "1700",
+    "name": "Eff_E3_EvilAvatar"
+  },
+  {
+    "index": "1701",
+    "name": "Eff_PickLock"
+  },
+  {
+    "index": "1702",
+    "name": "Eff_Smite"
+  },
+  {
+    "index": "1721",
+    "name": "DoorPortalTemplate"
+  },
+  {
+    "index": "1722",
+    "name": "DoorTemplate"
+  },
+  {
+    "index": "1723",
+    "name": "MonsterTemplate"
+  },
+  {
+    "index": "1724",
+    "name": "NPCTemplate"
+  },
+  {
+    "index": "1725",
+    "name": "RefereeTemplate"
+  },
+  {
+    "index": "1726",
+    "name": "CEntity"
+  },
+  {
+    "index": "1727",
+    "name": "ContextMenuSystemGlobals"
+  },
+  {
+    "index": "1728",
+    "name": "IDialogCallback"
+  },
+  {
+    "index": "1729",
+    "name": "CAgent"
+  },
+  {
+    "index": "1730",
+    "name": "CAdmin"
+  },
+  {
+    "index": "1731",
+    "name": "CPlayer"
+  },
+  {
+    "index": "1732",
+    "name": "CContainer"
+  },
+  {
+    "index": "1733",
+    "name": "gmCEntity"
+  },
+  {
+    "index": "1734",
+    "name": "CItem"
+  },
+  {
+    "index": "1735",
+    "name": "CShield"
+  },
+  {
+    "index": "1736",
+    "name": "CTextItem"
+  },
+  {
+    "index": "1737",
+    "name": "CWeapon"
+  },
+  {
+    "index": "1738",
+    "name": "CAIAdminSystem"
+  },
+  {
+    "index": "1739",
+    "name": "CAlertSystem"
+  },
+  {
+    "index": "1740",
+    "name": "CChannelingSystem"
+  },
+  {
+    "index": "1741",
+    "name": "DamageDisplayInfo"
+  },
+  {
+    "index": "1742",
+    "name": "CDramaSystem"
+  },
+  {
+    "index": "1743",
+    "name": "CDyeSystem"
+  },
+  {
+    "index": "1744",
+    "name": "CEffectListenerSystem"
+  },
+  {
+    "index": "1745",
+    "name": "ErrorCategory"
+  },
+  {
+    "index": "1746",
+    "name": "ExaminationCacheData"
+  },
+  {
+    "index": "1747",
+    "name": "IFellowSelectCallback"
+  },
+  {
+    "index": "1748",
+    "name": "SummonFellowSelectCallback"
+  },
+  {
+    "index": "1749",
+    "name": "InteractionLockSystem"
+  },
+  {
+    "index": "1750",
+    "name": "MouseoverDirectory"
+  },
+  {
+    "index": "1751",
+    "name": "MusicControl"
+  },
+  {
+    "index": "1752",
+    "name": "CDuelingSystem"
+  },
+  {
+    "index": "1753",
+    "name": "CQuestJournal"
+  },
+  {
+    "index": "1754",
+    "name": "QuestIconStruct"
+  },
+  {
+    "index": "1755",
+    "name": "CRecallSystem"
+  },
+  {
+    "index": "1756",
+    "name": "CToggleSkillSystem"
+  },
+  {
+    "index": "1757",
+    "name": "CSummonSystem"
+  },
+  {
+    "index": "1758",
+    "name": "CSurveySystem"
+  },
+  {
+    "index": "1759",
+    "name": "CTrackingSystem"
+  },
+  {
+    "index": "1760",
+    "name": "AbandonChannelingDialogCallback"
+  },
+  {
+    "index": "1761",
+    "name": "AbandonQuestDialogCallback"
+  },
+  {
+    "index": "1762",
+    "name": "CreateRelationshipDialogCallback"
+  },
+  {
+    "index": "1763",
+    "name": "DuelingInviteDialogCallback"
+  },
+  {
+    "index": "1764",
+    "name": "DyeItemConfirmationDialogCallback"
+  },
+  {
+    "index": "1765",
+    "name": "FellowshipJoinRequestDialogCallback"
+  },
+  {
+    "index": "1766",
+    "name": "FinishSessionQuestDialogCallback"
+  },
+  {
+    "index": "1767",
+    "name": "GuildCreationConfirmationDialogCallback"
+  },
+  {
+    "index": "1768",
+    "name": "GuildThemeChangeConfirmationDialogCallback"
+  },
+  {
+    "index": "1769",
+    "name": "LeavePrivateEncounterDialogCallback"
+  },
+  {
+    "index": "1770",
+    "name": "LogoutDialogCallback"
+  },
+  {
+    "index": "1771",
+    "name": "PerkConfirmationDialogCallback"
+  },
+  {
+    "index": "1772",
+    "name": "PrivateEncounterDialogCallback"
+  },
+  {
+    "index": "1773",
+    "name": "PrivateEncounterTravelDialogCallback"
+  },
+  {
+    "index": "1774",
+    "name": "RecallConfirmationDialogCallback"
+  },
+  {
+    "index": "1775",
+    "name": "SellAllConfirmationDialogCallback"
+  },
+  {
+    "index": "1776",
+    "name": "ShareQuestDialogCallback"
+  },
+  {
+    "index": "1777",
+    "name": "SummonConfirmationDialogCallback"
+  },
+  {
+    "index": "1778",
+    "name": "HistoryList"
+  },
+  {
+    "index": "1779",
+    "name": "ClientTest"
+  },
+  {
+    "index": "1780",
+    "name": "StringTableTest"
+  },
+  {
+    "index": "1781",
+    "name": "AmbientMusicControl"
+  },
+  {
+    "index": "1782",
+    "name": "ErrorControl"
+  },
+  {
+    "index": "1783",
+    "name": "StrictAliasControl"
+  },
+  {
+    "index": "1784",
+    "name": "RecallSystem"
+  },
+  {
+    "index": "1787",
+    "name": "AITauntEffect"
+  },
+  {
+    "index": "1788",
+    "name": "AccomplishmentControl"
+  },
+  {
+    "index": "1790",
+    "name": "Version_GrantPreOrderItems"
+  },
+  {
+    "index": "1793",
+    "name": "LeaveMPDialogCallback"
+  },
+  {
+    "index": "1794",
+    "name": "ExaminationMoodDataGrabber"
+  },
+  {
+    "index": "1795",
+    "name": "CommunicationSystem"
+  },
+  {
+    "index": "1796",
+    "name": "PerkInventory"
+  },
+  {
+    "index": "1797",
+    "name": "ExaminationKinshipLifespanRankBenefitsDataGrabber"
+  },
+  {
+    "index": "1799",
+    "name": "ExaminationOneShotRecipeDataGrabber"
+  },
+  {
+    "index": "1802",
+    "name": "RaidAdaptor"
+  },
+  {
+    "index": "1803",
+    "name": "FellowshipRecruitDialogCallback"
+  },
+  {
+    "index": "1805",
+    "name": "MailControl"
+  },
+  {
+    "index": "1808",
+    "name": "IsWithinConsiderationRangeCallback"
+  },
+  {
+    "index": "1811",
+    "name": "WorldEventServer"
+  },
+  {
+    "index": "1812",
+    "name": "WorldEventControl"
+  },
+  {
+    "index": "1815",
+    "name": "BoolWorldEvent"
+  },
+  {
+    "index": "1816",
+    "name": "IWorldEvent"
+  },
+  {
+    "index": "1817",
+    "name": "GameSet"
+  },
+  {
+    "index": "1818",
+    "name": "GWM_WorldEvent"
+  },
+  {
+    "index": "1819",
+    "name": "WorldEventMessageSystem"
+  },
+  {
+    "index": "1820",
+    "name": "WorldEventSystem"
+  },
+  {
+    "index": "1821",
+    "name": "CWorldEventSystem"
+  },
+  {
+    "index": "1823",
+    "name": "GameSetActiveCountData"
+  },
+  {
+    "index": "1824",
+    "name": "ItemGameSet"
+  },
+  {
+    "index": "1827",
+    "name": "GameSetDirectory"
+  },
+  {
+    "index": "1828",
+    "name": "GameSetRegistry"
+  },
+  {
+    "index": "1829",
+    "name": "GameSetSystem"
+  },
+  {
+    "index": "1832",
+    "name": "GWM_GameSet"
+  },
+  {
+    "index": "1833",
+    "name": "CGameSetSystem"
+  },
+  {
+    "index": "1835",
+    "name": "ExaminationGameSetDataGrabberBlob"
+  },
+  {
+    "index": "1836",
+    "name": "ExaminationGameSetMemberListDataGrabber"
+  },
+  {
+    "index": "1837",
+    "name": "ExaminationGameSetBonusListDataGrabber"
+  },
+  {
+    "index": "1840",
+    "name": "GlobalRegistry"
+  },
+  {
+    "index": "1841",
+    "name": "ExaminationSkillQualifierDataGrabber"
+  },
+  {
+    "index": "1842",
+    "name": "SetBoolEventCallback"
+  },
+  {
+    "index": "1843",
+    "name": "BoolEventBox"
+  },
+  {
+    "index": "1844",
+    "name": "TargetMarkControl"
+  },
+  {
+    "index": "1845",
+    "name": "TargetMark"
+  },
+  {
+    "index": "1846",
+    "name": "CTargetMarkingSystem"
+  },
+  {
+    "index": "1849",
+    "name": "GWM_TargetMarking"
+  },
+  {
+    "index": "1857",
+    "name": "TargetMarkRegistry"
+  },
+  {
+    "index": "1858",
+    "name": "GCM_WorldEvent"
+  },
+  {
+    "index": "1859",
+    "name": "WorldEventConditionQuestEvent"
+  },
+  {
+    "index": "1860",
+    "name": "AccomplishmentSet"
+  },
+  {
+    "index": "1861",
+    "name": "CTargetListenerSystem"
+  },
+  {
+    "index": "1862",
+    "name": "GCM_Listener"
+  },
+  {
+    "index": "1865",
+    "name": "AIThreatTransferEffect"
+  },
+  {
+    "index": "1866",
+    "name": "GCM_RaidShout"
+  },
+  {
+    "index": "1869",
+    "name": "ReadyCheckDialogCallback"
+  },
+  {
+    "index": "1870",
+    "name": "ExaminationAFKDataGrabber"
+  },
+  {
+    "index": "1873",
+    "name": "MasterLootDialogCallback"
+  },
+  {
+    "index": "1874",
+    "name": "QuestLockSystem"
+  },
+  {
+    "index": "1878",
+    "name": "CRelaySystem"
+  },
+  {
+    "index": "1879",
+    "name": "CTripwireSystem"
+  },
+  {
+    "index": "1880",
+    "name": "TimeOfDayIndicatorControl"
+  },
+  {
+    "index": "1881",
+    "name": "TimeOfDayData"
+  },
+  {
+    "index": "1882",
+    "name": "ChannelingFailedQuestEvent"
+  },
+  {
+    "index": "1884",
+    "name": "gmStringFilterSystem"
+  },
+  {
+    "index": "1886",
+    "name": "CPropertyHandlerSystem"
+  },
+  {
+    "index": "1887",
+    "name": "IntWorldEvent"
+  },
+  {
+    "index": "1889",
+    "name": "Faction"
+  },
+  {
+    "index": "1890",
+    "name": "Version_UpdateChatWindowTextTags"
+  },
+  {
+    "index": "1891",
+    "name": "ReputationControl"
+  },
+  {
+    "index": "1892",
+    "name": "IntEventBox"
+  },
+  {
+    "index": "1893",
+    "name": "DecIntEventCallback"
+  },
+  {
+    "index": "1894",
+    "name": "IncIntEventCallback"
+  },
+  {
+    "index": "1895",
+    "name": "ResetIntEventCallback"
+  },
+  {
+    "index": "1897",
+    "name": "CReputationSystem"
+  },
+  {
+    "index": "1898",
+    "name": "WorldEventCondition"
+  },
+  {
+    "index": "1899",
+    "name": "ReputationSystem"
+  },
+  {
+    "index": "1903",
+    "name": "DiscoveryDistanceControl"
+  },
+  {
+    "index": "1904",
+    "name": "DiscoveryDistancePair"
+  },
+  {
+    "index": "1905",
+    "name": "SessionFinishedQuestEvent"
+  },
+  {
+    "index": "1913",
+    "name": "ExaminationWorldEventProgressGrabber"
+  },
+  {
+    "index": "1914",
+    "name": "TrackingStateControl"
+  },
+  {
+    "index": "1915",
+    "name": "GWM_Reputation"
+  },
+  {
+    "index": "1916",
+    "name": "BarterSystem"
+  },
+  {
+    "index": "1917",
+    "name": "BarterTrophyListTemplate"
+  },
+  {
+    "index": "1918",
+    "name": "ReputationTrophyListTemplate"
+  },
+  {
+    "index": "1919",
+    "name": "GWM_SessionPlaySystem"
+  },
+  {
+    "index": "1924",
+    "name": "SessionPlaySystem"
+  },
+  {
+    "index": "1925",
+    "name": "SessionPlayControl"
+  },
+  {
+    "index": "1926",
+    "name": "CSessionPlaySystem"
+  },
+  {
+    "index": "1927",
+    "name": "CAltPlaySystem"
+  },
+  {
+    "index": "1928",
+    "name": "GCM_AltPlay"
+  },
+  {
+    "index": "1929",
+    "name": "GCM_SessionPlay"
+  },
+  {
+    "index": "1930",
+    "name": "AltPlaySession"
+  },
+  {
+    "index": "1931",
+    "name": "AltPlaySystem"
+  },
+  {
+    "index": "1932",
+    "name": "AltPlayerDesc"
+  },
+  {
+    "index": "1934",
+    "name": "GWM_AltPlaySystem"
+  },
+  {
+    "index": "1935",
+    "name": "AltPlaySessionDataAdaptor"
+  },
+  {
+    "index": "1936",
+    "name": "FactionAdaptor"
+  },
+  {
+    "index": "1937",
+    "name": "GCM_Barter"
+  },
+  {
+    "index": "1939",
+    "name": "GWM_Barter"
+  },
+  {
+    "index": "1940",
+    "name": "BarterMessageSystem"
+  },
+  {
+    "index": "1941",
+    "name": "CBarterSystem"
+  },
+  {
+    "index": "1942",
+    "name": "BarterItemStructAdapter"
+  },
+  {
+    "index": "1943",
+    "name": "BarterProfile"
+  },
+  {
+    "index": "1944",
+    "name": "GCM_Reputation"
+  },
+  {
+    "index": "1945",
+    "name": "ExaminationWorldEventAdminGrabber"
+  },
+  {
+    "index": "1946",
+    "name": "ExaminationFactionNameDataGrabber"
+  },
+  {
+    "index": "1947",
+    "name": "BankSlotData"
+  },
+  {
+    "index": "1949",
+    "name": "Version_InitializeFactions"
+  },
+  {
+    "index": "1950",
+    "name": "ExaminationItemSummoneeMaterialCostDataGrabber"
+  },
+  {
+    "index": "1951",
+    "name": "ExaminationItemSummonerMaterialCostDataGrabber"
+  },
+  {
+    "index": "1952",
+    "name": "HouseList"
+  },
+  {
+    "index": "1953",
+    "name": "HousingSystem"
+  },
+  {
+    "index": "1954",
+    "name": "NeighbourhoodDirectory"
+  },
+  {
+    "index": "1955",
+    "name": "NeighborhoodGate"
+  },
+  {
+    "index": "1956",
+    "name": "NeighborhoodTemplate"
+  },
+  {
+    "index": "1958",
+    "name": "CHousingSystem"
+  },
+  {
+    "index": "1959",
+    "name": "GWM_HousingSystem"
+  },
+  {
+    "index": "1960",
+    "name": "NeighborhoodDataAdaptor"
+  },
+  {
+    "index": "1961",
+    "name": "NeighborhoodGateDataAdaptor"
+  },
+  {
+    "index": "1962",
+    "name": "ValidationSystem"
+  },
+  {
+    "index": "1963",
+    "name": "ExaminationWorldEventDescriptionGrabber"
+  },
+  {
+    "index": "1964",
+    "name": "HouseKeeper"
+  },
+  {
+    "index": "1965",
+    "name": "HouseInfo"
+  },
+  {
+    "index": "1966",
+    "name": "WorldEventInfo"
+  },
+  {
+    "index": "1967",
+    "name": "AvailableHouseDataAdaptor"
+  },
+  {
+    "index": "1968",
+    "name": "AvailableNeighborhoodDataAdaptor"
+  },
+  {
+    "index": "1969",
+    "name": "HousingPurchaseDataAdaptor"
+  },
+  {
+    "index": "1971",
+    "name": "LAPriorityQueue"
+  },
+  {
+    "index": "1972",
+    "name": "LLPriorityQueue"
+  },
+  {
+    "index": "1974",
+    "name": "AAPriorityQueue"
+  },
+  {
+    "index": "1975",
+    "name": "ALPriorityQueue"
+  },
+  {
+    "index": "1977",
+    "name": "BillingSystem"
+  },
+  {
+    "index": "1978",
+    "name": "AggroPingControl"
+  },
+  {
+    "index": "1980",
+    "name": "HousePermissionsDataAdaptor"
+  },
+  {
+    "index": "1981",
+    "name": "HousePermissionsModificationDataAdaptor"
+  },
+  {
+    "index": "1982",
+    "name": "MovieFile"
+  },
+  {
+    "index": "1983",
+    "name": "MovieLibraryControl"
+  },
+  {
+    "index": "1984",
+    "name": "PlayerHousePermissionInfo"
+  },
+  {
+    "index": "1985",
+    "name": "MovieLibrarySystem"
+  },
+  {
+    "index": "1987",
+    "name": "NeighborhoodGateUsageAction"
+  },
+  {
+    "index": "1988",
+    "name": "NeighborhoodGateUsageBlob"
+  },
+  {
+    "index": "1989",
+    "name": "Hook"
+  },
+  {
+    "index": "1990",
+    "name": "HouseUpkeepDataAdaptor"
+  },
+  {
+    "index": "1991",
+    "name": "GloryDamageContributorInfo"
+  },
+  {
+    "index": "1992",
+    "name": "SkillChannelingProgressController"
+  },
+  {
+    "index": "1994",
+    "name": "HookInfo"
+  },
+  {
+    "index": "1995",
+    "name": "HousingLandmark"
+  },
+  {
+    "index": "1996",
+    "name": "CurrencyControl"
+  },
+  {
+    "index": "1997",
+    "name": "PELockCallback"
+  },
+  {
+    "index": "1998",
+    "name": "RandomIntEventCallback"
+  },
+  {
+    "index": "1999",
+    "name": "HousingHookUsageAction"
+  },
+  {
+    "index": "2001",
+    "name": "SpeciesLevelLootTable"
+  },
+  {
+    "index": "2004",
+    "name": "AttributeSystem"
+  },
+  {
+    "index": "2005",
+    "name": "CHouseKeeper"
+  },
+  {
+    "index": "2007",
+    "name": "IHouseKeeper"
+  },
+  {
+    "index": "2008",
+    "name": "VMDataHandler"
+  },
+  {
+    "index": "2010",
+    "name": "VMDataTest"
+  },
+  {
+    "index": "2014",
+    "name": "MusicManager"
+  },
+  {
+    "index": "2015",
+    "name": "ExaminationEffectResistanceDataGrabber"
+  },
+  {
+    "index": "2017",
+    "name": "BaseHouseKeeper"
+  },
+  {
+    "index": "2024",
+    "name": "PEShowNPCVitalsCallback"
+  },
+  {
+    "index": "2025",
+    "name": "StorageKeeper"
+  },
+  {
+    "index": "2026",
+    "name": "HousingDecorationItemUsageAction"
+  },
+  {
+    "index": "2027",
+    "name": "AnalyzeSkillEffect"
+  },
+  {
+    "index": "2028",
+    "name": "GCM_Combat"
+  },
+  {
+    "index": "2029",
+    "name": "StorageKeeperUsageAction"
+  },
+  {
+    "index": "2030",
+    "name": "PEHideNPCVitalsCallback"
+  },
+  {
+    "index": "2031",
+    "name": "HousingEscrowDataAdaptor"
+  },
+  {
+    "index": "2032",
+    "name": "HousingEscrowEntryDataAdaptor"
+  },
+  {
+    "index": "2034",
+    "name": "NeighborhoodInfo"
+  },
+  {
+    "index": "2035",
+    "name": "NeighborhoodTemplateRolloutInfo"
+  },
+  {
+    "index": "2036",
+    "name": "UserChatChannel"
+  },
+  {
+    "index": "2038",
+    "name": "UserChatChannelSlots"
+  },
+  {
+    "index": "2046",
+    "name": "AIPetDispelByChannelEffect"
+  },
+  {
+    "index": "2048",
+    "name": "GWM_MountSystem"
+  },
+  {
+    "index": "2049",
+    "name": "HousingDecorationDataAdaptor"
+  },
+  {
+    "index": "2050",
+    "name": "HousingDecorationEntryDataAdaptor"
+  },
+  {
+    "index": "2051",
+    "name": "HousingPurchaseNeighborhoodDataAdaptor"
+  },
+  {
+    "index": "2052",
+    "name": "MusicNoteEventChunk"
+  },
+  {
+    "index": "2053",
+    "name": "ExaminationSummoningItemAreaRestrictionDataGrabber"
+  },
+  {
+    "index": "2054",
+    "name": "HousingForSaleSignUsageAction"
+  },
+  {
+    "index": "2063",
+    "name": "RandomEffect"
+  },
+  {
+    "index": "2064",
+    "name": "RandomEffectData"
+  },
+  {
+    "index": "2065",
+    "name": "ClothingAppearance"
+  },
+  {
+    "index": "2070",
+    "name": "OutfitData"
+  },
+  {
+    "index": "2071",
+    "name": "OutfitRegistry"
+  },
+  {
+    "index": "2073",
+    "name": "OutfitSystem"
+  },
+  {
+    "index": "2074",
+    "name": "Outfit"
+  },
+  {
+    "index": "2075",
+    "name": "GWM_OutfitSystem"
+  },
+  {
+    "index": "2076",
+    "name": "AntiAddictionSystem"
+  },
+  {
+    "index": "2078",
+    "name": "TraitGameSet"
+  },
+  {
+    "index": "2080",
+    "name": "SendMailEffect"
+  },
+  {
+    "index": "2082",
+    "name": "GCM_OutfitSystem"
+  },
+  {
+    "index": "2084",
+    "name": "Version_UpdateQuestReputation"
+  },
+  {
+    "index": "2085",
+    "name": "OutfitControl"
+  },
+  {
+    "index": "2088",
+    "name": "Version_UpdateBarterReputation"
+  },
+  {
+    "index": "2091",
+    "name": "LockAndKeySystem"
+  },
+  {
+    "index": "2097",
+    "name": "Activator"
+  },
+  {
+    "index": "2099",
+    "name": "ReportSpammerConfirmationDialogCallback"
+  },
+  {
+    "index": "2100",
+    "name": "AppearanceModControl"
+  },
+  {
+    "index": "2102",
+    "name": "AppearanceModSystem"
+  },
+  {
+    "index": "2103",
+    "name": "CAppearanceModSystem"
+  },
+  {
+    "index": "2104",
+    "name": "GCM_AppearanceMod"
+  },
+  {
+    "index": "2106",
+    "name": "GWM_AppearanceModSystem"
+  },
+  {
+    "index": "2107",
+    "name": "gmAppearanceSystem"
+  },
+  {
+    "index": "2108",
+    "name": "Version_ReInitializeDamageFloatyText"
+  },
+  {
+    "index": "2110",
+    "name": "NoUsageAction"
+  },
+  {
+    "index": "2111",
+    "name": "EntityNotificationSystem"
+  },
+  {
+    "index": "2113",
+    "name": "Version_RebuildAuctionBidList"
+  },
+  {
+    "index": "2115",
+    "name": "ItemAdvancementSystem"
+  },
+  {
+    "index": "2117",
+    "name": "ItemAdvancementRegistry"
+  },
+  {
+    "index": "2119",
+    "name": "QuestArc"
+  },
+  {
+    "index": "2120",
+    "name": "QuestArcDirectory"
+  },
+  {
+    "index": "2121",
+    "name": "GWM_ItemAdvancement"
+  },
+  {
+    "index": "2122",
+    "name": "CItemAdvancementSystem"
+  },
+  {
+    "index": "2123",
+    "name": "ItemAdvancementMessageSystem"
+  },
+  {
+    "index": "2124",
+    "name": "HobbySystem"
+  },
+  {
+    "index": "2126",
+    "name": "CHobbySystem"
+  },
+  {
+    "index": "2127",
+    "name": "WorldEventLevelLootTableTemplate"
+  },
+  {
+    "index": "2128",
+    "name": "WorldEventLootTableDirectory"
+  },
+  {
+    "index": "2129",
+    "name": "ExaminationTraitSlottedDataGrabber"
+  },
+  {
+    "index": "2130",
+    "name": "TravelMode"
+  },
+  {
+    "index": "2131",
+    "name": "HobbyProfile"
+  },
+  {
+    "index": "2132",
+    "name": "ExaminationTraitNatureDataGrabber"
+  },
+  {
+    "index": "2134",
+    "name": "ItemAdvancementProgressionList"
+  },
+  {
+    "index": "2136",
+    "name": "HobbyRegistry"
+  },
+  {
+    "index": "2137",
+    "name": "GWM_HobbySystem"
+  },
+  {
+    "index": "2138",
+    "name": "ItemAdvancementProgressionTable"
+  },
+  {
+    "index": "2139",
+    "name": "ItemAdvancementProgressionGroup"
+  },
+  {
+    "index": "2142",
+    "name": "PropertyCostProgression"
+  },
+  {
+    "index": "2144",
+    "name": "CLCache"
+  },
+  {
+    "index": "2145",
+    "name": "PipIntervalData"
+  },
+  {
+    "index": "2146",
+    "name": "IHobbyPolicy"
+  },
+  {
+    "index": "2147",
+    "name": "SharedEventControl"
+  },
+  {
+    "index": "2150",
+    "name": "GCM_ItemAdvancement"
+  },
+  {
+    "index": "2151",
+    "name": "DownloadManager"
+  },
+  {
+    "index": "2152",
+    "name": "ItemAdvancementControl"
+  },
+  {
+    "index": "2153",
+    "name": "HobbyRewardProfile"
+  },
+  {
+    "index": "2154",
+    "name": "HobbyRewardEntry"
+  },
+  {
+    "index": "2155",
+    "name": "FishingHobbyPolicy"
+  },
+  {
+    "index": "2156",
+    "name": "ReactiveResistCategoryEffect"
+  },
+  {
+    "index": "2157",
+    "name": "DoNothingHobbyPolicy"
+  },
+  {
+    "index": "2160",
+    "name": "ItemAdvancementProgressionInfo"
+  },
+  {
+    "index": "2161",
+    "name": "ZoneEventControl"
+  },
+  {
+    "index": "2162",
+    "name": "GCM_Hobby"
+  },
+  {
+    "index": "2163",
+    "name": "ResourceSetQuestEvent"
+  },
+  {
+    "index": "2164",
+    "name": "Version_OutfitSlotVisibility"
+  },
+  {
+    "index": "2165",
+    "name": "LiquidWorldObjectFilter"
+  },
+  {
+    "index": "2166",
+    "name": "Simple_RaycastReport"
+  },
+  {
+    "index": "2168",
+    "name": "ProgressionControl"
+  },
+  {
+    "index": "2174",
+    "name": "GuildConfirmationDialogCallback"
+  },
+  {
+    "index": "2176",
+    "name": "GCM_Propel"
+  },
+  {
+    "index": "2177",
+    "name": "NameRuleProperties"
+  },
+  {
+    "index": "2178",
+    "name": "NameRuleSystem"
+  },
+  {
+    "index": "2180",
+    "name": "HobbyControl"
+  },
+  {
+    "index": "2181",
+    "name": "HobbyTitleEntry"
+  },
+  {
+    "index": "2183",
+    "name": "IPropertyResponseCallback"
+  },
+  {
+    "index": "2184",
+    "name": "PropertyResponseMap"
+  },
+  {
+    "index": "2185",
+    "name": "GWM_Propel"
+  },
+  {
+    "index": "2187",
+    "name": "PropertyResponseSystem"
+  },
+  {
+    "index": "2188",
+    "name": "CPropelSystem"
+  },
+  {
+    "index": "2191",
+    "name": "Version_DiscoverTravelDestinations"
+  },
+  {
+    "index": "2192",
+    "name": "WorldEventResponseMap"
+  },
+  {
+    "index": "2193",
+    "name": "AIHintPropertyResponseCallback"
+  },
+  {
+    "index": "2194",
+    "name": "NameRulePropertyControl"
+  },
+  {
+    "index": "2197",
+    "name": "BoolPropertyResponseCallback"
+  },
+  {
+    "index": "2199",
+    "name": "GeneratorPropertyResponseCallback"
+  },
+  {
+    "index": "2200",
+    "name": "HotspotPropertyResponseCallback"
+  },
+  {
+    "index": "2201",
+    "name": "DoorPropertyResponseCallback"
+  },
+  {
+    "index": "2202",
+    "name": "ActivatorPropertyResponseCallback"
+  },
+  {
+    "index": "2204",
+    "name": "ItemAdvancementReforgeTable"
+  },
+  {
+    "index": "2205",
+    "name": "RelayPropertyResponseCallback"
+  },
+  {
+    "index": "2206",
+    "name": "TripwirePropertyResponseCallback"
+  },
+  {
+    "index": "2207",
+    "name": "LandmarkSystem"
+  },
+  {
+    "index": "2208",
+    "name": "SnapToGroundInfo"
+  },
+  {
+    "index": "2210",
+    "name": "ShowUserAnimationUsageAction"
+  },
+  {
+    "index": "2219",
+    "name": "Relic"
+  },
+  {
+    "index": "2225",
+    "name": "DramaPropertyResponseCallback"
+  },
+  {
+    "index": "2226",
+    "name": "HobbyItemQuestEvent"
+  },
+  {
+    "index": "2227",
+    "name": "RunicLevelLootTable"
+  },
+  {
+    "index": "2229",
+    "name": "RunicListTemplate"
+  },
+  {
+    "index": "2231",
+    "name": "AIZeroOutThreatEffect"
+  },
+  {
+    "index": "2233",
+    "name": "AIZeroOutThreatForTargetEffect"
+  },
+  {
+    "index": "2239",
+    "name": "RunicTreasureGroup"
+  },
+  {
+    "index": "2244",
+    "name": "AccountTitleBestowEntry"
+  },
+  {
+    "index": "2245",
+    "name": "Version_AccountTitleBestow"
+  },
+  {
+    "index": "2246",
+    "name": "NPCComment"
+  },
+  {
+    "index": "2247",
+    "name": "NPCCommentArray"
+  },
+  {
+    "index": "2248",
+    "name": "NPCCommentSystem"
+  },
+  {
+    "index": "2250",
+    "name": "GCM_NPCComment"
+  },
+  {
+    "index": "2251",
+    "name": "GWM_NPCComment"
+  },
+  {
+    "index": "2252",
+    "name": "CNPCCommentSystem"
+  },
+  {
+    "index": "2253",
+    "name": "ExpirationEffectEntry"
+  },
+  {
+    "index": "2254",
+    "name": "ExpirationEffectRegistry"
+  },
+  {
+    "index": "2258",
+    "name": "SkillListenerEffect"
+  },
+  {
+    "index": "2259",
+    "name": "ThreateningSkillHintEffect"
+  },
+  {
+    "index": "2263",
+    "name": "PEBillboardCallback"
+  },
+  {
+    "index": "2264",
+    "name": "PEPlayVOCallback"
+  },
+  {
+    "index": "2265",
+    "name": "ItemAdvancementQuestEvent"
+  },
+  {
+    "index": "2266",
+    "name": "CCombatStateSystem"
+  },
+  {
+    "index": "2268",
+    "name": "GambitSystem"
+  },
+  {
+    "index": "2269",
+    "name": "GambitModEffect"
+  },
+  {
+    "index": "2271",
+    "name": "GCM_Gambit"
+  },
+  {
+    "index": "2272",
+    "name": "CGambitSystem"
+  },
+  {
+    "index": "2274",
+    "name": "ExaminationRecipeCooldownDataGrabber"
+  },
+  {
+    "index": "2275",
+    "name": "GambitClassInfo"
+  },
+  {
+    "index": "2276",
+    "name": "GambitControl"
+  },
+  {
+    "index": "2278",
+    "name": "CraftGuild"
+  },
+  {
+    "index": "2280",
+    "name": "GCM_GameSet"
+  },
+  {
+    "index": "2281",
+    "name": "InstantThreatEffect"
+  },
+  {
+    "index": "2282",
+    "name": "ThreatOverTimeEffect"
+  },
+  {
+    "index": "2283",
+    "name": "CraftGuildDataAdaptor"
+  },
+  {
+    "index": "2284",
+    "name": "ProgressionGatingSystem"
+  },
+  {
+    "index": "2287",
+    "name": "AdvanceableItemFilter"
+  },
+  {
+    "index": "2289",
+    "name": "ItemAdvancementBindDialogCallback"
+  },
+  {
+    "index": "2290",
+    "name": "ExaminationSkillAppliedGambitDataGrabber"
+  },
+  {
+    "index": "2291",
+    "name": "ExaminationSkillRequiredGambitDataGrabber"
+  },
+  {
+    "index": "2292",
+    "name": "ExaminationSkillCostsPipDataGrabber"
+  },
+  {
+    "index": "2293",
+    "name": "ExaminationSkillRequiredPipDataGrabber"
+  },
+  {
+    "index": "2296",
+    "name": "ProgressionGatingControl"
+  },
+  {
+    "index": "2300",
+    "name": "RunicCombinationControl"
+  },
+  {
+    "index": "2301",
+    "name": "RunicCombinationInfo"
+  },
+  {
+    "index": "2308",
+    "name": "ExaminationSkillSpellcraftModDataGrabber"
+  },
+  {
+    "index": "2312",
+    "name": "GWM_AccountSystem"
+  },
+  {
+    "index": "2313",
+    "name": "CAccountSystem"
+  },
+  {
+    "index": "2314",
+    "name": "AccountSystem"
+  },
+  {
+    "index": "2315",
+    "name": "QuestItemDirectory"
+  },
+  {
+    "index": "2316",
+    "name": "QuestItemRegionDirectory"
+  },
+  {
+    "index": "2317",
+    "name": "EffectListenerFilter"
+  },
+  {
+    "index": "2318",
+    "name": "IEffectRecordFilter"
+  },
+  {
+    "index": "2321",
+    "name": "ItemAdvancementLevelInfo"
+  },
+  {
+    "index": "2322",
+    "name": "IALevelInfo"
+  },
+  {
+    "index": "2323",
+    "name": "CharacterSheetManager"
+  },
+  {
+    "index": "2327",
+    "name": "ItemAdvancementReforgeSlotInfo"
+  },
+  {
+    "index": "2328",
+    "name": "PopulationTrackingManager"
+  },
+  {
+    "index": "2329",
+    "name": "ExaminationTraitSetRequirementsDataGrabber"
+  },
+  {
+    "index": "2335",
+    "name": "PopulationTrackingSystem"
+  },
+  {
+    "index": "2337",
+    "name": "IAItemRegistryInfo"
+  },
+  {
+    "index": "2338",
+    "name": "IATitle"
+  },
+  {
+    "index": "2339",
+    "name": "CPopulationTrackingSystem"
+  },
+  {
+    "index": "2340",
+    "name": "IATitleUsageAction"
+  },
+  {
+    "index": "2342",
+    "name": "IATitleUsageBlob"
+  },
+  {
+    "index": "2345",
+    "name": "IATargetUsageConfirmation"
+  },
+  {
+    "index": "2346",
+    "name": "GRSControl"
+  },
+  {
+    "index": "2350",
+    "name": "CMEOInventorySystem"
+  },
+  {
+    "index": "2351",
+    "name": "Version_UpdateMonsterPlayerLevel"
+  },
+  {
+    "index": "2352",
+    "name": "IntPropertyResponseCallback"
+  },
+  {
+    "index": "2353",
+    "name": "EffectPropertyResponseCallback"
+  },
+  {
+    "index": "2354",
+    "name": "ForwardedPropertyListEntry"
+  },
+  {
+    "index": "2365",
+    "name": "HasActiveTraitCallback"
+  },
+  {
+    "index": "2368",
+    "name": "IAXPUsageAction"
+  },
+  {
+    "index": "2369",
+    "name": "IAXPUsageBlob"
+  },
+  {
+    "index": "2370",
+    "name": "IALPResetUsageAction"
+  },
+  {
+    "index": "2372",
+    "name": "BarterTreasureGroupProfile"
+  },
+  {
+    "index": "2375",
+    "name": "Version_UpdateChatWindowTextType"
+  },
+  {
+    "index": "2376",
+    "name": "ExaminationLegacyListDataGrabber"
+  },
+  {
+    "index": "2377",
+    "name": "ExaminationLegacyStruct"
+  },
+  {
+    "index": "2378",
+    "name": "ExaminationReforgeDataGrabber"
+  },
+  {
+    "index": "2379",
+    "name": "ExaminationIALegacyDescriptionDataGrabber"
+  },
+  {
+    "index": "2381",
+    "name": "WeaponStrikeModifierData"
+  },
+  {
+    "index": "2382",
+    "name": "ExaminationLegendaryPointsDataGrabber"
+  },
+  {
+    "index": "2384",
+    "name": "ExaminationItemTitleDataGrabber"
+  },
+  {
+    "index": "2385",
+    "name": "ExaminationItemXPBarDataGrabber"
+  },
+  {
+    "index": "2386",
+    "name": "ExaminationSkillMaxRangeDataGrabber"
+  },
+  {
+    "index": "2387",
+    "name": "ExaminationRunicListDataGrabber"
+  },
+  {
+    "index": "2388",
+    "name": "AdvancementLineEntry"
+  },
+  {
+    "index": "2389",
+    "name": "IAdvancementLine"
+  },
+  {
+    "index": "2390",
+    "name": "SkillAdvancementLine"
+  },
+  {
+    "index": "2391",
+    "name": "AdvancementLineDirectory"
+  },
+  {
+    "index": "2392",
+    "name": "GWM_ShortcutSystem"
+  },
+  {
+    "index": "2393",
+    "name": "CShortcutSystem"
+  },
+  {
+    "index": "2395",
+    "name": "RegionControl"
+  },
+  {
+    "index": "2397",
+    "name": "IAItemRegistryInfoAdapter"
+  },
+  {
+    "index": "2398",
+    "name": "ExaminationIAIdentifyHintDataGrabber"
+  },
+  {
+    "index": "2399",
+    "name": "TraitAdvancementLine"
+  },
+  {
+    "index": "2400",
+    "name": "ExaminationIALegacyRankListBlob"
+  },
+  {
+    "index": "2401",
+    "name": "ExaminationIALegacyRankListDataGrabber"
+  },
+  {
+    "index": "2402",
+    "name": "StringInfoProgression"
+  },
+  {
+    "index": "2403",
+    "name": "ConstModDescOverride"
+  },
+  {
+    "index": "2404",
+    "name": "IModDescOverride"
+  },
+  {
+    "index": "2405",
+    "name": "ProgressionModDescOverride"
+  },
+  {
+    "index": "2406",
+    "name": "ExaminationSkillCastingTimeDataGrabber"
+  },
+  {
+    "index": "2407",
+    "name": "RepositoryManager"
+  },
+  {
+    "index": "2409",
+    "name": "Version_InvokeCraftProficiencyTutorials"
+  },
+  {
+    "index": "2410",
+    "name": "ExaminationMaxQuestDataGrabber"
+  },
+  {
+    "index": "2413",
+    "name": "GWM_RepositorySystem"
+  },
+  {
+    "index": "2415",
+    "name": "CRepositorySystem"
+  },
+  {
+    "index": "2416",
+    "name": "RepositorySystem"
+  },
+  {
+    "index": "2418",
+    "name": "IAESelector"
+  },
+  {
+    "index": "2419",
+    "name": "IAECommand"
+  },
+  {
+    "index": "2420",
+    "name": "IAECommandParams"
+  },
+  {
+    "index": "2421",
+    "name": "AECDoNothing"
+  },
+  {
+    "index": "2422",
+    "name": "IAESAreaSelector"
+  },
+  {
+    "index": "2424",
+    "name": "AECRunScript"
+  },
+  {
+    "index": "2425",
+    "name": "AESGameplayAreaSelector"
+  },
+  {
+    "index": "2426",
+    "name": "AECGrantTrophy"
+  },
+  {
+    "index": "2427",
+    "name": "PostprocUtils"
+  },
+  {
+    "index": "2429",
+    "name": "IALegendaryPointInfo"
+  },
+  {
+    "index": "2430",
+    "name": "Version_QuestTokens"
+  },
+  {
+    "index": "2431",
+    "name": "ExaminationDPSRankListDataGrabber"
+  },
+  {
+    "index": "2432",
+    "name": "LRandomSelectionTable"
+  },
+  {
+    "index": "2433",
+    "name": "ExaminationItemTitleTierDataGrabber"
+  },
+  {
+    "index": "2434",
+    "name": "GCM_Usage"
+  },
+  {
+    "index": "2435",
+    "name": "QuestItemFilter"
+  },
+  {
+    "index": "2437",
+    "name": "AECPortalStorm"
+  },
+  {
+    "index": "2438",
+    "name": "Version_IALegacyEffects"
+  },
+  {
+    "index": "2439",
+    "name": "CMailSystem"
+  },
+  {
+    "index": "2441",
+    "name": "ReviveOnDefeatEffect"
+  },
+  {
+    "index": "2448",
+    "name": "GrantCraftXPEffect"
+  },
+  {
+    "index": "2455",
+    "name": "Version_IAClassItems"
+  },
+  {
+    "index": "2459",
+    "name": "MountEffect"
+  },
+  {
+    "index": "2461",
+    "name": "QuestEventTargetLocationControl"
+  },
+  {
+    "index": "2462",
+    "name": "MountCleanupCallback"
+  },
+  {
+    "index": "2464",
+    "name": "MountData"
+  },
+  {
+    "index": "2469",
+    "name": "CMountSystem"
+  },
+  {
+    "index": "2472",
+    "name": "DismountedQuestEvent"
+  },
+  {
+    "index": "2475",
+    "name": "NPCBehavior_Patrol_StartIfValid_Callback"
+  },
+  {
+    "index": "2476",
+    "name": "GCM_MountSystem"
+  },
+  {
+    "index": "2477",
+    "name": "DefeatBlockSelfReviveEffect"
+  },
+  {
+    "index": "2478",
+    "name": "QuestEvent_LocationAdaptor"
+  },
+  {
+    "index": "2479",
+    "name": "QuestEventTargetLocationControl_DataAdaptor"
+  },
+  {
+    "index": "2480",
+    "name": "ITeaRpc"
+  },
+  {
+    "index": "2486",
+    "name": "TeaWslEvent"
+  },
+  {
+    "index": "2490",
+    "name": "ExaminationWeaponPropertyModDataGrabber"
+  },
+  {
+    "index": "2491",
+    "name": "GWM_Tea"
+  },
+  {
+    "index": "2493",
+    "name": "CTeaMgr"
+  },
+  {
+    "index": "2496",
+    "name": "TeaPlayerPathing"
+  },
+  {
+    "index": "2497",
+    "name": "PetRenameConfirmationDialogCallback"
+  },
+  {
+    "index": "2503",
+    "name": "MountItemUsageAction"
+  },
+  {
+    "index": "2504",
+    "name": "UsageConfirmationDialogCallback"
+  },
+  {
+    "index": "2506",
+    "name": "EnumeratedArbitraryBitfield"
+  },
+  {
+    "index": "2507",
+    "name": "ContentLayerPosition"
+  },
+  {
+    "index": "2515",
+    "name": "SkirmishControl"
+  },
+  {
+    "index": "2516",
+    "name": "WorldEventGenerator"
+  },
+  {
+    "index": "2517",
+    "name": "CalculatePropertyValueCallback"
+  },
+  {
+    "index": "2518",
+    "name": "MapPropertyValueCallback"
+  },
+  {
+    "index": "2519",
+    "name": "DataIDProgression"
+  },
+  {
+    "index": "2520",
+    "name": "CompletedQuestRecord"
+  },
+  {
+    "index": "2521",
+    "name": "IQuestRecord"
+  },
+  {
+    "index": "2524",
+    "name": "RepeatableCompletedQuestRecord"
+  },
+  {
+    "index": "2525",
+    "name": "SkirmishTrait"
+  },
+  {
+    "index": "2532",
+    "name": "WebStoreAccountItem"
+  },
+  {
+    "index": "2533",
+    "name": "WebStoreItem"
+  },
+  {
+    "index": "2534",
+    "name": "WebStoreItemDirectory"
+  },
+  {
+    "index": "2535",
+    "name": "WebStoreSystem"
+  },
+  {
+    "index": "2536",
+    "name": "CWebStoreSystem"
+  },
+  {
+    "index": "2537",
+    "name": "AwardSkirmishPointsCallback"
+  },
+  {
+    "index": "2539",
+    "name": "GWM_WebStoreSystem"
+  },
+  {
+    "index": "2540",
+    "name": "GWM_Skirmish"
+  },
+  {
+    "index": "2541",
+    "name": "WebStoreInventoryItem"
+  },
+  {
+    "index": "2542",
+    "name": "Version_IAResetItemsForClass"
+  },
+  {
+    "index": "2543",
+    "name": "PopulationDurationTableEntry"
+  },
+  {
+    "index": "2544",
+    "name": "PopulationControlEffect"
+  },
+  {
+    "index": "2545",
+    "name": "CharacterSlotControl"
+  },
+  {
+    "index": "2546",
+    "name": "CharacterSlotSystem"
+  },
+  {
+    "index": "2552",
+    "name": "AdminUtils"
+  },
+  {
+    "index": "2555",
+    "name": "CCharacterSlotSystem"
+  },
+  {
+    "index": "2559",
+    "name": "FearEffect"
+  },
+  {
+    "index": "2560",
+    "name": "BankRepositorySystem"
+  },
+  {
+    "index": "2562",
+    "name": "CBankRepositorySystem"
+  },
+  {
+    "index": "2564",
+    "name": "GWM_BankRepositorySystem"
+  },
+  {
+    "index": "2566",
+    "name": "QuestGuideData"
+  },
+  {
+    "index": "2567",
+    "name": "BankRepositoryDataAdaptor"
+  },
+  {
+    "index": "2570",
+    "name": "GCM_BankRepository"
+  },
+  {
+    "index": "2574",
+    "name": "gmMathUtils"
+  },
+  {
+    "index": "2581",
+    "name": "BankRepositoryControl"
+  },
+  {
+    "index": "2582",
+    "name": "BankBillingTokenEntry"
+  },
+  {
+    "index": "2583",
+    "name": "BitUtils"
+  },
+  {
+    "index": "2586",
+    "name": "GCM_Webstore"
+  },
+  {
+    "index": "2588",
+    "name": "Version_ItemLevelRequirements"
+  },
+  {
+    "index": "2589",
+    "name": "FactionLevelQuestEvent"
+  },
+  {
+    "index": "2592",
+    "name": "PatrolBox"
+  },
+  {
+    "index": "2594",
+    "name": "NPCBehavior_Patrol_QueryForPatrol_Callback"
+  },
+  {
+    "index": "2595",
+    "name": "SetPatrolBoxCallback"
+  },
+  {
+    "index": "2602",
+    "name": "WorldJoinSystem"
+  },
+  {
+    "index": "2603",
+    "name": "CWorldJoinSystem"
+  },
+  {
+    "index": "2604",
+    "name": "GWM_WorldJoinSystem"
+  },
+  {
+    "index": "2605",
+    "name": "GCM_WorldJoin"
+  },
+  {
+    "index": "2606",
+    "name": "WorldJoinControl"
+  },
+  {
+    "index": "2607",
+    "name": "DismountEffect"
+  },
+  {
+    "index": "2617",
+    "name": "WJInvitation"
+  },
+  {
+    "index": "2618",
+    "name": "WeaponDamageVarianceTable"
+  },
+  {
+    "index": "2619",
+    "name": "WorldJoinManager"
+  },
+  {
+    "index": "2620",
+    "name": "WorldJoinRequest"
+  },
+  {
+    "index": "2621",
+    "name": "TraitSlottedCallback"
+  },
+  {
+    "index": "2622",
+    "name": "IPropertyLogicCallback"
+  },
+  {
+    "index": "2623",
+    "name": "PropertyLogic"
+  },
+  {
+    "index": "2624",
+    "name": "ExaminationTraitPreRequisitesDataGrabber"
+  },
+  {
+    "index": "2626",
+    "name": "WardrobeSystem"
+  },
+  {
+    "index": "2627",
+    "name": "CWardrobeSystem"
+  },
+  {
+    "index": "2628",
+    "name": "PESetupParams"
+  },
+  {
+    "index": "2629",
+    "name": "GWM_WardrobeSystem"
+  },
+  {
+    "index": "2630",
+    "name": "GCM_Wardrobe"
+  },
+  {
+    "index": "2631",
+    "name": "IAReplaceLegacyUsageAction"
+  },
+  {
+    "index": "2633",
+    "name": "ExaminationTraitRerequisiteSlottedCallback"
+  },
+  {
+    "index": "2634",
+    "name": "CraftingParams"
+  },
+  {
+    "index": "2635",
+    "name": "CraftMultiOutputStruct"
+  },
+  {
+    "index": "2637",
+    "name": "SkirmishStatRepositorySystem"
+  },
+  {
+    "index": "2639",
+    "name": "WardrobeControl"
+  },
+  {
+    "index": "2640",
+    "name": "IncrementSkirmishStatCallback"
+  },
+  {
+    "index": "2641",
+    "name": "GCM_Skirmish"
+  },
+  {
+    "index": "2642",
+    "name": "CSkirmishSystem"
+  },
+  {
+    "index": "2643",
+    "name": "TeleportedQuestEvent"
+  },
+  {
+    "index": "2649",
+    "name": "IAUpgradeLegacyUsageAction"
+  },
+  {
+    "index": "2651",
+    "name": "SkirmishEncounterTemplate"
+  },
+  {
+    "index": "2653",
+    "name": "ClassResistControl"
+  },
+  {
+    "index": "2660",
+    "name": "UserPluginManager"
+  },
+  {
+    "index": "2662",
+    "name": "Version_UpdateGameplayOptionsProfileProperties"
+  },
+  {
+    "index": "2663",
+    "name": "IEffectSorter"
+  },
+  {
+    "index": "2664",
+    "name": "EffectSorter_Default"
+  },
+  {
+    "index": "2665",
+    "name": "EffectSorter_OldestOnly"
+  },
+  {
+    "index": "2666",
+    "name": "WardrobeRemoveItemDialogCallback"
+  },
+  {
+    "index": "2668",
+    "name": "SkirmishSystem"
+  },
+  {
+    "index": "2669",
+    "name": "SkillTrainerProfile"
+  },
+  {
+    "index": "2670",
+    "name": "IATargettedUsageAction"
+  },
+  {
+    "index": "2675",
+    "name": "WardrobeUseDyeDialogCallback"
+  },
+  {
+    "index": "2676",
+    "name": "PetForceAttackEffect"
+  },
+  {
+    "index": "2678",
+    "name": "IAPointTable"
+  },
+  {
+    "index": "2679",
+    "name": "Version_V2Book9IAItems"
+  },
+  {
+    "index": "2681",
+    "name": "IAIncreaseMaxLevelUsageAction"
+  },
+  {
+    "index": "2685",
+    "name": "CSelectionSystem"
+  },
+  {
+    "index": "2696",
+    "name": "PrivateEncounterQuestBestowalData"
+  },
+  {
+    "index": "2701",
+    "name": "CombatPropertyModControl"
+  },
+  {
+    "index": "2703",
+    "name": "RequiredCombatPropertyModLookup"
+  },
+  {
+    "index": "2708",
+    "name": "PVPControl"
+  },
+  {
+    "index": "2715",
+    "name": "PESetupParamsFilter"
+  },
+  {
+    "index": "2721",
+    "name": "gmPropertyUtils"
+  },
+  {
+    "index": "2725",
+    "name": "CharacterTransferSystem"
+  },
+  {
+    "index": "2727",
+    "name": "SkirmishMatchParams"
+  },
+  {
+    "index": "2728",
+    "name": "SkirmishTreasureLookup"
+  },
+  {
+    "index": "2729",
+    "name": "SkirmishCustomLootLookupTable"
+  },
+  {
+    "index": "2732",
+    "name": "IQuestMsgFilter"
+  },
+  {
+    "index": "2733",
+    "name": "GenericQuestMsgFilter"
+  },
+  {
+    "index": "2734",
+    "name": "MonsterDiedQuestMsgFilter"
+  },
+  {
+    "index": "2735",
+    "name": "Version_TurnOnFloatyTextType"
+  },
+  {
+    "index": "2745",
+    "name": "WJEncounterDisplayData"
+  },
+  {
+    "index": "2746",
+    "name": "Version_China_TurnOffGore"
+  },
+  {
+    "index": "2747",
+    "name": "SkirmishTraitSPRepositorySystem"
+  },
+  {
+    "index": "2748",
+    "name": "Version_SkirmishTraitPoints"
+  },
+  {
+    "index": "2751",
+    "name": "GrantTraitRankEffect"
+  },
+  {
+    "index": "2752",
+    "name": "ExaminationTraitRankToLevelEquivalenceDataGrabber"
+  },
+  {
+    "index": "2753",
+    "name": "WJQueueDialogCallback"
+  },
+  {
+    "index": "2754",
+    "name": "AlertSystem"
+  },
+  {
+    "index": "2757",
+    "name": "WJRequestDialogCallback"
+  },
+  {
+    "index": "2759",
+    "name": "WJDequeueDialogCallback"
+  },
+  {
+    "index": "2760",
+    "name": "EnumIterator"
+  },
+  {
+    "index": "2761",
+    "name": "SkirmishStartBestTimeTimer"
+  },
+  {
+    "index": "2762",
+    "name": "AreaEffect"
+  },
+  {
+    "index": "2763",
+    "name": "DetectionUtils"
+  },
+  {
+    "index": "2767",
+    "name": "Version_Property"
+  },
+  {
+    "index": "2769",
+    "name": "ResetPatrolBoxCallback"
+  },
+  {
+    "index": "2772",
+    "name": "Version_BankRepository_DestroyExcludedItems"
+  },
+  {
+    "index": "2774",
+    "name": "AccountTypeRestrictionsControl"
+  },
+  {
+    "index": "2776",
+    "name": "WebStoreGenericInventoryItem"
+  },
+  {
+    "index": "2779",
+    "name": "BindingSystem"
+  },
+  {
+    "index": "2781",
+    "name": "CBindingSystem"
+  },
+  {
+    "index": "2783",
+    "name": "CBillingSystem"
+  },
+  {
+    "index": "2784",
+    "name": "WebStoreFreeAccountItem"
+  },
+  {
+    "index": "2787",
+    "name": "AuctionWebstoreItemMaxAuctionsEntry"
+  },
+  {
+    "index": "2788",
+    "name": "ContextID"
+  },
+  {
+    "index": "2790",
+    "name": "GWM_TeaPropertyInterface"
+  },
+  {
+    "index": "2791",
+    "name": "TeaPropertyMessaging"
+  },
+  {
+    "index": "2796",
+    "name": "GrantPurchasedTraitRankEffect"
+  },
+  {
+    "index": "2797",
+    "name": "AccountBankPolicy"
+  },
+  {
+    "index": "2798",
+    "name": "IBankPolicy"
+  },
+  {
+    "index": "2799",
+    "name": "CharacterBankPolicy"
+  },
+  {
+    "index": "2800",
+    "name": "BankUpgradeProgression"
+  },
+  {
+    "index": "2801",
+    "name": "RipCord"
+  },
+  {
+    "index": "2802",
+    "name": "CRipCordSystem"
+  },
+  {
+    "index": "2804",
+    "name": "CInventorySystem"
+  },
+  {
+    "index": "2805",
+    "name": "ItemDecaySystem"
+  },
+  {
+    "index": "2808",
+    "name": "ExaminationItemDecayDataGrabber"
+  },
+  {
+    "index": "2809",
+    "name": "ItemDecayControl"
+  },
+  {
+    "index": "2810",
+    "name": "TreasureGroupProfileEntry"
+  },
+  {
+    "index": "2811",
+    "name": "PositionDefs"
+  },
+  {
+    "index": "2812",
+    "name": "TurbinePointsControl"
+  },
+  {
+    "index": "2813",
+    "name": "GrantTurbinePointsUsageAction"
+  },
+  {
+    "index": "2814",
+    "name": "PackageItem"
+  },
+  {
+    "index": "2815",
+    "name": "OpenPackageUsageAction"
+  },
+  {
+    "index": "2816",
+    "name": "BankUpgradeUsageAction"
+  },
+  {
+    "index": "2817",
+    "name": "Version_AwardTurbinePointsForAllQuests"
+  },
+  {
+    "index": "2818",
+    "name": "AAPropertyHash"
+  },
+  {
+    "index": "2824",
+    "name": "GrantTraitSlotUsageAction"
+  },
+  {
+    "index": "3030",
+    "name": "RipCordSystem"
+  },
+  {
+    "index": "3031",
+    "name": "AlignmentEntityFilter"
+  },
+  {
+    "index": "3032",
+    "name": "IEntityFilter"
+  },
+  {
+    "index": "3033",
+    "name": "EntityFilterTable"
+  },
+  {
+    "index": "3034",
+    "name": "TriggerResponse"
+  },
+  {
+    "index": "3035",
+    "name": "PlayerTriggerResponseSet"
+  },
+  {
+    "index": "3036",
+    "name": "TriggerResponseSystem"
+  },
+  {
+    "index": "3037",
+    "name": "IResponse"
+  },
+  {
+    "index": "3038",
+    "name": "ITrigger"
+  },
+  {
+    "index": "3039",
+    "name": "ApplyEffectsResponse"
+  },
+  {
+    "index": "3040",
+    "name": "PropertyChangeTrigger"
+  },
+  {
+    "index": "3042",
+    "name": "ClassEntityFilter"
+  },
+  {
+    "index": "3044",
+    "name": "RandomNameGenerationDirectory"
+  },
+  {
+    "index": "3046",
+    "name": "ChargenClassPriorityControl"
+  },
+  {
+    "index": "3047",
+    "name": "RandomNameGenerationCategory"
+  },
+  {
+    "index": "3048",
+    "name": "RandomNameGenerationOption"
+  },
+  {
+    "index": "3049",
+    "name": "PEWhiteList"
+  },
+  {
+    "index": "3050",
+    "name": "WhiteListSystem"
+  },
+  {
+    "index": "3052",
+    "name": "WebStoreGrantSkillInventoryItem"
+  },
+  {
+    "index": "3053",
+    "name": "PhoneticShiftsTable"
+  },
+  {
+    "index": "3054",
+    "name": "WebStoreGrantTraitInventoryItem"
+  },
+  {
+    "index": "3055",
+    "name": "TravelToEttenmoorsUsagePermission"
+  },
+  {
+    "index": "3057",
+    "name": "WardrobeAccountItemEntry"
+  },
+  {
+    "index": "3058",
+    "name": "IAIncreaseItemLevelUsageAction"
+  },
+  {
+    "index": "3059",
+    "name": "WebstoreExclusionFilteringUsagePermission"
+  },
+  {
+    "index": "3060",
+    "name": "AbandonPrivateEncounterDialogCallback"
+  },
+  {
+    "index": "3061",
+    "name": "AssignLootRightsCallback"
+  },
+  {
+    "index": "3081",
+    "name": "PaperItemSystem"
+  },
+  {
+    "index": "3083",
+    "name": "Packed_CountLimitSystem"
+  },
+  {
+    "index": "3084",
+    "name": "CPaperItemSystem"
+  },
+  {
+    "index": "3085",
+    "name": "GWM_PaperItemSystem"
+  },
+  {
+    "index": "3086",
+    "name": "QuestCategoryLimiterSystem"
+  },
+  {
+    "index": "3087",
+    "name": "QuestCategoryLimiterControl"
+  },
+  {
+    "index": "3088",
+    "name": "ResetQuestCategoryCountUsageAction"
+  },
+  {
+    "index": "3089",
+    "name": "SetMaxQuestCategoryLimitUsageAction"
+  },
+  {
+    "index": "3093",
+    "name": "GCM_PaperItem"
+  },
+  {
+    "index": "3094",
+    "name": "CLuaCommunicationSystem"
+  },
+  {
+    "index": "3095",
+    "name": "GWM_LuaCommunicationSystem"
+  },
+  {
+    "index": "3099",
+    "name": "PetRecallEffect"
+  },
+  {
+    "index": "3102",
+    "name": "BankChestInfoRepositorySystem"
+  },
+  {
+    "index": "3103",
+    "name": "BankChestInfo"
+  },
+  {
+    "index": "3104",
+    "name": "GWM_BankChestInfoRepositorySystem"
+  },
+  {
+    "index": "3105",
+    "name": "PaperItemControl"
+  },
+  {
+    "index": "3107",
+    "name": "CBankChestInfoRepositorySystem"
+  },
+  {
+    "index": "3109",
+    "name": "WebStoreRenameItem"
+  },
+  {
+    "index": "3110",
+    "name": "Packed_CountLimitSystem_WithTracking"
+  },
+  {
+    "index": "3113",
+    "name": "IsPlayerPetEntityFilter"
+  },
+  {
+    "index": "3114",
+    "name": "Version_RefreshPlayerAutoTrainSkills"
+  },
+  {
+    "index": "3117",
+    "name": "NameCreditSystem"
+  },
+  {
+    "index": "3118",
+    "name": "Version_V3B2_5_UpdateNameCredits"
+  },
+  {
+    "index": "3119",
+    "name": "EffectSorter_PropertyMod"
+  },
+  {
+    "index": "3121",
+    "name": "ModEffectPropertySortStruct"
+  },
+  {
+    "index": "3123",
+    "name": "PEResetPlayerSkillsCallback"
+  },
+  {
+    "index": "3124",
+    "name": "PersistentComboEffect"
+  },
+  {
+    "index": "3126",
+    "name": "StringInfoUtils"
+  },
+  {
+    "index": "3130",
+    "name": "EffectSorter_LongestRemainingDuration"
+  },
+  {
+    "index": "3131",
+    "name": "FellowshipMakerSystem"
+  },
+  {
+    "index": "3133",
+    "name": "CFellowshipMakerSystem"
+  },
+  {
+    "index": "3134",
+    "name": "RelicSystem"
+  },
+  {
+    "index": "3136",
+    "name": "FellowshipMakerManager"
+  },
+  {
+    "index": "3138",
+    "name": "RelicTransmutationRecipe"
+  },
+  {
+    "index": "3139",
+    "name": "RelicTransmutationDirectory"
+  },
+  {
+    "index": "3140",
+    "name": "FellowshipMakerRequest"
+  },
+  {
+    "index": "3141",
+    "name": "FellowshipMakerEncounterParams"
+  },
+  {
+    "index": "3143",
+    "name": "HunterCampUsageAction"
+  },
+  {
+    "index": "3144",
+    "name": "SetMaxQuestCategoryLimitUsagePermission"
+  },
+  {
+    "index": "3146",
+    "name": "Version_UnslotAllRelics"
+  },
+  {
+    "index": "3147",
+    "name": "UnlockLegendarySlotUsageAction"
+  },
+  {
+    "index": "3148",
+    "name": "Version_UpdateTravelRegistry"
+  },
+  {
+    "index": "3149",
+    "name": "LegacyReplacementLevelTableEntry"
+  },
+  {
+    "index": "3150",
+    "name": "CRelicSystem"
+  },
+  {
+    "index": "3151",
+    "name": "GWM_RelicSystem"
+  },
+  {
+    "index": "3152",
+    "name": "IsIgnoringCallback"
+  },
+  {
+    "index": "3153",
+    "name": "WSLCompatibilityTester"
+  },
+  {
+    "index": "3154",
+    "name": "ClientCompatibilityTester"
+  },
+  {
+    "index": "3155",
+    "name": "PEBestowQuestCallback"
+  },
+  {
+    "index": "3156",
+    "name": "RelicUnslotUsageAction"
+  },
+  {
+    "index": "3158",
+    "name": "gmTimeUtils"
+  },
+  {
+    "index": "3160",
+    "name": "UpdateQuestScriptsCallback"
+  },
+  {
+    "index": "3161",
+    "name": "PrivateInstanceData"
+  },
+  {
+    "index": "3162",
+    "name": "BoolTestStateWorldEvent"
+  },
+  {
+    "index": "3163",
+    "name": "IntTestStateWorldEvent"
+  },
+  {
+    "index": "3167",
+    "name": "PlayerVersion_ProcessQuestList"
+  },
+  {
+    "index": "3169",
+    "name": "Version_ReawardCompletedQuestRewards"
+  },
+  {
+    "index": "3322",
+    "name": "AdvancedCharacterStartControl"
+  },
+  {
+    "index": "3399",
+    "name": "MountAppearanceTraits"
+  },
+  {
+    "index": "3437",
+    "name": "MountedCombatControl"
+  },
+  {
+    "index": "3481",
+    "name": "PetControl"
+  },
+  {
+    "index": "3542",
+    "name": "PVPVirtueControl"
+  },
+  {
+    "index": "3580",
+    "name": "TraitConfigurationControl"
+  },
+  {
+    "index": "3587",
+    "name": "TraitGroupToTraitNature"
+  },
+  {
+    "index": "3590",
+    "name": "PlayerAssists"
+  },
+  {
+    "index": "3592",
+    "name": "PVPFeatControl"
+  },
+  {
+    "index": "3607",
+    "name": "ColorPackControl"
+  },
+  {
+    "index": "3733",
+    "name": "ResetScheduleControl"
+  },
+  {
+    "index": "3787",
+    "name": "BigBattlesControl"
+  },
+  {
+    "index": "3916",
+    "name": "LinearInterpolatingProgression_ControlPoint"
+  },
+  {
+    "index": "3917",
+    "name": "LinearInterpolatingProgression_Slope"
+  },
+  {
+    "index": "3918",
+    "name": "LinearInterpolatingProgression"
+  },
+  {
+    "index": "3994",
+    "name": "CollectionControl"
+  },
+  {
+    "index": "4091",
+    "name": "CosmeticPetDirectory"
+  },
+  {
+    "index": "4093",
+    "name": "MountDirectory"
+  },
+  {
+    "index": "4099",
+    "name": "LoEControl"
+  },
+  {
+    "index": "4105",
+    "name": "AllegianceControl"
+  }
+]

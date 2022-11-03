@@ -1,0 +1,12 @@
+{
+    "entitiesTableAddress": "0x1d7df38",
+    "referencesTableAddress": "0x1d79bd8",
+    "clientDataAddress": "0x1d79618",
+    "accountDataAddress": "0x1d79618",
+    "storageDataAddress": "0x1d938d0",
+    "pointerSize": 8,
+    "intSize": 8,
+    "intKeySizeForMaps": 8,
+    "bucketSize": 24,
+    "worldEntityOffset": 16
+}
