@@ -24,10 +24,11 @@ class ViewWindow(customtkinter.CTkToplevel):
         self.__parent.withdraw()
         self.__config = config
         self.__data_extractor = DataExtractor(config)
+        self.__currently_syncing = False
         self.__pref_visible = False
+        self.__debug = debug
         
         self.resizable(False, False)
-        self.__data_extractor.sync()
         # self.__client_data = ClientData(config, debug)
         # self.__client_data.load_client_data()
 
@@ -39,8 +40,8 @@ class ViewWindow(customtkinter.CTkToplevel):
         ws = self.winfo_screenwidth() # width of the screen
         hs = self.winfo_screenheight() # height of the screen
         # calculate x and y coordinates for the Tk root window
-        self.main_x = int((ws/2) - (ViewWindow.WINDOW_WIDTH/2))
-        self.main_y = int((hs/2) - (ViewWindow.WINDOW_HEIGHT/2))
+        self.main_x: int = int((ws/2) - (ViewWindow.WINDOW_WIDTH/2))
+        self.main_y: int = int((hs/2) - (ViewWindow.WINDOW_HEIGHT/2))
         self.geometry(f"{ViewWindow.WINDOW_WIDTH}x{ViewWindow.WINDOW_HEIGHT}+{self.main_x}+{self.main_y}")
 
         # Specify the delete window protocol with custom function/dialog
@@ -75,7 +76,7 @@ class ViewWindow(customtkinter.CTkToplevel):
 
         self.frame_title = customtkinter.CTkLabel(master=self.frame_left,
                                               text="Lotro Data\nExtractor",
-                                              text_font=("Roboto Medium", -24))  # font name and size in px
+                                              text_font=("Roboto Medium", -24))  # type: ignore font name and size in px
         self.frame_title.grid(row=1, column=0, pady=10, padx=10)
 
         self.button_1 = customtkinter.CTkButton(master=self.frame_left,
@@ -89,10 +90,10 @@ class ViewWindow(customtkinter.CTkToplevel):
         self.button_2.grid(row=3, column=0, pady=10, padx=20)
 
         self.button_3 = customtkinter.CTkButton(master=self.frame_left,
-                                                text="Send Info",
-                                                fg_color="#A52A2A", 
-                                                hover_color="#731d1d",
-                                                command=self.send_info)
+                                                text="Sync Data",
+                                                fg_color="#03a56a",
+                                                hover_color="#037f51",
+                                                command=self.sync_data)
         self.button_3.grid(row=4, column=0, pady=10, padx=20)
 
         # ============ frame_right ============
@@ -100,21 +101,21 @@ class ViewWindow(customtkinter.CTkToplevel):
 
     
     def display_home_page(self):
-        self.display_page = customtkinter.CTkFrame(master=self.frame_right, fg_color=None)
+        self.display_page = customtkinter.CTkFrame(master=self.frame_right, fg_color=None)  # type: ignore
         self.display_page.grid_rowconfigure(1, weight=1)
-        self.display_page.grid_columnconfigure((0,1,2), weight=1)
+        self.display_page.grid_columnconfigure((0,1,2), weight=1)  # type: ignore
         self.display_page.grid()
         
         self.display_title = customtkinter.CTkLabel(master=self.display_page,
                                               text="About",
-                                              text_font=("Roboto Medium", -30))  # font name and size in px
+                                              text_font=("Roboto Medium", -30))  # type: ignore font name and size in px
         self.display_title.grid(row=0, column=0, columnspan=3, pady=10)
 
         first_par_text = """Lotro Extractor is an application that allows you to extract information and send the  \ninformation\nfrom the LotRO game client.\n
         It allows you to openly view the information from the client.\nAnd edit the preference file!"""
         self.first_par = customtkinter.CTkLabel(master=self.display_page,
                                               text=first_par_text,
-                                              text_font=("Roboto Medium", -14))
+                                              text_font=("Roboto Medium", -14)) # type: ignore font name and size in px
         self.first_par.grid(row=1, column=0, columnspan=3, padx=(10,0), pady=10, sticky="ew")
 
         
@@ -145,55 +146,66 @@ class ViewWindow(customtkinter.CTkToplevel):
     def display_info(self):
         print('Display info')
 
-    def send_info(self):
-        print('Send info')
+    def sync_data(self):
+        if self.__currently_syncing:
+            self.__currently_syncing = False
+            self.__data_extractor.stop_sync()
+            self.button_3['text'] = "Sync Data"
+            self.button_3['fg_color'] = "#03a56a"
+            self.button_3['hover_color'] = "#037f51"
+        else:
+            self.__currently_syncing = True
+            self.__data_extractor.sync()
+            self.button_3['text'] = "Stop Syncing"
+            self.button_3['fg_color'] = "#A52A2A"
+            self.button_3['hover_color'] = "#731d1d"
+        # self.__custom_slider()    
 
-    """
-    Function to destroy the windows called from the confirmation window.
-    :param popup: The popup to destroy.
-    :type popup: customtkinter.CTKTopevel
-    :return None
-    """
-    def __quit_app(self, popup: customtkinter.CTkToplevel = None) -> None:
+    def __quit_app(self, popup: customtkinter.CTkToplevel) -> None:
+        """
+        Function to destroy the windows called from the confirmation window.
+        :param popup: The popup to destroy.
+        :type popup: customtkinter.CTKTopevel
+        :return None
+        """
         if popup is not None:
             popup.grab_release()
-            popup.destroy()       
-        self.__config.close_mem() 
+            popup.destroy() 
+        self.__config.close_mem()
+        self.__data_extractor.stop_sync()
         os.kill(os.getpid(), signal.SIGTERM)
 
-
-    """
-    Function to destroy the window and the icon called from the icon menu.
-    :param icon: The icon to destroy.
-    :type icon: pystray.Icon
-    :return None
-    """
-    def __quit_both_app(self, icon: Icon = None) -> None:
+    def __quit_both_app(self, icon: Icon) -> None:
+        """
+        Function to destroy the window and the icon called from the icon menu.
+        :param icon: The icon to destroy.
+        :type icon: pystray.Icon
+        :return None
+        """
         if icon is not None:
             icon.stop()
-        self.__config.close_mem() 
+        self.__config.close_mem()
+        self.__data_extractor.stop_sync()
         os.kill(os.getpid(), signal.SIGTERM)
 
-
-    """
-    Function to show the app window and destroy the icon if open.
-    :param icon: The icon to destroy.
-    :type icon: pystray.Icon
-    :return None
-    """
     def __show_app(self, icon) -> None:
+        """
+        Function to show the app window and destroy the icon if open.
+        :param icon: The icon to destroy.
+        :type icon: pystray.Icon
+        :return None
+        """
         if icon is not None:
             icon.stop()
         self.after(0, self.deiconify)
 
-
-    """
-    Function to withdraw the app window, destroy popup, and create the icon in the system tray.
-    :param popup: The popup to destroy.
-    :type popup: customtkinter.CTKTopevel
-    :return None
-    """
-    def __withdraw_app(self, popup: customtkinter.CTkToplevel = None) -> None:  
+    def __withdraw_app(self, popup: customtkinter.CTkToplevel) -> None:  
+        """
+        Function to withdraw the app window, destroy popup, and create the icon in the system tray.
+        :param popup: The popup to destroy.
+        :type popup: customtkinter.CTKTopevel
+        :return None
+        """
         # Release the focus and destroy the popup
         popup.grab_release()
         popup.destroy()
@@ -236,4 +248,35 @@ class ViewWindow(customtkinter.CTkToplevel):
         minimize_button.place(relx=0.27, rely=0.68, anchor=customtkinter.CENTER)
         quit_button = customtkinter.CTkButton(master=popout, text="Quit", command=lambda: self.__quit_app(popup=popout), fg_color="#A52A2A", hover_color="#731d1d")
         quit_button.place(relx=0.73, rely=0.68, anchor=customtkinter.CENTER)
-        
+
+
+    # Function to make popup with slider in tkinter
+    def __custom_slider(self) -> float:
+        # Create a top level dialog
+        popout = customtkinter.CTkToplevel(self)
+
+        # Placement of the dialog
+        # calculate x and y coordinates for the dialog window
+        popout_x = int((self.main_x+ViewWindow.WINDOW_WIDTH/2) - (ViewWindow.EXIT_WIDTH/2))
+        popout_y = int((self.main_y+ViewWindow.WINDOW_HEIGHT/2) - (ViewWindow.EXIT_WIDTH/2))
+        popout.geometry(f"{ViewWindow.EXIT_WIDTH}x{ViewWindow.EXIT_WIDTH}+{popout_x}+{popout_y}")
+        # Disable resize
+        popout.resizable(False, False)
+
+        # Grab the focus in the dialog window
+        popout.grab_set()
+
+        # Current value of the slider
+        current_value = customtkinter.DoubleVar()
+
+        # Set the title and the information
+        popout.title("Slider")
+        label = customtkinter.CTkLabel( popout, text="Slider")
+        label.pack(pady=(13, 30))
+        slider = customtkinter.CTkSlider(master=popout, from_=0, to=100, orient=customtkinter.HORIZONTAL, variable=current_value)
+        slider.pack(pady=(13, 30))
+        quit_button = customtkinter.CTkButton(master=popout, text="Quit", command=lambda: self.__quit_app(popup=popout), fg_color="#A52A2A", hover_color="#731d1d")
+        quit_button.pack(pady=(13, 30))
+
+        print(current_value.get())
+        return current_value.get()

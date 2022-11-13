@@ -45,7 +45,8 @@ class ClientData():
 
             return self
         except Exception as exp:
-            raise Exception('Error in client.py!') from exp
+            # raise Exception('Error in client.py!') from exp
+            raise exp
 
     @property
     def server_name(self) -> str:

@@ -3,6 +3,7 @@ from backend.data_facade import DataFacade
 from backend.decoders.properties_decoder import PropertiesDecoder
 from backend.entities.entity_data import EntityData
 
+
 class EntityTableController():
     def __init__(self, config: Config, facade: DataFacade, debug: bool = False) -> None:
         self.__config: Config = config

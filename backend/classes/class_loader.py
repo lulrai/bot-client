@@ -451,6 +451,7 @@ class QuestEventTargetLocationLoader(WStateClassLoader):
         result: AchievableGeoDataItem = None
         if position is not None:
             result = AchievableGeoDataItem(str1, str2, did, position)
+        return result
 
     def __read_quest_genus_struct(self, ins: io.BytesIO) -> None:
         flags = ord(ins.read(1))

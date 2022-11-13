@@ -16,11 +16,12 @@ if TYPE_CHECKING:
 
 class Utils():
     @staticmethod
-    def retrieve_string(mem: pymem, read_addr: int, approx_read: int = 80) -> str:
+    def retrieve_string(mem: pymem, read_addr: int, approx_read: int = 100) -> str:
         EOL_pattern = b"\x00\x00\x00[ .]*[\x00]*"
-        num_bytes = re.search(EOL_pattern, mem.read_bytes(read_addr, approx_read)).start()
-        found_string = mem.read_bytes(read_addr, num_bytes).replace(b'\x00', b'').decode("utf-8", errors='ignore')
-        return found_string
+        search_result = re.search(EOL_pattern, mem.read_bytes(read_addr, approx_read))
+        if search_result:
+            return mem.read_bytes(read_addr, search_result.start()).replace(b'\x00', b'').decode("utf-8", errors='ignore')
+        return ''
 
     @staticmethod
     def read_arb_bitfield(config: Config, bit_field_ptr: int, offset: int) -> BitSet:
