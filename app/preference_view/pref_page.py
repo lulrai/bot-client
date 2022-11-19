@@ -1,13 +1,15 @@
 import configparser
 import os
+import shutil
 import time
+
 import customtkinter
 from customtkinter import CTkCanvas
-import shutil
 
 from app.preference_view.pref_view import PreferenceView
 from backend.common.config import Config
 from backend.utils.common_utils import Utils
+
 
 class PrefPage():
     PARENT_WINDOW_WIDTH = 780
@@ -209,8 +211,8 @@ class PrefPage():
             pass
         
         for section in self.config_changes:
-            for option in self.config_changes[section]:
-                self.__preferences_ini.set(section, option, self.config_changes[section][option])
+            for option, value in self.config_changes[section].items():
+                self.__preferences_ini.set(section, option, value)
 
         with open(src_fpath, 'w') as configfile:
             self.__preferences_ini.write(configfile, space_around_delimiters=False)

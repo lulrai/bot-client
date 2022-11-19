@@ -39,7 +39,7 @@ class App(customtkinter.CTk):
         self.__debug = debug
 
         # =============== Define the main window and appearance ===============
-        customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
+        customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dark
         customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
 
         # Set icon path and icon for the application
@@ -161,7 +161,7 @@ class App(customtkinter.CTk):
         :param popup: The popup to destroy.
         :type popup: customtkinter.CTKTopevel
         :returns: None
-        """  
+        """
         # Release the focus and destroy the popup
         popup.grab_release()
         popup.destroy()

@@ -13,17 +13,28 @@ class DataExtractor():
         self.__config: Config = config
         self.__data_facade: DataFacade = DataFacade(config)
         self.__character_data: dict[str, CharData] = {}
-        self.__sync_thread = threading.Thread(target=self.__sync_char, name="Char Sync", args=[sync_time])
+        self.__thread_event = threading.Event()
+        self.__sync_time = sync_time
+        self.__sync_thread = threading.Thread(target=self.__sync_char, name="Char Sync", args=[self.__sync_time, self.__thread_event])
+        self.__sync_thread.daemon = True
 
     def sync(self) -> None:
+        self.__sync_thread = threading.Thread(target=self.__sync_char, name="Char Sync", args=[self.__sync_time, self.__thread_event])
         self.__sync_thread.daemon = True
+        self.__thread_event.clear()
         self.__sync_thread.start()
 
     def stop_sync(self) -> None:
+        self.__thread_event.set()
         self.__sync_thread.join()
 
-    def __sync_char(self, sync_time: int) -> None:
+    def sync_enabled(self) -> bool:
+        return self.__sync_thread.is_alive()
+
+    def __sync_char(self, sync_time: int, event: threading.Event) -> None:
         while(True):
+            if event.is_set():
+                break
             try:
                 curr_char_data: CharData = CharData(self.__config, self.__data_facade).parse_char()
                 if not curr_char_data.name: continue

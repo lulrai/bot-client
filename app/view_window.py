@@ -11,7 +11,6 @@ from app.preference_view.pref_page import PrefPage
 from backend.common.config import Config
 from backend.data_extractor import DataExtractor
 
-
 class ViewWindow(customtkinter.CTkToplevel):
     WINDOW_WIDTH = 780
     WINDOW_HEIGHT = 520
@@ -24,13 +23,10 @@ class ViewWindow(customtkinter.CTkToplevel):
         self.__parent.withdraw()
         self.__config = config
         self.__data_extractor = DataExtractor(config)
-        self.__currently_syncing = False
         self.__pref_visible = False
         self.__debug = debug
         
         self.resizable(False, False)
-        # self.__client_data = ClientData(config, debug)
-        # self.__client_data.load_client_data()
 
         # Set icon path and icon for the application
         self.icon_path = os.path.join('extra', 'imgs', 'favicon.ico')
@@ -147,19 +143,12 @@ class ViewWindow(customtkinter.CTkToplevel):
         print('Display info')
 
     def sync_data(self):
-        if self.__currently_syncing:
-            self.__currently_syncing = False
-            self.__data_extractor.stop_sync()
-            self.button_3['text'] = "Sync Data"
-            self.button_3['fg_color'] = "#03a56a"
-            self.button_3['hover_color'] = "#037f51"
+        if self.__data_extractor.sync_enabled():
+            self.__data_extractor.stop_sync() 
+            self.button_3.configure(require_redraw=True, text = "Sync Data", fg_color="#03a56a", hover_color="#037f51")
         else:
-            self.__currently_syncing = True
             self.__data_extractor.sync()
-            self.button_3['text'] = "Stop Syncing"
-            self.button_3['fg_color'] = "#A52A2A"
-            self.button_3['hover_color'] = "#731d1d"
-        # self.__custom_slider()    
+            self.button_3.configure(require_redraw=True, text = "Stop Syncing", fg_color="#A52A2A", hover_color="#731d1d")
 
     def __quit_app(self, popup: customtkinter.CTkToplevel) -> None:
         """
@@ -172,7 +161,8 @@ class ViewWindow(customtkinter.CTkToplevel):
             popup.grab_release()
             popup.destroy() 
         self.__config.close_mem()
-        self.__data_extractor.stop_sync()
+        if self.__data_extractor.sync_enabled():
+            self.__data_extractor.stop_sync()
         os.kill(os.getpid(), signal.SIGTERM)
 
     def __quit_both_app(self, icon: Icon) -> None:
@@ -185,7 +175,8 @@ class ViewWindow(customtkinter.CTkToplevel):
         if icon is not None:
             icon.stop()
         self.__config.close_mem()
-        self.__data_extractor.stop_sync()
+        if self.__data_extractor.sync_enabled():
+            self.__data_extractor.stop_sync()
         os.kill(os.getpid(), signal.SIGTERM)
 
     def __show_app(self, icon) -> None:
