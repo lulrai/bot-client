@@ -15,7 +15,7 @@ class Config():
     Config class properties and methods to retrieve the data from in-game.
     """
 
-    def __init__(self, timeout: int = 60, lotro_dir: str = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Lord of the Rings Online", debug: bool = False) -> None:
+    def __init__(self, timeout: int = 60, lotro_dir: str = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Lord of the Rings Online", debug: bool = True) -> None:
         """
         Initialize the Config class.
         :param timeout: The timeout in seconds to wait for the game process to start.
@@ -66,9 +66,9 @@ class Config():
                     if self.__debug: logging.info('Retrieving information from the client process...')
                     if self.__debug: logging.info('     Client: {match.group(0)}\n     Id: %d', proc.pid)
                     self.__pid = proc.pid
-                    self.__lotro_client = os.path.join(self.__lotro_base_dir, match.group(0))
-                    self.__lotro_exe = match.group(0)
                     self.__is_64bits = (match.group(1) == '64')
+                    self.__lotro_client = os.path.join(self.__lotro_base_dir, 'x64', 'lotroclient64.exe') if self.__is_64bits else os.path.join(self.__lotro_base_dir, 'lotroclient.exe')
+                    self.__lotro_exe = match.group(0)
                     self.__pointer_size = 8 if self.__is_64bits else 4
                     self.__int_size = 8 if self.__is_64bits else 4
                     self.__map_int_keysize = 8 if self.__is_64bits else 4
@@ -80,8 +80,7 @@ class Config():
                     self.__storage_data_pattern = "4883EC28BA02000000488D0D?3" if self.__is_64bits else "6a016a02b9?3e8"
 
                     self.__mem = pymem.Pymem(match.group(0)) # Create a pymem object to read the game client memory.
-                    self.__base_address = self.__mem.base_address # Get the base address of the game client.
-
+                    self.__base_address = self.__mem.base_address + (4096 - 1024) if self.__is_64bits else 0 # Get the base address of the game client.
                     if self.__debug: # If debug mode is enabled, print some useful info.
                         logging.info('Lotro Client: %s}', self.__lotro_client)
                         logging.info('    Base Address: %d', self.__base_address)
@@ -92,7 +91,8 @@ class Config():
                         logging.info('    Bucket Size: %d', self.__bucket_size)
                         logging.info('    World Entity Offset: %d', self.__world_entity_offset)
                     return True
-            if self.__debug: logging.info('Sleeping for 1 second... Timeout: %d', timeout)
+            if self.__debug: 
+                print(f'Is 64 bits? {self.__is_64bits}')
             time.sleep(1) # Sleep for 1 second.
             timeout -= 1 # Decrement the timeout.
         return False
@@ -114,7 +114,7 @@ class Config():
         self.__storage_data_address = self.__set_static_memory_offset(self.__storage_data_pattern, storage_data_offset, 'Storage Data')
 
 
-    def __set_static_memory_offset(self, pattern_type: str, offset: int, mem_type: str) -> hex:
+    def __set_static_memory_offset(self, pattern_type: str, offset: int, mem_type: str) -> int:
         """
         Set the address of a static memory offset.
         :param pattern_type: The pattern to find the memory offset.
@@ -123,33 +123,37 @@ class Config():
         :type offset: int
         :param mem_type: The type of memory.
         :type mem_type: str
-        :returns: The address of the memory offset in hex.
-        :rtype: hex
+        :returns: The address of the memory offset in int.
+        :rtype: int
         """
         pattern_pairs = [pattern_type[i:i+2] for i in range(0, len(pattern_type), 2)] # Split the pattern into pairs.
-        pattern_regex = b'' # The regex pattern to find the memory offset.
+        pattern_regex = bytearray() # The regex pattern to find the memory offset.
         for pair in pattern_pairs: # Iterate over the pattern pairs.
             if pair[0] == '?': # If the pair is a wildcard.
                 for _ in range(int(pair[1])+1): # Iterate over the wildcard.
-                    pattern_regex += b'[\x00-\xFF]' # Add the wildcard to the regex pattern.
+                    pattern_regex.extend(b'[\x00-\xFF]') # Add the wildcard to the regex pattern.
             else: # If the pair is not a wildcard.
-                pattern_regex += bytes.fromhex(pair) # Add the pair to the regex pattern.
+                pattern_regex.extend(re.escape(bytes.fromhex(pair))) # Add the pair to the regex pattern.
         
+        compiled_pattern_regex = re.compile(bytes(pattern_regex)) # Compile the regex pattern.
         with open(self.__lotro_client, 'rb') as game_client: # Open the game client exe.
             file_bytes = game_client.read() # Read the game client exe.
-        matches = re.search(pattern_regex, file_bytes) # Find the memory offset.
+        matches = compiled_pattern_regex.search(file_bytes) # Find the memory offset.
         if matches is None: # If the memory offset is not found.
             raise Exception(f"No static memory offset found for {mem_type} with pattern: {pattern_type}") # Raise an exception.
-        index = matches.start() + offset # Get the index of the memory offset.
-        if self.__debug: # If debug mode is enabled, print some useful info.
-            print(f'{mem_type} Offset: {index}') # Print the memory offset.
-
-        address_byte_string = file_bytes[index:index+4] # Get the address bytes.
+        
+        index = matches.start() # Get the index of the memory offset.
+        
+        address_byte_string = file_bytes[index+offset:index+offset+4] # Get the address bytes.
         address_byte_array = bytearray(address_byte_string) # Convert the address bytes to a byte array.
-        address_byte_array.reverse() # Reverse the byte array.
-
-        address_hex = address_byte_array.hex() # Convert the byte array to hex.
-        return address_hex 
+        address_int = int.from_bytes(address_byte_array, byteorder='little') # Convert the address bytes to an int.
+        
+        address_int = (index+offset+4) + address_int if self.__is_64bits else address_int
+                
+        if self.__debug: # If debug mode is enabled, print some useful info.
+            print(f'{mem_type} Address: \n\tHex: {hex(address_int)}\n\tInt: {address_int}\n\tWith Base Address: {address_int+self.__base_address}') # Print the memory offset.
+            
+        return self.__base_address + address_int # Return the address as an int.
 
     def close_mem(self) -> None:
         """
@@ -204,47 +208,47 @@ class Config():
         return self.__base_address
 
     @property
-    def entities_table_address(self) -> hex:
+    def entities_table_address(self) -> int:
         """
         Get the entities table address property.
         :returns: The entities table address property.
-        :rtype: hex
+        :rtype: int
         """
         return self.__entities_table_address
 
     @property
-    def references_table_address(self) -> hex:
+    def references_table_address(self) -> int:
         """
         Get the references table address property.
         :returns: The references table address property.
-        :rtype: hex
+        :rtype: int
         """
         return self.__references_table_address
 
     @property
-    def client_data_address(self) -> hex:
+    def client_data_address(self) -> int:
         """
         Get the client data address property.
         :returns: The client data address property.
-        :rtype: hex
+        :rtype: int
         """
         return self.__client_data_address
 
     @property
-    def account_data_address(self) -> hex:
+    def account_data_address(self) -> int:
         """
         Get the account data address property.
         :returns: The account data address property.
-        :rtype: hex
+        :rtype: int
         """
         return self.__account_data_address
 
     @property
-    def storage_data_address(self) -> hex:
+    def storage_data_address(self) -> int:
         """
         Get the storage data address property.
         :returns: The storage data address property.
-        :rtype: hex
+        :rtype: int
         """
         return self.__storage_data_address
 

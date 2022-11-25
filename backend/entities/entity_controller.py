@@ -2,6 +2,7 @@ from backend.common.config import Config
 from backend.data_facade import DataFacade
 from backend.decoders.properties_decoder import PropertiesDecoder
 from backend.entities.entity_data import EntityData
+from backend.utils.common_utils import Utils
 
 
 class EntityTableController():
@@ -12,13 +13,13 @@ class EntityTableController():
         self.__debug: bool = debug
 
     def load_entities(self) -> dict[int, EntityData]:
-        entity_table_ptr = self.__config.mem.read_uint(int(self.__config.entities_table_address, base=16))
+        entity_table_ptr = Utils.get_pointer(self.__config.mem, self.__config.entities_table_address, self.__config.pointer_size)
         entity_manager: dict[int, EntityData] = {}
 
-        buckets_ptr = self.__config.mem.read_uint(entity_table_ptr+(3*self.__config.pointer_size))
+        buckets_ptr = Utils.get_pointer(self.__config.mem, entity_table_ptr+(3*self.__config.pointer_size), self.__config.pointer_size)
         if self.__debug: print(f"buckets_ptr: {hex(buckets_ptr)}")
 
-        first_bucket_ptr = self.__config.mem.read_uint(entity_table_ptr+(4*self.__config.pointer_size))
+        first_bucket_ptr = Utils.get_pointer(self.__config.mem, entity_table_ptr+(4*self.__config.pointer_size), self.__config.pointer_size)
         if self.__debug: print(f"first_bucket_ptr: {hex(first_bucket_ptr)}")
 
         nb_buckets = self.__config.mem.read_uint(entity_table_ptr+(5*self.__config.pointer_size))
@@ -27,7 +28,7 @@ class EntityTableController():
 
         if buckets_ptr:
             for i in range(nb_buckets):
-                first_entry = self.__config.mem.read_uint(buckets_ptr+(i*self.__config.pointer_size))
+                first_entry = Utils.get_pointer(self.__config.mem, buckets_ptr+(i*self.__config.pointer_size), self.__config.pointer_size)
                 if first_entry:
                     self.__handle_table_entry(entity_manager, first_entry)
         return entity_manager
@@ -37,20 +38,20 @@ class EntityTableController():
         entity_data: EntityData = EntityData(instance_id)
         entity_manager[instance_id] = entity_data
 
-        world_entity_ptr = self.__config.mem.read_uint(ptr+self.__config.world_entity_offset)
+        world_entity_ptr = Utils.get_pointer(self.__config.mem, ptr+self.__config.world_entity_offset, self.__config.pointer_size)
         self.__handle_world_entity(world_entity_ptr, entity_data)
 
-        next_ptr = self.__config.mem.read_uint(ptr + 8)
+        next_ptr = Utils.get_pointer(self.__config.mem, ptr + 8, self.__config.pointer_size)
         if next_ptr:
             self.__handle_table_entry(entity_manager, next_ptr)
 
     def __handle_world_entity(self, world_entity_ptr: int, entity_data: EntityData) -> None:
         world_entity_offset = 0x120 if self.__config.is_64bits else 0x98
-        world_entity_construction_ptr = self.__config.mem.read_uint(world_entity_ptr+world_entity_offset)
+        world_entity_construction_ptr = Utils.get_pointer(self.__config.mem, world_entity_ptr+world_entity_offset, self.__config.pointer_size)
         if world_entity_construction_ptr:
             entity_data.data_id = self.__config.mem.read_uint(world_entity_construction_ptr+world_entity_offset+self.__config.pointer_size+4)
         property_source_offset = 0xc0 if self.__config.is_64bits else 0x60
-        property_source_ptr = self.__config.mem.read_uint(world_entity_ptr+property_source_offset)
+        property_source_ptr = Utils.get_pointer(self.__config.mem, world_entity_ptr+property_source_offset, self.__config.pointer_size)
         if property_source_ptr:
             prop_offset = 0x30 if self.__config.is_64bits else 0x18
             entity_data.properties = self.__properties_decoder.handle_properties(property_source_ptr, prop_offset+self.__config.pointer_size)

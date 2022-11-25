@@ -34,7 +34,7 @@ class PrefPage():
 
     def __load_prefs(self):
         preferences_ini_offset = 0x00 if self.__config.is_64bits else 0x40
-        main_client_data_addr = self.__config.mem.read_uint(int(self.__config.client_data_address, base=16))
+        main_client_data_addr = self.__config.mem.read_uint(self.__config.client_data_address)
         preferences_addr = self.__config.mem.read_uint(main_client_data_addr + preferences_ini_offset)
         self.__preferences_path = Utils.retrieve_string(self.__config.mem, preferences_addr)
 

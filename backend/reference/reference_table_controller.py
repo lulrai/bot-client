@@ -6,6 +6,7 @@ from backend.common.config import Config
 from backend.decoders.native_package_decoder import NativePackagesDecoder
 from backend.decoders.wsl_decoder import WSLDecoder
 from backend.reference.reference_table_entry import ReferenceTableEntry
+from backend.utils.common_utils import Utils
 
 if TYPE_CHECKING:
     from backend.data_facade import DataFacade
@@ -20,10 +21,9 @@ class ReferencesTableController():
         self.__initialize()
 
     def __initialize(self) -> None:
-        base_ptr: int = int(self.__config.references_table_address, base=16)
-        ref_table_ptr: int = self.__config.mem.read_uint(base_ptr)
         ptr_size: int = self.__config.pointer_size
-        table_ptr: int = self.__config.mem.read_uint(ref_table_ptr)
+        ref_table_ptr: int = Utils.get_pointer(self.__config.mem, self.__config.references_table_address, ptr_size)
+        table_ptr: int = Utils.get_pointer(self.__config.mem, ref_table_ptr, ptr_size)
         self.__num_entries: int = self.__config.mem.read_uint(ref_table_ptr + ptr_size + 4)
         self.__gc_generation: int = self.__config.mem.read_uint(ref_table_ptr + ptr_size + 12) & 0xFF
         nb_used_entries: int = self.__config.mem.read_uint(ref_table_ptr + ptr_size + 8)

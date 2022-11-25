@@ -31,7 +31,7 @@ class CharData():
             if props:
                 char_type = props.get_property('CharacterType')
                 if char_type and char_type == 2:
-                    self.__name = entity_data.properties.get_property('Name')
+                    self.__name = props.get_property('Name')
                     self.__entity_data = entity_data
         return self
 

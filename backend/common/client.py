@@ -22,24 +22,24 @@ class ClientData():
 
     def load_client_data(self) -> ClientData:
         try:
-            client_instance_addr = self.__config.mem.read_uint(int(self.__config.client_data_address, base=16))
+            client_instance_addr = Utils.get_pointer(self.__config.mem, self.__config.client_data_address, self.__config.pointer_size)
 
             server_name_offset = 0x130 if self.__config.is_64bits else 0xb4
             language_offset = 0xf0 if self.__config.is_64bits else 0x84
             account_property_offset = 0x190 if self.__config.is_64bits else 0xe8
             world_property_offset = 0x188 if self.__config.is_64bits else 0xe4
 
-            server_name_addr = self.__config.mem.read_uint(client_instance_addr + server_name_offset)
+            server_name_addr = Utils.get_pointer(self.__config.mem, client_instance_addr + server_name_offset, self.__config.pointer_size)
             self.__server_name = Utils.retrieve_string(self.__config.mem, server_name_addr)
 
-            language_addr = self.__config.mem.read_uint(client_instance_addr + language_offset)
+            language_addr = Utils.get_pointer(self.__config.mem, client_instance_addr + language_offset, self.__config.pointer_size)
             self.__language = Utils.retrieve_string(self.__config.mem, language_addr)
 
-            account_property_addr = self.__config.mem.read_uint(client_instance_addr + account_property_offset)
+            account_property_addr = Utils.get_pointer(self.__config.mem, client_instance_addr + account_property_offset, self.__config.pointer_size)
             acc_data_offset = 0xb8 if self.__config.is_64bits else 0x6c
             self.__account_property: Properties = self.__properties_decoder.handle_properties(account_property_addr, acc_data_offset)
 
-            world_property_addr = self.__config.mem.read_uint(client_instance_addr + world_property_offset)
+            world_property_addr =  Utils.get_pointer(self.__config.mem, client_instance_addr + world_property_offset, self.__config.pointer_size)
             world_data_offset = 0x20 if self.__config.is_64bits else 0x10
             self.__world_property: Properties = self.__properties_decoder.handle_properties(world_property_addr, world_data_offset)
 

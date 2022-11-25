@@ -17,10 +17,8 @@ class ViewWindow(customtkinter.CTkToplevel):
     EXIT_WIDTH = 320
     EXIT_HEIGHT = 100
 
-    def __init__(self, parent: customtkinter.CTk, config: Config, debug: bool = False) -> None:
+    def __init__(self, parent: customtkinter.CTk, config: Config, debug: bool) -> None:
         super().__init__(master=parent)
-        self.__parent = parent
-        self.__parent.withdraw()
         self.__config = config
         self.__data_extractor = DataExtractor(config)
         self.__pref_visible = False
@@ -144,7 +142,7 @@ class ViewWindow(customtkinter.CTkToplevel):
 
     def sync_data(self):
         if self.__data_extractor.sync_enabled():
-            self.__data_extractor.stop_sync() 
+            self.__data_extractor.stop_sync()
             self.button_3.configure(require_redraw=True, text = "Sync Data", fg_color="#03a56a", hover_color="#037f51")
         else:
             self.__data_extractor.sync()

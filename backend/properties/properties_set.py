@@ -22,3 +22,10 @@ class Properties():
 
     def set_property(self, property_val: PropertyValue) -> None:
         self.__props[property_val.prop_definition.name] = property_val
+        
+    def __repr__(self) -> str:
+        return_val = 'Properties [\n'
+        sorted(self.__props)
+        for _, val in self.__props.items():
+            return_val += f'{val}\n'
+        return return_val + ']'

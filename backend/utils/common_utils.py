@@ -18,7 +18,23 @@ if TYPE_CHECKING:
 class Utils():
     """Class that contains utility methods."""
     @staticmethod
-    def retrieve_string(mem: pymem, read_addr: int, approx_read: int = 100) -> str:
+    def get_pointer(mem: pymem, address: int, ptr_size: int) -> int:
+        """
+        Gets the pointer value from the given address.
+        param mem: The pymem instance.
+        type mem: pymem.Pymem
+        param address: The address to read from.
+        type address: int
+        param ptr_size: The size of the pointer.
+        type ptr_size: int
+        returns: The pointer value.
+        rtype: int
+        """
+        ptr_val = int.from_bytes(mem.read_bytes(address, ptr_size), byteorder='little')
+        return ptr_val if ptr_val else None
+    
+    @staticmethod
+    def retrieve_string(mem: pymem, read_addr: int, approx_read=150) -> str:
         """
         Function to retrieve a string from memory.
         param mem: pymem object
@@ -30,11 +46,15 @@ class Utils():
         returns: string
         rtype: str
         """
-        eol_pattern = b"\x00\x00\x00[ .]*[\x00]*"
+        eol_pattern = b"\x00[\x00]*[\x00|\x01]*[\x00]*"
         search_result = re.search(eol_pattern, mem.read_bytes(read_addr, approx_read))
         if search_result:
-            return mem.read_bytes(read_addr, search_result.start()).replace(b'\x00', b'').decode("utf-8", errors='ignore')
+            return mem.read_bytes(read_addr, search_result.start()).decode("latin-1")
         return ''
+        # length = Utils.read_vle_mem(mem, read_addr)
+        # str_bytes = mem.read_bytes(read_addr, length * 2);
+        # print(length)
+        # return str_bytes.decode('latin-1')
 
     @staticmethod
     def read_arb_bitfield(config: Config, bit_field_ptr: int, offset: int) -> BitSet:
@@ -49,6 +69,7 @@ class Utils():
         returns: BitSet
         rtype: BitSet
         """
+        bits_ptr = Utils.get_pointer(config.mem, bit_field_ptr+offset, config.pointer_size)
         bit_count = config.mem.read_uint(bit_field_ptr+offset+config.pointer_size)
         if bit_count == 0: return BitSet()
         print('Nb bits:', bit_count)
@@ -56,7 +77,7 @@ class Utils():
         ret = BitSet(nbits=bit_count)
         bit_index = 0
         for i in range(byte_count):
-            value = ord(config.mem.read_bytes(bit_field_ptr+i, 1))
+            value = ord(config.mem.read_bytes(bits_ptr+i, 1))
             local_bit_flag = 1
             while bit_index < bit_count and local_bit_flag < 256:
                 if (value & local_bit_flag) != 0:

@@ -79,15 +79,17 @@ class StringsManager():
         token = Utils.read_uint32(ins)
         unknown = Utils.read_uint32(ins)
         assert unknown == 0
+        
         label_parts_count = Utils.read_uint32(ins)
         label_parts: list[str] = []
         for _ in range(label_parts_count):
             label_parts.append(Utils.read_prefixed_utf16(ins))
         nb_variables = Utils.read_uint32(ins)
         variable_ids: list[int] = []
-        assert nb_variables == (label_parts_count - 1)
         for _ in range(nb_variables):
             variable_ids.append(Utils.read_uint32(ins))
+        assert nb_variables == (label_parts_count - 1)
+        
         variable_names: list[str] = []
         has_variable_names = Utils.read_bool(ins)
         if has_variable_names:

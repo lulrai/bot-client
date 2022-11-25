@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 
+from backend.paths import DATA_PATH
 from backend.utils.common_utils import Utils
 
 
@@ -18,11 +19,12 @@ class KnownVariablesManager(object):
 
     @classmethod
     def __load(cls) -> None:
-        with open(os.path.join('..', 'data', 'KnownVariables.json')) as inf:
+        # Load the known variables from the file in the data folder
+        with open(os.path.join(DATA_PATH, 'KnownVariables.json')) as inf:
             known_variables: list[str] = json.load(inf)
         for known_variable in known_variables:
-            hash = Utils.hash(known_variable)
-            cls.__cache[hash] = known_variable
+            var_hash = Utils.hash(known_variable)
+            cls.__cache[var_hash] = known_variable
 
     @classmethod
     def __initialize(cls) -> None:
@@ -34,7 +36,7 @@ class KnownVariablesManager(object):
         cls.__load()
 
     @classmethod
-    def get_variable_from_hash(cls, hash: int) -> str:
-        if hash in cls.__cache:
-            return cls.__cache[hash]
+    def get_variable_from_hash(cls, var_hash: int) -> str:
+        if var_hash in cls.__cache:
+            return cls.__cache[var_hash]
         return None

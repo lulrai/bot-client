@@ -9,6 +9,7 @@ from backend.strings.string_format_builder import StringFormatBuilder
 from backend.strings.string_info import (LiteralStringInfo, StringInfo,
                                          TableEntryStringInfo)
 from backend.strings.string_renderer import StringRenderer
+from backend.utils.common_utils import Utils
 
 if TYPE_CHECKING:
     from backend.data_facade import DataFacade
@@ -98,8 +99,7 @@ class StringInfoUtils():
         is_literal_offset = offset + config.pointer_size + 8 + hash_table_size + config.pointer_size
         is_literal = config.mem.read_bool(value_addr+is_literal_offset)
         if is_literal:
-            string_ptr = config.mem.read_uint(value_addr + offset + config.pointer_size + 8 + hash_table_size)
-            # return handle_literal_str_value(config, string_ptr)
+            string_ptr = Utils.get_pointer(config.mem, value_addr + offset + config.pointer_size + 8 + hash_table_size, config.pointer_size)
             return StringInfoUtils.handle_literal_str_value(config, string_ptr)
         else:
             token_id = config.mem.read_uint(value_addr + offset + config.pointer_size)

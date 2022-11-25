@@ -36,17 +36,17 @@ class PropertiesDecoder():
 
     def handle_pointer_prop_val(self, ptr: int, property_def: PropertyDef) -> object:
         p_type = property_def.ptype.val
-        if self.__debug: print(f"property type: {property_def.ptype.NAMES[p_type]}")
+        # if self.__debug: print(f"property type: {property_def.ptype.NAMES[p_type]}")
         if p_type == PropertyType.StringInfo:
             offset = self.__config.reference_count_size
             return StringInfoUtils.read_string_info(self.__config, self.__data_facade, ptr, offset)
         if p_type == PropertyType.String:
             offset = self.__config.reference_count_size
-            string_ptr = self.__memory.read_uint(ptr+offset)
-            return Utils.retrieve_string(self.__memory, string_ptr, 260)
+            string_ptr = Utils.get_pointer(self.__memory, ptr+offset, self.__config.pointer_size)
+            return Utils.retrieve_string(self.__memory, string_ptr)
         if p_type == PropertyType.Array:
             offset = self.__config.reference_count_size
-            data_ptr = self.__memory.read_uint(ptr+offset)
+            data_ptr = Utils.get_pointer(self.__memory, ptr+offset, self.__config.pointer_size)
             nb_items = self.__memory.read_uint(ptr+offset+self.__config.pointer_size+4)
             values: list[PropertyValue] = []
             if nb_items == 0: return values
@@ -111,7 +111,7 @@ class PropertiesDecoder():
         elif p_type == PropertyType.Float:
             prop_val = self.__memory.read_float(ptr + property_val_offset)
         else:
-            value_ptr = self.__memory.read_uint(ptr + property_val_offset)
+            value_ptr = Utils.get_pointer(self.__memory, ptr + property_val_offset, self.__config.pointer_size)
             prop_val = self.handle_pointer_prop_val(value_ptr, property_def)
         return prop_val
 
@@ -130,7 +130,7 @@ class PropertiesDecoder():
 
     def handle_property(self, ptr: int, offset: int, property_def: PropertyDef) -> PropertyValue:
         if property_def and property_def.pid == 0: return PropertyValue(property_def, None, None)
-        property_desc_ptr = self.__memory.read_uint(ptr+offset)
+        property_desc_ptr = Utils.get_pointer(self.__memory, ptr+offset, self.__config.pointer_size)
         assert property_desc_ptr is not None
         property_def = self.load_property_descriptor(property_desc_ptr, property_def)
         if property_def is None: return None
@@ -148,22 +148,22 @@ class PropertiesDecoder():
     def handle_prop_map_entry(self, storage: Properties, hash_table_data_ptr: int) -> None:
         if hash_table_data_ptr is None: return
         property_id = self.__memory.read_uint(hash_table_data_ptr)
-        if self.__debug: print('Property ID:', property_id)
+        #if self.__debug: print('Property ID:', property_id)
         prop_def = self.__data_facade.get_properties_registry().get_property_def(property_id)
         offset = self.__config.map_int_keysize + self.__config.pointer_size
         property_value = self.handle_property(hash_table_data_ptr, offset, prop_def)
-        if self.__debug: print(f"{property_value.prop_definition.name}: {property_value.value}")
+        #if self.__debug: print(f"{property_value.prop_definition.name}: {property_value.value}")
         if property_value: storage.set_property(property_value)
-        next = self.__memory.read_uint(hash_table_data_ptr + self.__config.map_int_keysize)
-        if next: 
-            self.handle_prop_map_entry(storage, next)
+        next_ptr = Utils.get_pointer(self.__memory, hash_table_data_ptr + self.__config.map_int_keysize, self.__config.pointer_size)
+        if next_ptr: 
+            self.handle_prop_map_entry(storage, next_ptr)
 
     def handle_properties(self, ptr: int, hash_table_offset: int):
-        buckets_ptr = self.__memory.read_uint(ptr+hash_table_offset+(2*self.__config.pointer_size))
-        if self.__debug: print(f"buckets_ptr: {hex(buckets_ptr)}")
+        buckets_ptr = Utils.get_pointer(self.__memory, ptr+hash_table_offset+(2*self.__config.pointer_size), self.__config.pointer_size)
+        if self.__debug and buckets_ptr: print(f"buckets_ptr: {hex(buckets_ptr)}")
 
-        first_bucket_ptr = self.__memory.read_uint(ptr+hash_table_offset+(3*self.__config.pointer_size))
-        if self.__debug: print(f"first_bucket_ptr: {hex(first_bucket_ptr)}")
+        first_bucket_ptr =  Utils.get_pointer(self.__memory, ptr+hash_table_offset+(3*self.__config.pointer_size), self.__config.pointer_size)
+        if self.__debug and first_bucket_ptr: print(f"first_bucket_ptr: {hex(first_bucket_ptr)}")
 
         nb_buckets = self.__memory.read_uint(ptr+hash_table_offset+(4*self.__config.pointer_size))
         nb_elements = self.__memory.read_uint(ptr+hash_table_offset+(4*self.__config.pointer_size)+0x4)
@@ -172,7 +172,7 @@ class PropertiesDecoder():
         storage = Properties()
         if buckets_ptr and nb_elements > 0:
             for i in range(nb_buckets):
-                first_entry = self.__memory.read_uint(buckets_ptr+(i*self.__config.pointer_size))
+                first_entry =  Utils.get_pointer(self.__memory, buckets_ptr+(i*self.__config.pointer_size), self.__config.pointer_size)
                 if first_entry:
                     self.handle_prop_map_entry(storage, first_entry)
         map_size = len(storage.props)

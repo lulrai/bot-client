@@ -15,7 +15,8 @@ class StringFormatBuilder():
             if has_var:
                 return StringFormatBuilder.__render_entry_with_variables(entry, decoded_parts)
             return StringFormatBuilder.__render_entry_without_variables(entry)
-        except:
+        except Exception as e:
+            raise e
             print('Could not render string for entry:', entry)
             return '?'
 

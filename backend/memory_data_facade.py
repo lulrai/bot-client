@@ -14,7 +14,7 @@ class MemoryDataFacade():
         self.__entities_manager: dict[int, EntityData] = EntityTableController(config, facade).load_entities()
         self.__references_table_controller: ReferencesTableController = ReferencesTableController(config, facade)
         self.__client_data: ClientData = ClientData(config, facade, debug).load_client_data()
-        # self.__storage_data_controller: StorageDataController = StorageDataController(config, facade)
+        #self.__storage_data_controller: StorageDataController = StorageDataController(config, facade)
 
     def get_entities_manager(self) -> dict[int, EntityData]:
         return self.__entities_manager

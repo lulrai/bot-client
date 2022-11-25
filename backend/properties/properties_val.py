@@ -17,6 +17,9 @@ class PropertyValue():
     @property
     def complement(self) -> object:
         return self.__complement
+    
+    def __repr__(self) -> str:
+        return f'{self.__definition.name}: {self.__value}'
 
 class ArrayPropertyValue(PropertyValue):
     def __init__(self, prop_def: PropertyDef, values: list[PropertyValue]) -> None:
@@ -37,3 +40,9 @@ class ArrayPropertyValue(PropertyValue):
         for i in range(len(values)):
             ret[i] = values[i].complement
         return ret
+    
+    def __repr__(self) -> str:
+        compl_str = '\t\t[\n'
+        for prop_val in self.__values:
+            compl_str+=f'\t\t\t{prop_val}\n'
+        return compl_str + '\t\t]'

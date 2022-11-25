@@ -69,8 +69,9 @@ class App(customtkinter.CTk):
         self.waiting_label.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)
 
         # =============== Threaded wait for client ==============
-        self.__main_thread = threading.Thread(target=self.__run_config, args=[self.__debug])
-        self.__main_thread.start()
+        # self.__main_thread = threading.Thread(target=self.__run_config, args=[self.__debug])
+        # self.__main_thread.start()
+        self.__run_config(self.__debug)
 
     def __run_config(self, debug: bool = False) -> None:
         """
@@ -82,6 +83,7 @@ class App(customtkinter.CTk):
         config = Config(debug=debug)
         try:
             if config.await_process(): # Wait for the client to start
+                print('Found process')
                 # Start the process monitor to close the app when the client closes
                 threading.Thread(target=self.__monitor_process, args=[config]).start()
                 config.set_address() # Set the address of the client
@@ -90,7 +92,8 @@ class App(customtkinter.CTk):
                 self.waiting_label.configure( # Update the label
                     text=f"Client found at {config.lotro_exe} with PID: {config.pid}! Retrieving info.."
                 )
-                if not debug: time.sleep(10)
+                self.update() # Update the window
+                self.withdraw() # Hide the waiting window
                 ViewWindow(self, config, debug) # Open the view window
         except pymem.pymem.exception.CouldNotOpenProcess: # Could not access the client memory (probably not running as admin)
             self.waiting_label.configure(

@@ -1,5 +1,5 @@
 import threading
-from time import sleep
+import logging
 
 from pymem.exception import MemoryReadError
 
@@ -9,7 +9,7 @@ from backend.data_facade import DataFacade
 
 
 class DataExtractor():
-    def __init__(self, config: Config, sync_time: int = 3) -> None:
+    def __init__(self, config: Config, sync_time: int = 20) -> None:
         self.__config: Config = config
         self.__data_facade: DataFacade = DataFacade(config)
         self.__character_data: dict[str, CharData] = {}
@@ -39,12 +39,15 @@ class DataExtractor():
                 curr_char_data: CharData = CharData(self.__config, self.__data_facade).parse_char()
                 if not curr_char_data.name: continue
                 self.__character_data[curr_char_data.name] = curr_char_data
-                print(self.__character_data)
-                sleep(sync_time)
+                logging.info(self.__character_data[curr_char_data.name].get_memory_extraction_session().get_memory_facade().get_client_data().account_data)
+                logging.info(self.__character_data[curr_char_data.name].get_memory_extraction_session().get_memory_facade().get_client_data().world_data)
+                logging.info(self.__character_data[curr_char_data.name].entity_data.properties)
+                event.wait(sync_time)
             except MemoryReadError as mem_read_err:
                 if mem_read_err.args[0].startswith('Could not read memory at: 0') and not self.__character_data:
-                    sleep(sync_time)
-                continue
+                    event.wait(sync_time)
+                logging.error(mem_read_err)
+                raise mem_read_err
 
     def get_character_data(self) -> dict[str, CharData]:
         return self.__character_data
