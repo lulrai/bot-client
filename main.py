@@ -14,7 +14,7 @@ app = App(debug=DEBUG_ENABLED) # Create the main application window
 # Set up logging
 logging.basicConfig(filename='app.log',
     format='%(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
+    level=(logging.DEBUG if DEBUG_ENABLED else logging.INFO),
     filemode='w',
     force=True)
 

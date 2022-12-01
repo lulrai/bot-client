@@ -6,6 +6,8 @@ import re
 import time
 import logging
 from typing import Pattern
+import configparser
+from backend.utils.common_utils import Utils
 
 import psutil
 import pymem
@@ -28,6 +30,7 @@ class Config():
         """
         self.__timeout: int = timeout # Timeout in seconds to wait for the game process to start.
         self.__lotro_base_dir: str = lotro_dir # The directory where the game is installed.
+        self.__lotro_pref_path: str = "" # The path to the lotro config file.
         self.__lotro_client: str = "" # The path to the game client.
         self.__lotro_exe: str = "" # The exe of the game client.
         self.__bit_match: Pattern = re.compile("lotroclient(64)*.exe") # Regex to match the game client exe.
@@ -35,6 +38,7 @@ class Config():
         self.__debug: bool = debug # Whether to enable debug mode or not.
         self.__mem: pymem = None # The pymem object to read the game client memory.
         self.__pid: int = -1 # Keep track of the game client process id.
+        self.__preferences_ini: configparser.ConfigParser = configparser.ConfigParser() # The preferences.ini file loader.
 
         self.__base_address: int = 0 # The base address of the game client.
         self.__entities_table_address: int = 0 # The address of the entities table.
@@ -91,10 +95,10 @@ class Config():
                         logging.info('    Bucket Size: %d', self.__bucket_size)
                         logging.info('    World Entity Offset: %d', self.__world_entity_offset)
                     return True
-            if self.__debug: 
-                print(f'Is 64 bits? {self.__is_64bits}')
             time.sleep(1) # Sleep for 1 second.
             timeout -= 1 # Decrement the timeout.
+        if self.__debug: 
+                print(f'Is 64 bits? {self.__is_64bits}')
         return False
 
     def set_address(self) -> None:
@@ -106,6 +110,7 @@ class Config():
         references_table_offset = 3 if self.__is_64bits else -9 # The offset of the references table.
         client_account_data_offset = 3 if self.__is_64bits else -4 # The offset of the client data.
         storage_data_offset = 12 if self.__is_64bits else 5 # The offset of the storage data.
+        preferences_ini_offset = 0x19F8 if self.__is_64bits else 0x40
 
         self.__entities_table_address = self.__set_static_memory_offset(self.__entities_table_pattern, entities_table_offset, 'Entities Table')
         self.__references_table_address = self.__set_static_memory_offset(self.__references_table_pattern, references_table_offset, 'References Table')
@@ -113,6 +118,14 @@ class Config():
         self.__account_data_address = self.__client_data_address
         self.__storage_data_address = self.__set_static_memory_offset(self.__storage_data_pattern, storage_data_offset, 'Storage Data')
 
+        if self.__debug:
+            logging.debug('Preferences located at with offset: %s', hex(self.__client_data_address + preferences_ini_offset))
+        main_client_data_addr = Utils.get_pointer(self.__mem, self.__client_data_address, self.__pointer_size) if not self.__is_64bits else self.__client_data_address
+        preferences_addr = Utils.get_pointer(self.__mem, main_client_data_addr + preferences_ini_offset, self.__pointer_size)
+        self.__lotro_pref_path = Utils.retrieve_string(self.__mem, preferences_addr)
+        if self.__debug:
+            logging.info('Preferences path: %s', self.__lotro_pref_path)
+        self.__preferences_ini.read(self.__lotro_pref_path)
 
     def __set_static_memory_offset(self, pattern_type: str, offset: int, mem_type: str) -> int:
         """
@@ -323,3 +336,30 @@ class Config():
         :rtype: int
         """
         return self.__pid
+    
+    @property
+    def debug(self) -> bool:
+        """
+        Get the debug property.
+        :returns: The debug property.
+        :rtype: bool
+        """
+        return self.__debug
+    
+    @property
+    def pref_ini(self) -> configparser.ConfigParser:
+        """
+        Get the pref ini property.
+        :returns: The pref ini property.
+        :rtype: str
+        """
+        return self.__preferences_ini
+    
+    @property
+    def lotro_pref_path(self) -> str:
+        """
+        Get the lotro pref path property.
+        :returns: The lotro pref path property.
+        :rtype: str
+        """
+        return self.__lotro_pref_path
