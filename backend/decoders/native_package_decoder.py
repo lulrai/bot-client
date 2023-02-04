@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.common.data_types import BitSet, Position
 from backend.decoders.friend_adaptor_decoder import FriendAdaptorDecoder
 from backend.decoders.hash_decoder import ContainersDecoder
@@ -18,8 +18,8 @@ if TYPE_CHECKING:
     from backend.data_facade import DataFacade
 
 class NativePackagesDecoder():
-    def __init__(self, config: Config, data_facade: DataFacade) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, data_facade: DataFacade) -> None:
+        self.__config: GameConfig = config
         self.__data_facade: DataFacade = data_facade
         self.__properties_decoder: PropertiesDecoder = PropertiesDecoder(config, data_facade)
         self.__containers_decoder: ContainersDecoder = ContainersDecoder(config)

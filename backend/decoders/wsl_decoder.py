@@ -3,13 +3,13 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from backend.classes.class_definition import AttributeDefinition, ClassInstance
-from backend.common.config import Config
+from backend.common.config import GameConfig
 
 if TYPE_CHECKING:
     from backend.data_facade import DataFacade
 
 class WSLDecoder():
-    def __init__(self, config: Config, data_facade: DataFacade) -> None:
+    def __init__(self, config: GameConfig, data_facade: DataFacade) -> None:
         self.__config = config
         self.__data_facade = data_facade
 

@@ -4,13 +4,13 @@ import logging
 from pymem.exception import MemoryReadError
 
 from backend.char_data import CharData
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.data_facade import DataFacade
 
 
 class DataExtractor():
-    def __init__(self, config: Config, sync_time: int = 20) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, sync_time: int = 20) -> None:
+        self.__config: GameConfig = config
         self.__data_facade: DataFacade = DataFacade(config)
         self.__character_data: dict[str, CharData] = {}
         self.__thread_event = threading.Event()

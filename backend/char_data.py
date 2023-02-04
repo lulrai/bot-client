@@ -7,13 +7,13 @@ from backend.memory_data_facade import (MemoryDataFacade,
                                         MemoryExtractionSession)
 
 if TYPE_CHECKING:
-    from backend.common.config import Config
+    from backend.common.config import GameConfig
     from backend.data_facade import DataFacade
     from backend.properties.properties_set import Properties
 
 class CharData():
-    def __init__(self, config: Config, data_facade: DataFacade) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, data_facade: DataFacade) -> None:
+        self.__config: GameConfig = config
         self.__data_facade: DataFacade = data_facade
         self.__memory_extraction_session: MemoryExtractionSession = None
         self.__entity_data: EntityData = None

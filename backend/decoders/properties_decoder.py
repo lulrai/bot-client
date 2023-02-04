@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pymem
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.common.data_types import BitSet, Color, Position, Vector3D
 from backend.managers.abstract_mappers import EnumMapper
 from backend.properties.properties_def import PropertyDef
@@ -17,7 +17,7 @@ if TYPE_CHECKING:
     from backend.data_facade import DataFacade
 
 class PropertiesDecoder():
-    def __init__(self, config: Config, data_facade: DataFacade, debug: bool = False) -> None:
+    def __init__(self, config: GameConfig, data_facade: DataFacade, debug: bool = False) -> None:
         self.__config = config
         self.__memory: pymem = config.mem
         self.__data_facade: DataFacade = data_facade

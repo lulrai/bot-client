@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.decoders.properties_decoder import PropertiesDecoder
 from backend.properties.properties_set import Properties
 from backend.utils.common_utils import Utils
@@ -11,8 +11,8 @@ if TYPE_CHECKING:
     from backend.data_facade import DataFacade
 
 class ClientData():
-    def __init__(self, config: Config, facade: DataFacade, debug: bool = True) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, facade: DataFacade, debug: bool = True) -> None:
+        self.__config: GameConfig = config
         self.__properties_decoder: PropertiesDecoder = PropertiesDecoder(config, facade)
         self.__debug: bool = debug
         self.__server_name: str = ""

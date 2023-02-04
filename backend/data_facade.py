@@ -4,7 +4,7 @@ import os
 from backend.classes.function_definition import (FunctionArgumentDefinition,
                                                  FunctionDefinition,
                                                  FunctionsRegistry)
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.managers.datfiles_manager import DatFilesManager
 from backend.managers.enums_manager import EnumManager
 from backend.managers.properties_manager import (PropertiesRegistry,
@@ -21,7 +21,7 @@ from backend.wdata.wstate_loader import WStateLoader
 
 
 class DataFacade():
-    def __init__(self, config: Config, debug: bool = False) -> None:
+    def __init__(self, config: GameConfig, debug: bool = False) -> None:
         self.__dat_manager = DatFilesManager(config)
         self.__property_registry: PropertiesRegistry = None
         self.__strings_manager: StringsManager = StringsManager(self)

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.common.data_types import BitSet
 from backend.common.vault_data import VaultDescriptor, VaultItemDescriptor
 from backend.decoders.hash_decoder import HashtableDecoder
@@ -16,13 +16,13 @@ if TYPE_CHECKING:
     from backend.data_facade import DataFacade
 
 class MiscNativesDecoder():
-    def __init__(self, config: Config, data_facade: DataFacade) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, data_facade: DataFacade) -> None:
+        self.__config: GameConfig = config
         self.__data_facade = data_facade
         self.__props_decoder: PropertiesDecoder = PropertiesDecoder(config, data_facade)
         
     class VaultDescriptorDecoder(HashtableDecoder):
-        def __init__(self, config: Config) -> None:
+        def __init__(self, config: GameConfig) -> None:
             super().__init__(config, config.map_int_keysize, config.map_int_keysize+config.pointer_size, config.pointer_size)
 
         def parse_key(self, hash_table_data_ptr: int) -> int:
@@ -33,7 +33,7 @@ class MiscNativesDecoder():
             return Utils.retrieve_string(self.__config.mem, utf16_str_ptr)
 
     class CurrencyRecordDecoder(HashtableDecoder):
-        def __init__(self, config: Config) -> None:
+        def __init__(self, config: GameConfig) -> None:
             super().__init__(config, config.map_int_keysize, config.map_int_keysize+config.pointer_size, 4)
 
         def parse_key(self, hash_table_data_ptr: int) -> int:

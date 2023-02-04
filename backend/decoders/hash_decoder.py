@@ -1,4 +1,4 @@
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.reference.data_ref import DataReference
 from typing import TypeVar
 import abc
@@ -8,8 +8,8 @@ KT = TypeVar('KT')
 VT = TypeVar('VT')
 
 class HashtableDecoder(dict[KT, VT], abc.ABC):
-    def __init__(self, config: Config, key_size: int, value_offset: int, value_size: int) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, key_size: int, value_offset: int, value_size: int) -> None:
+        self.__config: GameConfig = config
         self.__key_size: int = key_size
         self.__value_offset: int = value_offset
         self.__value_size: int = value_offset
@@ -47,7 +47,7 @@ class HashtableDecoder(dict[KT, VT], abc.ABC):
         pass
 
 class IntLongValDecoder(HashtableDecoder):
-    def __init__(self, config: Config, key_size: int, value_offset: int, value_size: int) -> None:
+    def __init__(self, config: GameConfig, key_size: int, value_offset: int, value_size: int) -> None:
         super().__init__(config, key_size, value_offset, value_size)
     
     def parse_key(self, hash_table_data_ptr: int) -> int:
@@ -58,7 +58,7 @@ class IntLongValDecoder(HashtableDecoder):
         return DataReference(val) if (package_id in (35, 117)) else val
 
 class IntLongDecoder(HashtableDecoder):
-    def __init__(self, config: Config, key_size: int, value_offset: int, value_size: int) -> None:
+    def __init__(self, config: GameConfig, key_size: int, value_offset: int, value_size: int) -> None:
         super().__init__(config, key_size, value_offset, value_size)
     
     def parse_key(self, hash_table_data_ptr: int) -> int:
@@ -68,7 +68,7 @@ class IntLongDecoder(HashtableDecoder):
         return None
 
 class IntMultiHashDecoder(HashtableDecoder):
-    def __init__(self, config: Config, key_size: int, value_offset: int, value_size: int) -> None:
+    def __init__(self, config: GameConfig, key_size: int, value_offset: int, value_size: int) -> None:
         super().__init__(config, key_size, value_offset, value_size)
         self.__current_key = 0
 
@@ -90,7 +90,7 @@ class IntMultiHashDecoder(HashtableDecoder):
         return result
 
 class NRHashDecoder(HashtableDecoder):
-    def __init__(self, config: Config, key_size: int, value_offset: int, value_size: int) -> None:
+    def __init__(self, config: GameConfig, key_size: int, value_offset: int, value_size: int) -> None:
         super().__init__(config, key_size, value_offset, value_size)
     
     def parse_key(self, hash_table_data_ptr: int) -> int:
@@ -100,7 +100,7 @@ class NRHashDecoder(HashtableDecoder):
         return self.__config.mem.read_uint(hash_table_data_ptr+val_offset)
 
 class NHashSetDecoder(HashtableDecoder):
-    def __init__(self, config: Config, key_size: int, value_offset: int, value_size: int) -> None:
+    def __init__(self, config: GameConfig, key_size: int, value_offset: int, value_size: int) -> None:
         super().__init__(config, key_size, value_offset, value_size)
     
     def parse_key(self, hash_table_data_ptr: int) -> int:
@@ -110,8 +110,8 @@ class NHashSetDecoder(HashtableDecoder):
         return None
 
 class ContainersDecoder():
-    def __init__(self, config: Config) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig) -> None:
+        self.__config: GameConfig = config
         self.__intint_decoder: IntLongValDecoder = IntLongValDecoder(config, config.map_int_keysize, config.map_int_keysize+config.pointer_size, 4)
         self.__intlong_decoder: IntLongValDecoder = IntLongValDecoder(config, config.map_int_keysize, config.map_int_keysize+config.pointer_size, 8)
         longint_val_offset: int = 8+config.pointer_size if config.is_64bits else 8+config.pointer_size+4

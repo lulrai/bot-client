@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.decoders.properties_decoder import PropertiesDecoder
 from backend.properties.properties_set import Properties
 
@@ -11,8 +11,8 @@ if TYPE_CHECKING:
 
 
 class IgnoreAdaptorDecoder():
-    def __init__(self, config: Config, data_facade: DataFacade) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, data_facade: DataFacade) -> None:
+        self.__config: GameConfig = config
         self.__props_decoder: PropertiesDecoder = PropertiesDecoder(config, data_facade)
 
     def handle_ignore_adaptor(self, native_package_ptr: int, raw_size: int) -> Properties:

@@ -1,6 +1,6 @@
 import os
 
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.common.dat_archive import DATArchive
 
 DAT_FILES = ("general", "anim", "gamelogic", "local_English", 
@@ -10,7 +10,7 @@ DAT_FILES = ("general", "anim", "gamelogic", "local_English",
         "map_1", "map_2", "map_3", "map_4", "map_14")
 
 class DatFilesManager():
-    def __init__(self, config: Config, debug: bool = False) -> None:
+    def __init__(self, config: GameConfig, debug: bool = False) -> None:
         self.__archives: dict[str, DATArchive] = {}
         self.__debug: bool = debug
         for dat in DAT_FILES:

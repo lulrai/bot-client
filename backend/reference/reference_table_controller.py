@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.decoders.native_package_decoder import NativePackagesDecoder
 from backend.decoders.wsl_decoder import WSLDecoder
 from backend.reference.reference_table_entry import ReferenceTableEntry
@@ -12,8 +12,8 @@ if TYPE_CHECKING:
     from backend.data_facade import DataFacade
 
 class ReferencesTableController():
-    def __init__(self, config: Config, data_facade: DataFacade) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, data_facade: DataFacade) -> None:
+        self.__config: GameConfig = config
         self.__entry_pointers: list[int] = []
         self.__entries_cache: dict[int, ReferenceTableEntry] = {}
         self.__wsl_decoder = WSLDecoder(config, data_facade)

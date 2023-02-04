@@ -13,7 +13,7 @@ from backend.common.data_types import BitSet, Color, Quaternion, Vector3D
 from backend.properties.properties_set import Properties
 
 if TYPE_CHECKING:
-    from backend.common.config import Config
+    from backend.common.config import GameConfig
 
 class Utils():
     """Class that contains utility methods."""
@@ -57,7 +57,7 @@ class Utils():
         # return str_bytes.decode('latin-1')
 
     @staticmethod
-    def read_arb_bitfield(config: Config, bit_field_ptr: int, offset: int) -> BitSet:
+    def read_arb_bitfield(config: GameConfig, bit_field_ptr: int, offset: int) -> BitSet:
         """
         Function to read an arbitrary bitfield.
         param config: config object

@@ -1,5 +1,5 @@
 from backend.common.client import ClientData
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.data_facade import DataFacade
 from backend.entities.entity_controller import EntityTableController
 from backend.entities.entity_data import EntityData
@@ -10,7 +10,7 @@ from backend.wdata.wsl_inspector import WSLInspector
 
 
 class MemoryDataFacade():
-    def __init__(self, config: Config, facade: DataFacade, debug: bool = False) -> None:
+    def __init__(self, config: GameConfig, facade: DataFacade, debug: bool = False) -> None:
         self.__entities_manager: dict[int, EntityData] = EntityTableController(config, facade).load_entities()
         self.__references_table_controller: ReferencesTableController = ReferencesTableController(config, facade)
         self.__client_data: ClientData = ClientData(config, facade, debug).load_client_data()
@@ -29,7 +29,7 @@ class MemoryDataFacade():
         return self.__client_data.account_data if self.__client_data else None
 
 class MemoryExtractionSession():
-    def __init__(self, config: Config, data_facade: DataFacade, debug: bool = False) -> None:
+    def __init__(self, config: GameConfig, data_facade: DataFacade, debug: bool = False) -> None:
         self.__data_facade: DataFacade = data_facade
         self.__memory_data_facade: MemoryDataFacade = MemoryDataFacade(config, data_facade, debug)
         if self.__memory_data_facade: self.__wsl_inspector: WSLInspector = WSLInspector(self.__memory_data_facade.get_reference_table_controller())

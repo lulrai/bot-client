@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING
 from backend.managers.abstract_mappers import EnumMapper
 
 if TYPE_CHECKING:
-    from backend.common.config import Config
+    from backend.common.config import GameConfig
 
 class Color:
     def __init__(self, r, g, b, a):
@@ -118,7 +118,7 @@ class Position:
         return cls(flags, r, bx, by, i, c, offset, rot)
 
     @classmethod
-    def from_mem(cls, config: Config, ptr: int, offset: int) -> Position:
+    def from_mem(cls, config: GameConfig, ptr: int, offset: int) -> Position:
         start_offset: int = offset + config.pointer_size
         pad: int = 6 if config.is_64bits else 2
 

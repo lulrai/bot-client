@@ -1,4 +1,4 @@
-from backend.common.config import Config
+from backend.common.config import GameConfig
 from backend.data_facade import DataFacade
 from backend.decoders.properties_decoder import PropertiesDecoder
 from backend.entities.entity_data import EntityData
@@ -6,8 +6,8 @@ from backend.utils.common_utils import Utils
 
 
 class EntityTableController():
-    def __init__(self, config: Config, facade: DataFacade, debug: bool = False) -> None:
-        self.__config: Config = config
+    def __init__(self, config: GameConfig, facade: DataFacade, debug: bool = False) -> None:
+        self.__config: GameConfig = config
         self.__facade: DataFacade = facade
         self.__properties_decoder: PropertiesDecoder = PropertiesDecoder(self.__config, self.__facade)
         self.__debug: bool = debug
